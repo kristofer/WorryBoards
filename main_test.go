@@ -440,6 +440,9 @@ func TestSelectedProblemUsesClickToRevealFirstHint(t *testing.T) {
 	if !strings.Contains(body, "Show first hint") {
 		t.Fatalf("expected first-hint button in selected problem response, got: %s", body)
 	}
+	if !strings.Contains(body, "Copy question") || !strings.Contains(body, "copyProblemPrompt(this") {
+		t.Fatalf("expected copy-question button in selected problem response, got: %s", body)
+	}
 	if strings.Contains(body, "unlock in a few seconds") {
 		t.Fatalf("timer-based hint message should not be present, got: %s", body)
 	}

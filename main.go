@@ -691,6 +691,20 @@ const templates = `
       </div>
     </div>
   </div>
+  <script>
+    function copyProblemPrompt(button, promptText) {
+      if (!navigator.clipboard || !navigator.clipboard.writeText) {
+        return;
+      }
+      navigator.clipboard.writeText(promptText).then(function () {
+        const previous = button.textContent;
+        button.textContent = "Copied!";
+        setTimeout(function () {
+          button.textContent = previous;
+        }, 1200);
+      });
+    }
+  </script>
 </body>
 </html>
 {{end}}
@@ -719,7 +733,10 @@ const templates = `
 {{define "selected_problem"}}
 <h5 class="text-success">{{.Problem.Title}}</h5>
 <p class="text-body-secondary mb-1">{{.Problem.Language}} · Difficulty {{.Problem.Difficulty}}</p>
-<p class="mb-3">{{.Problem.Prompt}}</p>
+<p class="mb-2">{{.Problem.Prompt}}</p>
+<button class="btn btn-outline-primary btn-sm mb-3"
+        type="button"
+        onclick='copyProblemPrompt(this, "{{.Problem.Prompt | js}}")'>Copy question</button>
 <div id="solutions-{{.Problem.ID}}"
      hx-swap="innerHTML">
   <button class="btn btn-outline-success btn-sm"
