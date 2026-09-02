@@ -1,6 +1,6 @@
 # WorryBoards
 
-A static whiteboard practice app built with Go, HTMX, Bootstrap, and SQLite.
+A static whiteboard practice app built with Go, HTMX, Bootstrap, and SQLite (pure Go driver, no CGO required).
 
 Seeded catalog:
 - 225 total problems

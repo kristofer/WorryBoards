@@ -10,7 +10,7 @@ import (
 func setupTestDB(t *testing.T) *sql.DB {
 	t.Helper()
 
-	db, err := sql.Open("sqlite3", ":memory:")
+	db, err := sql.Open("sqlite", ":memory:")
 	if err != nil {
 		t.Fatalf("open db: %v", err)
 	}
@@ -308,7 +308,7 @@ func TestLevelTwoSharedTopicsIncludeNewJavaAndPythonQuestions(t *testing.T) {
 }
 
 func TestInitSchemaUpgradesProblemLanguageConstraint(t *testing.T) {
-	db, err := sql.Open("sqlite3", ":memory:")
+	db, err := sql.Open("sqlite", ":memory:")
 	if err != nil {
 		t.Fatalf("open db: %v", err)
 	}
@@ -351,7 +351,7 @@ func TestInitSchemaUpgradesProblemLanguageConstraint(t *testing.T) {
 }
 
 func TestMigrateCatalogUpdatesWhenJSONChanges(t *testing.T) {
-	db, err := sql.Open("sqlite3", ":memory:")
+	db, err := sql.Open("sqlite", ":memory:")
 	if err != nil {
 		t.Fatalf("open db: %v", err)
 	}
