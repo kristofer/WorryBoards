@@ -1,8 +1,12 @@
 package main
 
 import (
-	"encoding/json"
 	"database/sql"
+	"encoding/json"
+	"fmt"
+	"html/template"
+	"net/http"
+	"net/http/httptest"
 	"os"
 	"path/filepath"
 	"strings"
@@ -418,4 +422,96 @@ func TestMigrateCatalogUpdatesWhenJSONChanges(t *testing.T) {
 	if count != 2 {
 		t.Fatalf("expected 2 problems after second migration, got %d", count)
 	}
+}
+
+func TestSelectedProblemUsesClickToRevealFirstHint(t *testing.T) {
+	app := newTestApp(t)
+	problemID := firstProblemID(t, app.db)
+
+	req := httptest.NewRequest(http.MethodGet, fmt.Sprintf("/problem/%d", problemID), nil)
+	rr := httptest.NewRecorder()
+	app.handleProblemSelection(rr, req, problemID)
+
+	if rr.Code != http.StatusOK {
+		t.Fatalf("expected status 200, got %d", rr.Code)
+	}
+
+	body := rr.Body.String()
+	if !strings.Contains(body, "Show first hint") {
+		t.Fatalf("expected first-hint button in selected problem response, got: %s", body)
+	}
+	if strings.Contains(body, "unlock in a few seconds") {
+		t.Fatalf("timer-based hint message should not be present, got: %s", body)
+	}
+}
+
+func TestProblemSolutionsRevealHintsIncrementally(t *testing.T) {
+	app := newTestApp(t)
+	problemID := problemIDWithSolutionCount(t, app.db, 2)
+
+	firstReq := httptest.NewRequest(http.MethodGet, fmt.Sprintf("/problem/%d/solutions?count=1", problemID), nil)
+	firstRes := httptest.NewRecorder()
+	app.handleProblemSolutions(firstRes, firstReq, problemID)
+
+	if firstRes.Code != http.StatusOK {
+		t.Fatalf("expected status 200 for first hint, got %d", firstRes.Code)
+	}
+	firstBody := firstRes.Body.String()
+	if strings.Count(firstBody, "<li>") != 1 {
+		t.Fatalf("expected 1 revealed hint, got response: %s", firstBody)
+	}
+	if !strings.Contains(firstBody, "Show second hint") {
+		t.Fatalf("expected follow-up button for second hint, got: %s", firstBody)
+	}
+
+	secondReq := httptest.NewRequest(http.MethodGet, fmt.Sprintf("/problem/%d/solutions?count=2", problemID), nil)
+	secondRes := httptest.NewRecorder()
+	app.handleProblemSolutions(secondRes, secondReq, problemID)
+
+	if secondRes.Code != http.StatusOK {
+		t.Fatalf("expected status 200 for second hint, got %d", secondRes.Code)
+	}
+	secondBody := secondRes.Body.String()
+	if strings.Count(secondBody, "<li>") != 2 {
+		t.Fatalf("expected 2 revealed hints, got response: %s", secondBody)
+	}
+	if strings.Contains(secondBody, "Show second hint") || strings.Contains(secondBody, "Show next hint") {
+		t.Fatalf("did not expect another hint button after revealing second hint, got: %s", secondBody)
+	}
+}
+
+func newTestApp(t *testing.T) *App {
+	t.Helper()
+
+	return &App{
+		db:        setupTestDB(t),
+		templates: template.Must(template.New("all").Parse(templates)),
+	}
+}
+
+func firstProblemID(t *testing.T, db *sql.DB) int {
+	t.Helper()
+
+	var id int
+	if err := db.QueryRow("SELECT id FROM problems ORDER BY id LIMIT 1").Scan(&id); err != nil {
+		t.Fatalf("select first problem id: %v", err)
+	}
+	return id
+}
+
+func problemIDWithSolutionCount(t *testing.T, db *sql.DB, expectedCount int) int {
+	t.Helper()
+
+	var id int
+	err := db.QueryRow(`
+SELECT problem_id
+FROM problem_solutions
+GROUP BY problem_id
+HAVING COUNT(*) = ?
+ORDER BY problem_id
+LIMIT 1`, expectedCount).Scan(&id)
+	if err != nil {
+		t.Fatalf("select problem id with %d solutions: %v", expectedCount, err)
+	}
+	return id
 }
