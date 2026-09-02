@@ -54,6 +54,63 @@ var supportedLanguages = map[string]struct{}{
 	"Python": {},
 }
 
+const expectedProblemCount = 130
+
+func coreLevelOneTopics() []string {
+	return []string{
+		"Print numbers 1 to 10",
+		"Print even numbers from 2 to 20",
+		"Sum numbers 1 to 100",
+		"Countdown timer",
+		"Multiplication table (single number)",
+		"Basic string analysis",
+		"Reverse a word (without slicing shortcuts)",
+		"Count vowels in a sentence",
+		"Write a function: letter frequency dictionary",
+		"Find the largest number in a list",
+		"Filter positive numbers (list comprehension)",
+		"Square numbers (list comprehension)",
+		"Basic dictionary practice",
+		"Simple while input loop",
+		"FizzBuzz (classic fundamentals)",
+	}
+}
+
+func levelOneTopics() []string {
+	topics := append([]string{}, coreLevelOneTopics()...)
+	return append(topics,
+		"Print numbers 1 to N",
+		"Print odd numbers in range",
+		"Sum only even numbers 1 to 100",
+		"Countdown timer from N",
+		"Multiplication table (formatted output)",
+		"String palindrome check (loop-based)",
+		"Reverse sentence words using loops",
+		"Count vowels and consonants",
+		"Letter frequency top character",
+		"Find second largest number in a list",
+	)
+}
+
+func topicsForDifficulty(difficulty int) []string {
+	if difficulty == 1 {
+		return levelOneTopics()
+	}
+
+	return []string{
+		"Two Sum Variant",
+		"Balanced Brackets",
+		"Reverse Linked List",
+		"Merge Intervals",
+		"Top K Frequent",
+		"Binary Tree Depth",
+		"LRU Cache Design",
+		"Matrix Rotation",
+		"Anagram Grouping",
+		"Sliding Window Maximum",
+	}
+}
+
 func main() {
 	db, err := openAndInitDB("/home/runner/work/WorryBoards/WorryBoards/data/worryboards.db")
 	if err != nil {
@@ -145,7 +202,7 @@ func seedProblems(db *sql.DB) error {
 		return err
 	}
 
-	if count == 100 {
+	if count == expectedProblemCount {
 		return nil
 	}
 
@@ -162,19 +219,6 @@ func seedProblems(db *sql.DB) error {
 		return err
 	}
 
-	topics := []string{
-		"Two Sum Variant",
-		"Balanced Brackets",
-		"Reverse Linked List",
-		"Merge Intervals",
-		"Top K Frequent",
-		"Binary Tree Depth",
-		"LRU Cache Design",
-		"Matrix Rotation",
-		"Anagram Grouping",
-		"Sliding Window Maximum",
-	}
-
 	problemInsert, err := tx.Prepare("INSERT INTO problems(language, difficulty, title, prompt) VALUES(?, ?, ?, ?)")
 	if err != nil {
 		return err
@@ -188,13 +232,14 @@ func seedProblems(db *sql.DB) error {
 	defer solutionInsert.Close()
 
 	for difficulty := 1; difficulty <= 5; difficulty++ {
+		topics := topicsForDifficulty(difficulty)
 		for _, language := range []string{"Java", "Python"} {
 			for i, topic := range topics {
 				title := fmt.Sprintf("%s D%d #%02d", topic, difficulty, i+1)
-				prompt := fmt.Sprintf(
-					"Implement %s in %s. Target difficulty %d. Discuss runtime and edge cases.",
-					topic, language, difficulty,
-				)
+				prompt := fmt.Sprintf("Implement %s in %s. Target difficulty %d. Discuss runtime and edge cases.", topic, language, difficulty)
+				if difficulty == 1 {
+					prompt = fmt.Sprintf("Fundamentals task in %s: %s. Keep the solution beginner friendly.", language, topic)
+				}
 				res, err := problemInsert.Exec(language, difficulty, title, prompt)
 				if err != nil {
 					return err

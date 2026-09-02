@@ -30,8 +30,8 @@ func TestSeedProblemCounts(t *testing.T) {
 	if err := db.QueryRow("SELECT COUNT(*) FROM problems").Scan(&total); err != nil {
 		t.Fatalf("count total: %v", err)
 	}
-	if total != 100 {
-		t.Fatalf("expected 100 problems, got %d", total)
+	if total != expectedProblemCount {
+		t.Fatalf("expected %d problems, got %d", expectedProblemCount, total)
 	}
 
 	for difficulty := 1; difficulty <= 5; difficulty++ {
@@ -39,8 +39,12 @@ func TestSeedProblemCounts(t *testing.T) {
 		if err := db.QueryRow("SELECT COUNT(*) FROM problems WHERE difficulty = ?", difficulty).Scan(&c); err != nil {
 			t.Fatalf("count difficulty %d: %v", difficulty, err)
 		}
-		if c != 20 {
-			t.Fatalf("expected 20 problems for difficulty %d, got %d", difficulty, c)
+		expected := 20
+		if difficulty == 1 {
+			expected = 50
+		}
+		if c != expected {
+			t.Fatalf("expected %d problems for difficulty %d, got %d", expected, difficulty, c)
 		}
 	}
 }
@@ -71,8 +75,8 @@ GROUP BY problem_id`)
 	if err := rows.Err(); err != nil {
 		t.Fatalf("rows err: %v", err)
 	}
-	if seen != 100 {
-		t.Fatalf("expected 100 seeded solution groups, got %d", seen)
+	if seen != expectedProblemCount {
+		t.Fatalf("expected %d seeded solution groups, got %d", expectedProblemCount, seen)
 	}
 }
 
@@ -92,6 +96,26 @@ func TestGetProblemsRespectsFiltersAndLimit(t *testing.T) {
 		}
 		if p.Difficulty != 4 {
 			t.Fatalf("unexpected difficulty: %d", p.Difficulty)
+		}
+	}
+}
+
+func TestLevelOneCoreTopicsExistForBothLanguages(t *testing.T) {
+	db := setupTestDB(t)
+
+	for _, language := range []string{"Java", "Python"} {
+		for _, topic := range coreLevelOneTopics() {
+			var c int
+			if err := db.QueryRow(
+				"SELECT COUNT(*) FROM problems WHERE difficulty = 1 AND language = ? AND title GLOB ?",
+				language,
+				topic+" D1 #[0-9][0-9]",
+			).Scan(&c); err != nil {
+				t.Fatalf("count topic %q for %s: %v", topic, language, err)
+			}
+			if c != 1 {
+				t.Fatalf("expected exactly one difficulty-1 problem for %q in %s, got %d", topic, language, c)
+			}
 		}
 	}
 }
