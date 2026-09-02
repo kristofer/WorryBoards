@@ -41,13 +41,13 @@ func TestSeedProblemCounts(t *testing.T) {
 	if err := db.QueryRow("SELECT COUNT(*) FROM problems").Scan(&total); err != nil {
 		t.Fatalf("count total: %v", err)
 	}
-	if total != 195 {
-		t.Fatalf("expected 195 problems, got %d", total)
+	if total != 225 {
+		t.Fatalf("expected 225 problems, got %d", total)
 	}
 
 	expectedByDifficulty := map[int]int{
-		1: 77,
-		2: 42,
+		1: 97,
+		2: 52,
 		3: 31,
 		4: 25,
 		5: 20,
@@ -64,9 +64,9 @@ func TestSeedProblemCounts(t *testing.T) {
 	}
 
 	expectedByLanguage := map[string]int{
-		"Java":   119,
-		"Python": 68,
-		"SQL":    8,
+		"Java":   124,
+		"Python": 73,
+		"SQL":    28,
 	}
 	for language, expected := range expectedByLanguage {
 		var c int
@@ -105,8 +105,8 @@ GROUP BY problem_id`)
 	if err := rows.Err(); err != nil {
 		t.Fatalf("rows err: %v", err)
 	}
-	if seen != 195 {
-		t.Fatalf("expected 195 seeded solution groups, got %d", seen)
+	if seen != 225 {
+		t.Fatalf("expected 225 seeded solution groups, got %d", seen)
 	}
 }
 
@@ -233,6 +233,26 @@ func TestSQLStarterTopicsExist(t *testing.T) {
 		"What is a primary key?",
 		"What is a foreign key?",
 		"What is a query?",
+		"What does the WHERE clause do?",
+		"Sort rows with ORDER BY",
+		"Limit result size with LIMIT",
+		"Remove duplicates with DISTINCT",
+		"Rename columns with aliases",
+		"Filter with IN",
+		"Filter with BETWEEN",
+		"Search text with LIKE",
+		"Understand NULL and IS NULL",
+		"Count rows with COUNT",
+		"Find max and min values",
+		"Compute averages with AVG",
+		"Sum a numeric column",
+		"Group rows with GROUP BY",
+		"Filter grouped results with HAVING",
+		"Join two tables with INNER JOIN",
+		"Keep unmatched rows with LEFT JOIN",
+		"Add new rows with INSERT",
+		"Modify rows with UPDATE",
+		"Remove rows with DELETE",
 	}
 
 	for _, topic := range topics {
@@ -256,6 +276,34 @@ func TestSQLStarterTopicsExist(t *testing.T) {
 	}
 	if advancedCount != 1 {
 		t.Fatalf("expected exactly one SQL difficulty-2 subquery problem, got %d", advancedCount)
+	}
+}
+
+func TestLevelTwoSharedTopicsIncludeNewJavaAndPythonQuestions(t *testing.T) {
+	db := setupTestDB(t)
+
+	topics := []string{
+		"Validate Binary Search Tree",
+		"Coin Change Minimum Coins",
+		"Number of Islands",
+		"Min Stack Operations",
+		"Word Search Backtracking",
+	}
+
+	for _, language := range []string{"Java", "Python"} {
+		for _, topic := range topics {
+			var c int
+			if err := db.QueryRow(
+				"SELECT COUNT(*) FROM problems WHERE difficulty = 2 AND language = ? AND title GLOB ?",
+				language,
+				topic+" D2 #[0-9][0-9]",
+			).Scan(&c); err != nil {
+				t.Fatalf("count topic %q for %s: %v", topic, language, err)
+			}
+			if c != 1 {
+				t.Fatalf("expected exactly one difficulty-2 problem for %q in %s, got %d", topic, language, c)
+			}
+		}
 	}
 }
 
