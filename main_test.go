@@ -41,21 +41,40 @@ func TestSeedProblemCounts(t *testing.T) {
 	if err := db.QueryRow("SELECT COUNT(*) FROM problems").Scan(&total); err != nil {
 		t.Fatalf("count total: %v", err)
 	}
-	if total != 130 {
-		t.Fatalf("expected 130 problems, got %d", total)
+	if total != 195 {
+		t.Fatalf("expected 195 problems, got %d", total)
 	}
 
+	expectedByDifficulty := map[int]int{
+		1: 77,
+		2: 42,
+		3: 31,
+		4: 25,
+		5: 20,
+	}
 	for difficulty := 1; difficulty <= 5; difficulty++ {
 		var c int
 		if err := db.QueryRow("SELECT COUNT(*) FROM problems WHERE difficulty = ?", difficulty).Scan(&c); err != nil {
 			t.Fatalf("count difficulty %d: %v", difficulty, err)
 		}
-		expected := 20
-		if difficulty == 1 {
-			expected = 50
-		}
+		expected := expectedByDifficulty[difficulty]
 		if c != expected {
 			t.Fatalf("expected %d problems for difficulty %d, got %d", expected, difficulty, c)
+		}
+	}
+
+	expectedByLanguage := map[string]int{
+		"Java":   119,
+		"Python": 68,
+		"SQL":    8,
+	}
+	for language, expected := range expectedByLanguage {
+		var c int
+		if err := db.QueryRow("SELECT COUNT(*) FROM problems WHERE language = ?", language).Scan(&c); err != nil {
+			t.Fatalf("count language %s: %v", language, err)
+		}
+		if c != expected {
+			t.Fatalf("expected %d problems for %s, got %d", expected, language, c)
 		}
 	}
 }
@@ -86,8 +105,8 @@ GROUP BY problem_id`)
 	if err := rows.Err(); err != nil {
 		t.Fatalf("rows err: %v", err)
 	}
-	if seen != 130 {
-		t.Fatalf("expected 130 seeded solution groups, got %d", seen)
+	if seen != 195 {
+		t.Fatalf("expected 195 seeded solution groups, got %d", seen)
 	}
 }
 
@@ -106,6 +125,26 @@ func TestGetProblemsRespectsFiltersAndLimit(t *testing.T) {
 			t.Fatalf("unexpected language: %s", p.Language)
 		}
 		if p.Difficulty != 4 {
+			t.Fatalf("unexpected difficulty: %d", p.Difficulty)
+		}
+	}
+}
+
+func TestGetProblemsSupportsSQL(t *testing.T) {
+	db := setupTestDB(t)
+
+	problems, err := getProblems(db, "SQL", 1, 5)
+	if err != nil {
+		t.Fatalf("get SQL problems: %v", err)
+	}
+	if len(problems) != 5 {
+		t.Fatalf("expected 5 SQL problems, got %d", len(problems))
+	}
+	for _, p := range problems {
+		if p.Language != "SQL" {
+			t.Fatalf("unexpected language: %s", p.Language)
+		}
+		if p.Difficulty != 1 {
 			t.Fatalf("unexpected difficulty: %d", p.Difficulty)
 		}
 	}
@@ -146,6 +185,120 @@ func TestLevelOneCoreTopicsExistForBothLanguages(t *testing.T) {
 				t.Fatalf("expected exactly one difficulty-1 problem for %q in %s, got %d", topic, language, c)
 			}
 		}
+	}
+}
+
+func TestPythonStarterOnlyTopicsExist(t *testing.T) {
+	db := setupTestDB(t)
+
+	topics := []string{
+		"Drop the first item from a list",
+		"Drop the last two items from a list",
+		"Concatenate two lists",
+	}
+
+	for _, topic := range topics {
+		var pythonCount int
+		if err := db.QueryRow(
+			"SELECT COUNT(*) FROM problems WHERE difficulty = 1 AND language = 'Python' AND title GLOB ?",
+			topic+" D1 #[0-9][0-9]",
+		).Scan(&pythonCount); err != nil {
+			t.Fatalf("count python topic %q: %v", topic, err)
+		}
+		if pythonCount != 1 {
+			t.Fatalf("expected exactly one Python difficulty-1 problem for %q, got %d", topic, pythonCount)
+		}
+
+		var javaCount int
+		if err := db.QueryRow(
+			"SELECT COUNT(*) FROM problems WHERE difficulty = 1 AND language = 'Java' AND title GLOB ?",
+			topic+" D1 #[0-9][0-9]",
+		).Scan(&javaCount); err != nil {
+			t.Fatalf("count java topic %q: %v", topic, err)
+		}
+		if javaCount != 0 {
+			t.Fatalf("expected no Java difficulty-1 problem for %q, got %d", topic, javaCount)
+		}
+	}
+}
+
+func TestSQLStarterTopicsExist(t *testing.T) {
+	db := setupTestDB(t)
+
+	topics := []string{
+		"What is the SELECT statement?",
+		"Common clauses used with SELECT",
+		"Entities and relationships in databases",
+		"Common database relationship types",
+		"What is a primary key?",
+		"What is a foreign key?",
+		"What is a query?",
+	}
+
+	for _, topic := range topics {
+		var sqlCount int
+		if err := db.QueryRow(
+			"SELECT COUNT(*) FROM problems WHERE language = 'SQL' AND difficulty = 1 AND title GLOB ?",
+			topic+" D1 #[0-9][0-9]",
+		).Scan(&sqlCount); err != nil {
+			t.Fatalf("count SQL topic %q: %v", topic, err)
+		}
+		if sqlCount != 1 {
+			t.Fatalf("expected exactly one SQL difficulty-1 problem for %q, got %d", topic, sqlCount)
+		}
+	}
+
+	var advancedCount int
+	if err := db.QueryRow(
+		"SELECT COUNT(*) FROM problems WHERE language = 'SQL' AND difficulty = 2 AND title GLOB 'What is a subquery and what are its types? D2 #[0-9][0-9]'",
+	).Scan(&advancedCount); err != nil {
+		t.Fatalf("count SQL subquery topic: %v", err)
+	}
+	if advancedCount != 1 {
+		t.Fatalf("expected exactly one SQL difficulty-2 subquery problem, got %d", advancedCount)
+	}
+}
+
+func TestInitSchemaUpgradesProblemLanguageConstraint(t *testing.T) {
+	db, err := sql.Open("sqlite3", ":memory:")
+	if err != nil {
+		t.Fatalf("open db: %v", err)
+	}
+	defer db.Close()
+
+	oldSchema := `
+	CREATE TABLE problems (
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		language TEXT NOT NULL CHECK(language IN ('Java', 'Python')),
+		difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 5),
+		title TEXT NOT NULL,
+		prompt TEXT NOT NULL
+	);
+	CREATE TABLE problem_solutions (
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		problem_id INTEGER NOT NULL,
+		solution_order INTEGER NOT NULL,
+		solution TEXT NOT NULL,
+		FOREIGN KEY(problem_id) REFERENCES problems(id) ON DELETE CASCADE
+	);
+	`
+	if _, err := db.Exec(oldSchema); err != nil {
+		t.Fatalf("create old schema: %v", err)
+	}
+
+	if err := initSchema(db); err != nil {
+		t.Fatalf("upgrade schema: %v", err)
+	}
+	if err := migrateCatalog(db, catalogPathForTest(t)); err != nil {
+		t.Fatalf("migrate upgraded schema catalog: %v", err)
+	}
+
+	var c int
+	if err := db.QueryRow("SELECT COUNT(*) FROM problems WHERE language = 'SQL'").Scan(&c); err != nil {
+		t.Fatalf("count SQL after schema upgrade: %v", err)
+	}
+	if c == 0 {
+		t.Fatal("expected SQL problems after upgrading old schema")
 	}
 }
 

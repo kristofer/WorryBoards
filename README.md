@@ -3,9 +3,13 @@
 A static whiteboard practice app built with Go, HTMX, Bootstrap, and SQLite.
 
 Seeded catalog:
-- 130 total problems
-- Difficulty 1 has 50 fundamentals-focused prompts
-- Difficulties 2-5 have 20 prompts each
+- 195 total problems
+- Language choices: Java, Python, SQL
+- Difficulty 1 has 77 fundamentals-focused prompts
+- Difficulty 2 has 42 prompts
+- Difficulty 3 has 31 prompts
+- Difficulty 4 has 25 prompts
+- Difficulty 5 has 20 prompts
 - Source of truth is `/home/runner/work/WorryBoards/WorryBoards/problems.json`
 - On startup, the app runs a migration/sync that checks the JSON and updates SQLite when the catalog changes
 
