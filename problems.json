@@ -1,0 +1,889 @@
+{
+  "questions": [
+    {
+      "difficulty": 1,
+      "title": "Print numbers 1 to 10",
+      "prompt": "Fundamentals task in {language}: Print numbers 1 to 10. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Print even numbers from 2 to 20",
+      "prompt": "Fundamentals task in {language}: Print even numbers from 2 to 20. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Sum numbers 1 to 100",
+      "prompt": "Fundamentals task in {language}: Sum numbers 1 to 100. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Countdown timer",
+      "prompt": "Fundamentals task in {language}: Countdown timer. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Multiplication table (single number)",
+      "prompt": "Fundamentals task in {language}: Multiplication table (single number). Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Basic string analysis",
+      "prompt": "Fundamentals task in {language}: Basic string analysis. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Reverse a word (without slicing shortcuts)",
+      "prompt": "Fundamentals task in {language}: Reverse a word (without slicing shortcuts). Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Count vowels in a sentence",
+      "prompt": "Fundamentals task in {language}: Count vowels in a sentence. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Write a function: letter frequency dictionary",
+      "prompt": "Fundamentals task in {language}: Write a function: letter frequency dictionary. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Find the largest number in a list",
+      "prompt": "Fundamentals task in {language}: Find the largest number in a list. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Filter positive numbers (list comprehension)",
+      "prompt": "Fundamentals task in {language}: Filter positive numbers (list comprehension). Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Square numbers (list comprehension)",
+      "prompt": "Fundamentals task in {language}: Square numbers (list comprehension). Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Basic dictionary practice",
+      "prompt": "Fundamentals task in {language}: Basic dictionary practice. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Simple while input loop",
+      "prompt": "Fundamentals task in {language}: Simple while input loop. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "FizzBuzz (classic fundamentals)",
+      "prompt": "Fundamentals task in {language}: FizzBuzz (classic fundamentals). Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Print numbers 1 to N",
+      "prompt": "Fundamentals task in {language}: Print numbers 1 to N. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Print odd numbers in range",
+      "prompt": "Fundamentals task in {language}: Print odd numbers in range. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Sum only even numbers 1 to 100",
+      "prompt": "Fundamentals task in {language}: Sum only even numbers 1 to 100. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Countdown timer from N",
+      "prompt": "Fundamentals task in {language}: Countdown timer from N. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Multiplication table (formatted output)",
+      "prompt": "Fundamentals task in {language}: Multiplication table (formatted output). Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "String palindrome check (loop-based)",
+      "prompt": "Fundamentals task in {language}: String palindrome check (loop-based). Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Reverse sentence words using loops",
+      "prompt": "Fundamentals task in {language}: Reverse sentence words using loops. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Count vowels and consonants",
+      "prompt": "Fundamentals task in {language}: Count vowels and consonants. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Letter frequency top character",
+      "prompt": "Fundamentals task in {language}: Letter frequency top character. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Find second largest number in a list",
+      "prompt": "Fundamentals task in {language}: Find second largest number in a list. Keep the solution beginner friendly.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "{{language}} approach: extract core logic into a small helper function, then print the result."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Two Sum Variant",
+      "prompt": "Implement Two Sum Variant in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Balanced Brackets",
+      "prompt": "Implement Balanced Brackets in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Reverse Linked List",
+      "prompt": "Implement Reverse Linked List in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Merge Intervals",
+      "prompt": "Implement Merge Intervals in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Top K Frequent",
+      "prompt": "Implement Top K Frequent in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Binary Tree Depth",
+      "prompt": "Implement Binary Tree Depth in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "LRU Cache Design",
+      "prompt": "Implement LRU Cache Design in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Matrix Rotation",
+      "prompt": "Implement Matrix Rotation in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Anagram Grouping",
+      "prompt": "Implement Anagram Grouping in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Sliding Window Maximum",
+      "prompt": "Implement Sliding Window Maximum in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 3,
+      "title": "Two Sum Variant",
+      "prompt": "Implement Two Sum Variant in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 3,
+      "title": "Balanced Brackets",
+      "prompt": "Implement Balanced Brackets in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 3,
+      "title": "Reverse Linked List",
+      "prompt": "Implement Reverse Linked List in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 3,
+      "title": "Merge Intervals",
+      "prompt": "Implement Merge Intervals in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 3,
+      "title": "Top K Frequent",
+      "prompt": "Implement Top K Frequent in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 3,
+      "title": "Binary Tree Depth",
+      "prompt": "Implement Binary Tree Depth in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 3,
+      "title": "LRU Cache Design",
+      "prompt": "Implement LRU Cache Design in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 3,
+      "title": "Matrix Rotation",
+      "prompt": "Implement Matrix Rotation in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 3,
+      "title": "Anagram Grouping",
+      "prompt": "Implement Anagram Grouping in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 3,
+      "title": "Sliding Window Maximum",
+      "prompt": "Implement Sliding Window Maximum in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 4,
+      "title": "Two Sum Variant",
+      "prompt": "Implement Two Sum Variant in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 4,
+      "title": "Balanced Brackets",
+      "prompt": "Implement Balanced Brackets in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 4,
+      "title": "Reverse Linked List",
+      "prompt": "Implement Reverse Linked List in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 4,
+      "title": "Merge Intervals",
+      "prompt": "Implement Merge Intervals in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 4,
+      "title": "Top K Frequent",
+      "prompt": "Implement Top K Frequent in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 4,
+      "title": "Binary Tree Depth",
+      "prompt": "Implement Binary Tree Depth in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 4,
+      "title": "LRU Cache Design",
+      "prompt": "Implement LRU Cache Design in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 4,
+      "title": "Matrix Rotation",
+      "prompt": "Implement Matrix Rotation in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 4,
+      "title": "Anagram Grouping",
+      "prompt": "Implement Anagram Grouping in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 4,
+      "title": "Sliding Window Maximum",
+      "prompt": "Implement Sliding Window Maximum in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 5,
+      "title": "Two Sum Variant",
+      "prompt": "Implement Two Sum Variant in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 5,
+      "title": "Balanced Brackets",
+      "prompt": "Implement Balanced Brackets in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 5,
+      "title": "Reverse Linked List",
+      "prompt": "Implement Reverse Linked List in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 5,
+      "title": "Merge Intervals",
+      "prompt": "Implement Merge Intervals in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 5,
+      "title": "Top K Frequent",
+      "prompt": "Implement Top K Frequent in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 5,
+      "title": "Binary Tree Depth",
+      "prompt": "Implement Binary Tree Depth in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 5,
+      "title": "LRU Cache Design",
+      "prompt": "Implement LRU Cache Design in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 5,
+      "title": "Matrix Rotation",
+      "prompt": "Implement Matrix Rotation in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 5,
+      "title": "Anagram Grouping",
+      "prompt": "Implement Anagram Grouping in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 5,
+      "title": "Sliding Window Maximum",
+      "prompt": "Implement Sliding Window Maximum in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    }
+  ]
+}
