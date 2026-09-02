@@ -3,7 +3,7 @@
     {
       "difficulty": 1,
       "title": "Print numbers 1 to 10",
-      "prompt": "Print the integers from 1 through 10, one per line. Example output: 1 2 3 ... 10. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Print the integers from 1 through 10, one per line. Example output: 1 2 3 ... 10. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -16,7 +16,7 @@
     {
       "difficulty": 1,
       "title": "Print even numbers from 2 to 20",
-      "prompt": "Print only even numbers from 2 through 20 in ascending order. Example output: 2 4 6 8 10 12 14 16 18 20. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Print only even numbers from 2 through 20 in ascending order. Example output: 2 4 6 8 10 12 14 16 18 20. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -29,7 +29,7 @@
     {
       "difficulty": 1,
       "title": "Sum numbers 1 to 100",
-      "prompt": "Compute the sum of integers from 1 through 100 and print the final number. Example output: 5050. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Compute the sum of integers from 1 through 100 and print the final number. Example output: 5050. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -42,7 +42,7 @@
     {
       "difficulty": 1,
       "title": "Countdown timer",
-      "prompt": "Print a countdown from 10 to 1 and then print 'Liftoff'. Example output: 10 9 ... 1 Liftoff. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Print a countdown from 10 to 1 and then print 'Liftoff'. Example output: 10 9 ... 1 Liftoff. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -55,7 +55,7 @@
     {
       "difficulty": 1,
       "title": "Multiplication table (single number)",
-      "prompt": "Given n=7, print the multiplication table from 1 to 10. Example lines: 7 x 1 = 7 and 7 x 10 = 70. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given n=7, print the multiplication table from 1 to 10. Example lines: 7 x 1 = 7 and 7 x 10 = 70. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -68,7 +68,7 @@
     {
       "difficulty": 1,
       "title": "Basic string analysis",
-      "prompt": "Given text='Alphabetical', print its length, vowel count, and consonant count. Example output: length: 12 vowels: 5 consonants: 7. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given text='Alphabetical', print its length, vowel count, and consonant count. Example output: length: 12 vowels: 5 consonants: 7. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -81,7 +81,7 @@
     {
       "difficulty": 1,
       "title": "Reverse a word (without slicing shortcuts)",
-      "prompt": "Given word='straw', reverse it using loops (no slicing shortcuts) and print the result. Example output: warts. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given word='straw', reverse it using loops (no slicing shortcuts) and print the result. Example output: warts. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -94,7 +94,7 @@
     {
       "difficulty": 1,
       "title": "Count vowels in a sentence",
-      "prompt": "Given sentence='We code every day', count vowels (a,e,i,o,u) and print the total. Example output: vowels: 6. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given sentence='We code every day', count vowels (a,e,i,o,u) and print the total. Example output: vowels: 6. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -107,7 +107,7 @@
     {
       "difficulty": 1,
       "title": "Write a function: letter frequency dictionary",
-      "prompt": "Write a function that returns a letter-frequency dictionary. Example input: 'banana'; example output: {'b': 1, 'a': 3, 'n': 2}. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a function that returns a letter-frequency dictionary. Example: call the function with 'mississippi' and print m: 1, i: 4, s: 4, p: 2. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -120,7 +120,7 @@
     {
       "difficulty": 1,
       "title": "Find the largest number in a list",
-      "prompt": "Given numbers=[3, 18, 5, 11], find and print the largest value. Example output: 18. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given numbers=[3, 18, 5, 11], find and print the largest value. Example output: 18. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -133,7 +133,7 @@
     {
       "difficulty": 1,
       "title": "Filter positive numbers (list comprehension)",
-      "prompt": "Given numbers=[-2, 0, 7, -1, 5], return only positive values using list comprehension. Example output: [7, 5]. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given numbers=[-2, 0, 7, -1, 5], return only positive values using list comprehension. Example output: [7, 5]. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -146,7 +146,7 @@
     {
       "difficulty": 1,
       "title": "Square numbers (list comprehension)",
-      "prompt": "Given numbers=[1, 2, 3, 4], return a list of squares using list comprehension. Example output: [1, 4, 9, 16]. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given numbers=[1, 2, 3, 4], return a list of squares using list comprehension. Example output: [1, 4, 9, 16]. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -159,7 +159,7 @@
     {
       "difficulty": 1,
       "title": "Basic dictionary practice",
-      "prompt": "Create a dictionary for a student with name and score, then print score by key lookup. Example output: score: 92. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Create a dictionary for a student with name and score, then print score by key lookup. Example output: score: 92. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -172,7 +172,7 @@
     {
       "difficulty": 1,
       "title": "Simple while input loop",
-      "prompt": "Read integers until the user enters 0, then print their sum. Example input: 4 6 -2 0; example output: sum: 8. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Read integers until the user enters 0, then print their sum. Example input: 4 6 -2 0; example output: sum: 8. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -185,7 +185,7 @@
     {
       "difficulty": 1,
       "title": "FizzBuzz (classic fundamentals)",
-      "prompt": "Print numbers 1 to 20, replacing multiples of 3 with Fizz, 5 with Buzz, and both with FizzBuzz. Example output includes: 1 2 Fizz 4 Buzz ... 14 FizzBuzz ... 20. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Print numbers 1 to 20, replacing multiples of 3 with Fizz, 5 with Buzz, and both with FizzBuzz. Example output includes: 1 2 Fizz 4 Buzz ... 14 FizzBuzz ... 20. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -198,7 +198,7 @@
     {
       "difficulty": 1,
       "title": "Print numbers 1 to N",
-      "prompt": "Given N=5, print numbers from 1 to N in order. Example output: 1 2 3 4 5. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given N=5, print numbers from 1 to N in order. Example output: 1 2 3 4 5. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -211,7 +211,7 @@
     {
       "difficulty": 1,
       "title": "Print odd numbers in range",
-      "prompt": "Given start=3 and end=11, print odd numbers in that range. Example output: 3 5 7 9 11. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given start=3 and end=11, print odd numbers in that range. Example output: 3 5 7 9 11. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -224,7 +224,7 @@
     {
       "difficulty": 1,
       "title": "Sum only even numbers 1 to 100",
-      "prompt": "Sum only the even integers from 1 through 100 and print the result. Example output: 2550. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Sum only the even integers from 1 through 100 and print the result. Example output: 2550. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -237,7 +237,7 @@
     {
       "difficulty": 1,
       "title": "Countdown timer from N",
-      "prompt": "Given N=5, print a countdown to 1 and then 'Done'. Example output: 5 4 3 2 1 Done. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given N=5, print a countdown to 1 and then 'Done'. Example output: 5 4 3 2 1 Done. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -250,7 +250,7 @@
     {
       "difficulty": 1,
       "title": "Multiplication table (formatted output)",
-      "prompt": "Given n=4, print a formatted table line by line from 1..10. Example lines: 4 x 3 = 12 and 4 x 10 = 40. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given n=4, print a formatted table line by line from 1..10. Example lines: 4 x 3 = 12 and 4 x 10 = 40. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -263,7 +263,7 @@
     {
       "difficulty": 1,
       "title": "String palindrome check (loop-based)",
-      "prompt": "Given word='level', check with a loop whether it is a palindrome. Example output: true. For 'apple', output: false. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given word='level', check with a loop whether it is a palindrome. Example output: true. For 'apple', output: false. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -276,7 +276,7 @@
     {
       "difficulty": 1,
       "title": "Reverse sentence words using loops",
-      "prompt": "Given sentence='we love coding', reverse word order using loops. Example output: coding love we. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given sentence='we love coding', reverse word order using loops. Example output: coding love we. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -289,7 +289,7 @@
     {
       "difficulty": 1,
       "title": "Count vowels and consonants",
-      "prompt": "Given a word like 'alphabetical', count vowels and consonants and print both totals. Example output: vowels: 5 consonants: 7. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given a word like 'alphabetical', count vowels and consonants and print both totals. Example output: vowels: 5 consonants: 7. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -302,7 +302,7 @@
     {
       "difficulty": 1,
       "title": "Letter frequency top character",
-      "prompt": "Given text='mississippi', build letter counts and print the most frequent character. Example output: s: 4. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given text='mississippi', build letter counts and print the most frequent character. Example output: s: 4. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -315,7 +315,7 @@
     {
       "difficulty": 1,
       "title": "Find second largest number in a list",
-      "prompt": "Given numbers=[9, 2, 8, 6], find the second largest unique number. Example output: 8. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given numbers=[9, 2, 8, 6], find the second largest unique number. Example output: 8. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -328,7 +328,7 @@
     {
       "difficulty": 1,
       "title": "Drop the first item from a list",
-      "prompt": "Write a function that returns a new list without the first item. Example input: [10, 20, 30]; example output: [20, 30]. For [] return []. Write your answer in Python. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a function that returns a new list without the first item. Example input: [10, 20, 30]; example output: [20, 30]. For [] return []. Write your answer in Python.",
       "languages": [
         "Python"
       ],
@@ -340,7 +340,7 @@
     {
       "difficulty": 1,
       "title": "Drop the last two items from a list",
-      "prompt": "Write a function that removes the last two items from a list. Example input: [1,2,3,4,5]; example output: [1,2,3]. If length < 2, return an empty list. Write your answer in Python. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a function that removes the last two items from a list. Example input: [1,2,3,4,5]; example output: [1,2,3]. If length < 2, return an empty list. Write your answer in Python.",
       "languages": [
         "Python"
       ],
@@ -352,7 +352,7 @@
     {
       "difficulty": 1,
       "title": "Concatenate two lists",
-      "prompt": "Write a function that combines two lists in order. Example input: [1,2] and [3,4]; example output: [1,2,3,4]. Write your answer in Python. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a function that combines two lists in order. Example input: [1,2] and [3,4]; example output: [1,2,3,4]. Write your answer in Python.",
       "languages": [
         "Python"
       ],
@@ -363,7 +363,7 @@
     },
     {
       "title": "Sum integers from 7 to 23",
-      "prompt": "Compute and print the sum of all integers from 7 through 23 inclusive. Example output: 255. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Compute and print the sum of all integers from 7 through 23 inclusive. Example output: 255. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -375,7 +375,7 @@
     },
     {
       "title": "Find the smallest integer in an array",
-      "prompt": "Given [9, 5, 6, 3, 8, 2, 4], find and print the smallest integer. Example output: 2. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given [9, 5, 6, 3, 8, 2, 4], find and print the smallest integer. Example output: 2. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -387,7 +387,7 @@
     },
     {
       "title": "Explain local variables vs instance variables",
-      "prompt": "Explain local vs instance variables, then show one short code example of each. Example result: local exists only inside a method; instance belongs to each object. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain local vs instance variables, then show one short code example of each. Example result: local exists only inside a method; instance belongs to each object. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -399,7 +399,7 @@
     },
     {
       "title": "Write the shortest Java class",
-      "prompt": "Write the shortest valid Java class and explain why it compiles. Example result: class A {} compiles because it defines a legal class declaration. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write the shortest valid Java class and explain why it compiles. Example result: class A {} compiles because it defines a legal class declaration. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -411,7 +411,7 @@
     },
     {
       "title": "Create an object of type Foo",
-      "prompt": "Given a class Foo, create a new Foo object and store it in a variable. Example result: Foo f = new Foo(); Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Given a class Foo, create a new Foo object and store it in a variable. Example result: Foo f = new Foo(); Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -423,7 +423,7 @@
     },
     {
       "title": "What is Java and what are its key features?",
-      "prompt": "Explain what Java is and list key features such as platform independence and object orientation. Example result includes: 'Java runs on the JVM and uses bytecode for portability.' Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain what Java is and list key features such as platform independence and object orientation. Example result includes: 'Java runs on the JVM and uses bytecode for portability.' Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -435,7 +435,7 @@
     },
     {
       "title": "Difference between a class and an object in Java",
-      "prompt": "Explain class vs object and give a tiny example. Example result: 'Car is a class, myCar is an object created from Car.' Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain class vs object and give a tiny example. Example result: 'Car is a class, myCar is an object created from Car.' Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -447,7 +447,7 @@
     },
     {
       "title": "What is a constructor in Java?",
-      "prompt": "Explain what a constructor is, when it runs, and why overloaded constructors are useful. Example result includes: 'A constructor runs during new Person(...)'. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain what a constructor is, when it runs, and why overloaded constructors are useful. Example result includes: 'A constructor runs during new Person(...)'. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -459,7 +459,7 @@
     },
     {
       "title": "Static methods vs instance methods in Java",
-      "prompt": "Explain static vs instance methods and show one call style for each. Example result: Math.max(...) is static; obj.printName() is instance. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain static vs instance methods and show one call style for each. Example result: Math.max(...) is static; obj.printName() is instance. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -471,7 +471,7 @@
     },
     {
       "title": "Purpose of public static void main",
-      "prompt": "Explain the role of public static void main(String[] args) as the Java entry point. Example result includes: 'The JVM calls main to start program execution.' Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain the role of public static void main(String[] args) as the Java entry point. Example result includes: 'The JVM calls main to start program execution.' Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -483,7 +483,7 @@
     },
     {
       "title": "Public methods vs private methods in Java",
-      "prompt": "Explain when to use public vs private methods. Example result: public methods define API, private methods hide internal helpers. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain when to use public vs private methods. Example result: public methods define API, private methods hide internal helpers. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -495,7 +495,7 @@
     },
     {
       "title": "Public variables vs private variables in Java",
-      "prompt": "Explain public vs private fields and why private fields plus getters/setters are common. Example result includes encapsulation benefits. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain public vs private fields and why private fields plus getters/setters are common. Example result includes encapsulation benefits. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -507,7 +507,7 @@
     },
     {
       "title": "Purpose of the this keyword in Java",
-      "prompt": "Explain what this refers to and when it disambiguates fields from parameters. Example result: this.name = name. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain what this refers to and when it disambiguates fields from parameters. Example result: this.name = name. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -519,7 +519,7 @@
     },
     {
       "title": "While loops vs for loops in Java",
-      "prompt": "Compare while and for loops and give one scenario for each. Example result: for for known counts, while for condition-driven loops. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Compare while and for loops and give one scenario for each. Example result: for for known counts, while for condition-driven loops. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -531,7 +531,7 @@
     },
     {
       "title": "Declare a floating-point variable",
-      "prompt": "Declare a floating-point variable named x initialized to 3.14. Example result: double x = 3.14; Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Declare a floating-point variable named x initialized to 3.14. Example result: double x = 3.14; Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -543,7 +543,7 @@
     },
     {
       "title": "Write a Java for-loop that prints ZipCode",
-      "prompt": "Write a for loop from 0 to 9 that prints index and 'ZipCode'. Example output line: 0 ZipCode. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a for loop from 0 to 9 that prints index and 'ZipCode'. Example output line: 0 ZipCode. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -555,7 +555,7 @@
     },
     {
       "title": "What is the void type in Java?",
-      "prompt": "Explain what void means as a return type and when to use it. Example result: methods that only print or mutate state often return void. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain what void means as a return type and when to use it. Example result: methods that only print or mutate state often return void. Write your answer in Java.",
       "languages": [
         "Java"
       ],
@@ -567,7 +567,7 @@
     },
     {
       "title": "What is the SELECT statement?",
-      "prompt": "Explain what SELECT does in SQL and show a basic query. Example query: SELECT name FROM users; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain what SELECT does in SQL and show a basic query. Example query: SELECT name FROM users; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -579,7 +579,7 @@
     },
     {
       "title": "Common clauses used with SELECT",
-      "prompt": "Explain WHERE, ORDER BY, GROUP BY, and HAVING with one short query example. Example: SELECT dept, COUNT(*) FROM employees GROUP BY dept HAVING COUNT(*) > 5; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain WHERE, ORDER BY, GROUP BY, and HAVING with one short query example. Example: SELECT dept, COUNT(*) FROM employees GROUP BY dept HAVING COUNT(*) > 5; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -591,7 +591,7 @@
     },
     {
       "title": "Entities and relationships in databases",
-      "prompt": "Explain entities and relationships in database design. Example result: Student and Course are entities linked by Enrollment. Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain entities and relationships in database design. Example result: Student and Course are entities linked by Enrollment. Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -603,7 +603,7 @@
     },
     {
       "title": "Common database relationship types",
-      "prompt": "Describe one-to-one, one-to-many, and many-to-many with examples. Example result: one Author can have many Books. Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Describe one-to-one, one-to-many, and many-to-many with examples. Example result: one Author can have many Books. Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -615,7 +615,7 @@
     },
     {
       "title": "What is a primary key?",
-      "prompt": "Explain what a primary key is and why it must uniquely identify rows. Example: id INT PRIMARY KEY. Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain what a primary key is and why it must uniquely identify rows. Example: id INT PRIMARY KEY. Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -627,7 +627,7 @@
     },
     {
       "title": "What is a foreign key?",
-      "prompt": "Explain what a foreign key is and how it links tables. Example: orders.customer_id references customers.id. Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain what a foreign key is and how it links tables. Example: orders.customer_id references customers.id. Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -639,7 +639,7 @@
     },
     {
       "title": "What is a query?",
-      "prompt": "Explain what a query is and contrast read vs data-changing queries. Example read: SELECT * FROM products; example write: UPDATE products SET price=10 WHERE id=1; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain what a query is and contrast read vs data-changing queries. Example read: SELECT * FROM products; example write: UPDATE products SET price=10 WHERE id=1; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -651,7 +651,7 @@
     },
     {
       "title": "What does the WHERE clause do?",
-      "prompt": "Explain how WHERE filters rows before returning results. Example: SELECT * FROM orders WHERE total > 100; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain how WHERE filters rows before returning results. Example: SELECT * FROM orders WHERE total > 100; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -663,7 +663,7 @@
     },
     {
       "title": "Sort rows with ORDER BY",
-      "prompt": "Write a query that sorts by last_name ascending and created_at descending. Example: SELECT * FROM users ORDER BY last_name ASC, created_at DESC; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a query that sorts by last_name ascending and created_at descending. Example: SELECT * FROM users ORDER BY last_name ASC, created_at DESC; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -675,7 +675,7 @@
     },
     {
       "title": "Limit result size with LIMIT",
-      "prompt": "Write a query that returns only the first 10 rows. Example: SELECT * FROM logs ORDER BY created_at DESC LIMIT 10; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a query that returns only the first 10 rows. Example: SELECT * FROM logs ORDER BY created_at DESC LIMIT 10; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -687,7 +687,7 @@
     },
     {
       "title": "Remove duplicates with DISTINCT",
-      "prompt": "Explain DISTINCT and show how it removes duplicates. Example: SELECT DISTINCT city FROM customers; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain DISTINCT and show how it removes duplicates. Example: SELECT DISTINCT city FROM customers; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -699,7 +699,7 @@
     },
     {
       "title": "Rename columns with aliases",
-      "prompt": "Write a query that renames output columns with aliases. Example: SELECT first_name AS first, last_name AS last FROM users; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a query that renames output columns with aliases. Example: SELECT first_name AS first, last_name AS last FROM users; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -711,7 +711,7 @@
     },
     {
       "title": "Filter with IN",
-      "prompt": "Write a query using IN to match a small set of values. Example: SELECT * FROM orders WHERE status IN ('new','paid'); Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a query using IN to match a small set of values. Example: SELECT * FROM orders WHERE status IN ('new','paid'); Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -723,7 +723,7 @@
     },
     {
       "title": "Filter with BETWEEN",
-      "prompt": "Write a query using BETWEEN for a range. Example: SELECT * FROM events WHERE event_date BETWEEN '2026-01-01' AND '2026-01-31'; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a query using BETWEEN for a range. Example: SELECT * FROM events WHERE event_date BETWEEN '2026-01-01' AND '2026-01-31'; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -735,7 +735,7 @@
     },
     {
       "title": "Search text with LIKE",
-      "prompt": "Write a query using LIKE to match a prefix. Example: SELECT * FROM users WHERE email LIKE 'sam%'; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a query using LIKE to match a prefix. Example: SELECT * FROM users WHERE email LIKE 'sam%'; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -747,7 +747,7 @@
     },
     {
       "title": "Understand NULL and IS NULL",
-      "prompt": "Explain NULL and how IS NULL / IS NOT NULL are used. Example: SELECT * FROM tasks WHERE completed_at IS NULL; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain NULL and how IS NULL / IS NOT NULL are used. Example: SELECT * FROM tasks WHERE completed_at IS NULL; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -759,7 +759,7 @@
     },
     {
       "title": "Count rows with COUNT",
-      "prompt": "Write one query that counts all rows and one that counts non-null values in a column. Example: SELECT COUNT(*) FROM users; SELECT COUNT(phone) FROM users; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write one query that counts all rows and one that counts non-null values in a column. Example: SELECT COUNT(*) FROM users; SELECT COUNT(phone) FROM users; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -771,7 +771,7 @@
     },
     {
       "title": "Find max and min values",
-      "prompt": "Write queries that return the max and min of a numeric column. Example: SELECT MAX(score), MIN(score) FROM exams; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write queries that return the max and min of a numeric column. Example: SELECT MAX(score), MIN(score) FROM exams; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -783,7 +783,7 @@
     },
     {
       "title": "Compute averages with AVG",
-      "prompt": "Write a query that computes an average and explain NULL handling. Example: SELECT AVG(price) FROM products; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a query that computes an average and explain NULL handling. Example: SELECT AVG(price) FROM products; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -795,7 +795,7 @@
     },
     {
       "title": "Sum a numeric column",
-      "prompt": "Write a query that totals a numeric column. Example: SELECT SUM(amount) FROM payments; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a query that totals a numeric column. Example: SELECT SUM(amount) FROM payments; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -807,7 +807,7 @@
     },
     {
       "title": "Group rows with GROUP BY",
-      "prompt": "Write a grouped query returning one row per department with counts. Example: SELECT department, COUNT(*) FROM employees GROUP BY department; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a grouped query returning one row per department with counts. Example: SELECT department, COUNT(*) FROM employees GROUP BY department; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -819,7 +819,7 @@
     },
     {
       "title": "Filter grouped results with HAVING",
-      "prompt": "Write a GROUP BY query and keep only groups passing an aggregate rule. Example: SELECT department, COUNT(*) c FROM employees GROUP BY department HAVING c >= 3; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a GROUP BY query and keep only groups passing an aggregate rule. Example: SELECT department, COUNT(*) c FROM employees GROUP BY department HAVING c >= 3; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -831,7 +831,7 @@
     },
     {
       "title": "Join two tables with INNER JOIN",
-      "prompt": "Write an INNER JOIN between customers and orders on customer_id. Example: SELECT c.name, o.id FROM customers c INNER JOIN orders o ON o.customer_id = c.id; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write an INNER JOIN between customers and orders on customer_id. Example: SELECT c.name, o.id FROM customers c INNER JOIN orders o ON o.customer_id = c.id; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -843,7 +843,7 @@
     },
     {
       "title": "Keep unmatched rows with LEFT JOIN",
-      "prompt": "Explain LEFT JOIN and provide a query that keeps all rows from the left table. Example: SELECT c.name, o.id FROM customers c LEFT JOIN orders o ON o.customer_id = c.id; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Explain LEFT JOIN and provide a query that keeps all rows from the left table. Example: SELECT c.name, o.id FROM customers c LEFT JOIN orders o ON o.customer_id = c.id; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -855,7 +855,7 @@
     },
     {
       "title": "Add new rows with INSERT",
-      "prompt": "Write an INSERT statement with explicit columns. Example: INSERT INTO users (name, email) VALUES ('Sam', 'sam@example.com'); Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write an INSERT statement with explicit columns. Example: INSERT INTO users (name, email) VALUES ('Sam', 'sam@example.com'); Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -867,7 +867,7 @@
     },
     {
       "title": "Modify rows with UPDATE",
-      "prompt": "Write an UPDATE statement with a WHERE clause targeting one row. Example: UPDATE users SET status='active' WHERE id=42; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write an UPDATE statement with a WHERE clause targeting one row. Example: UPDATE users SET status='active' WHERE id=42; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
@@ -879,7 +879,7 @@
     },
     {
       "title": "Remove rows with DELETE",
-      "prompt": "Write a DELETE statement that removes matching rows safely. Example: DELETE FROM sessions WHERE expires_at < '2026-01-01'; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
+      "prompt": "Write a DELETE statement that removes matching rows safely. Example: DELETE FROM sessions WHERE expires_at < '2026-01-01'; Write your answer in SQL.",
       "languages": [
         "SQL"
       ],
