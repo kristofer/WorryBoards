@@ -1,7 +1,10 @@
 package main
 
 import (
+	"crypto/sha256"
 	"database/sql"
+	"encoding/hex"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"html/template"
@@ -9,6 +12,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"sort"
 	"strconv"
 	"strings"
 
@@ -49,70 +53,36 @@ type SelectedProblemData struct {
 	Problem Problem
 }
 
+type Catalog struct {
+	Questions []CatalogQuestion `json:"questions"`
+}
+
+type CatalogQuestion struct {
+	Difficulty int      `json:"difficulty"`
+	Title      string   `json:"title"`
+	Prompt     string   `json:"prompt"`
+	Languages  []string `json:"languages"`
+	Solutions  []string `json:"solutions"`
+}
+
+type ExpandedProblem struct {
+	Language   string
+	Difficulty int
+	Title      string
+	Prompt     string
+	Solutions  []string
+}
+
 var supportedLanguages = map[string]struct{}{
 	"Java":   {},
 	"Python": {},
 }
 
-const expectedProblemCount = 130
-
-func coreLevelOneTopics() []string {
-	return []string{
-		"Print numbers 1 to 10",
-		"Print even numbers from 2 to 20",
-		"Sum numbers 1 to 100",
-		"Countdown timer",
-		"Multiplication table (single number)",
-		"Basic string analysis",
-		"Reverse a word (without slicing shortcuts)",
-		"Count vowels in a sentence",
-		"Write a function: letter frequency dictionary",
-		"Find the largest number in a list",
-		"Filter positive numbers (list comprehension)",
-		"Square numbers (list comprehension)",
-		"Basic dictionary practice",
-		"Simple while input loop",
-		"FizzBuzz (classic fundamentals)",
-	}
-}
-
-func levelOneTopics() []string {
-	topics := append([]string{}, coreLevelOneTopics()...)
-	return append(topics,
-		"Print numbers 1 to N",
-		"Print odd numbers in range",
-		"Sum only even numbers 1 to 100",
-		"Countdown timer from N",
-		"Multiplication table (formatted output)",
-		"String palindrome check (loop-based)",
-		"Reverse sentence words using loops",
-		"Count vowels and consonants",
-		"Letter frequency top character",
-		"Find second largest number in a list",
-	)
-}
-
-func topicsForDifficulty(difficulty int) []string {
-	if difficulty == 1 {
-		return levelOneTopics()
-	}
-
-	return []string{
-		"Two Sum Variant",
-		"Balanced Brackets",
-		"Reverse Linked List",
-		"Merge Intervals",
-		"Top K Frequent",
-		"Binary Tree Depth",
-		"LRU Cache Design",
-		"Matrix Rotation",
-		"Anagram Grouping",
-		"Sliding Window Maximum",
-	}
-}
-
 func main() {
-	db, err := openAndInitDB("/home/runner/work/WorryBoards/WorryBoards/data/worryboards.db")
+	dbPath := envOrDefault("WORRYBOARDS_DB_PATH", "data/worryboards.db")
+	catalogPath := envOrDefault("WORRYBOARDS_CATALOG_PATH", "problems.json")
+
+	db, err := openAndInitDB(dbPath, catalogPath)
 	if err != nil {
 		log.Fatalf("failed to initialize database: %v", err)
 	}
@@ -134,12 +104,20 @@ func main() {
 	}
 }
 
-func openAndInitDB(path string) (*sql.DB, error) {
-	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
+func envOrDefault(key, fallback string) string {
+	value := strings.TrimSpace(os.Getenv(key))
+	if value == "" {
+		return fallback
+	}
+	return value
+}
+
+func openAndInitDB(dbPath, catalogPath string) (*sql.DB, error) {
+	if err := os.MkdirAll(filepath.Dir(dbPath), 0o755); err != nil {
 		return nil, err
 	}
 
-	db, err := sql.Open("sqlite3", path)
+	db, err := sql.Open("sqlite3", dbPath)
 	if err != nil {
 		return nil, err
 	}
@@ -163,7 +141,7 @@ func openAndInitDB(path string) (*sql.DB, error) {
 		return nil, err
 	}
 
-	if err := seedProblems(db); err != nil {
+	if err := migrateCatalog(db, catalogPath); err != nil {
 		db.Close()
 		return nil, err
 	}
@@ -189,6 +167,11 @@ CREATE TABLE IF NOT EXISTS problem_solutions (
 	FOREIGN KEY(problem_id) REFERENCES problems(id) ON DELETE CASCADE
 );
 
+CREATE TABLE IF NOT EXISTS app_meta (
+	key TEXT PRIMARY KEY,
+	value TEXT NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS idx_problems_language_difficulty ON problems(language, difficulty);
 CREATE INDEX IF NOT EXISTS idx_problem_solutions_problem_id ON problem_solutions(problem_id);
 `
@@ -196,14 +179,34 @@ CREATE INDEX IF NOT EXISTS idx_problem_solutions_problem_id ON problem_solutions
 	return err
 }
 
-func seedProblems(db *sql.DB) error {
-	var count int
-	if err := db.QueryRow("SELECT COUNT(*) FROM problems").Scan(&count); err != nil {
+func migrateCatalog(db *sql.DB, catalogPath string) error {
+	catalog, raw, err := loadCatalog(catalogPath)
+	if err != nil {
 		return err
 	}
 
-	if count == expectedProblemCount {
-		return nil
+	expanded, err := expandCatalog(catalog)
+	if err != nil {
+		return err
+	}
+	if len(expanded) == 0 {
+		return errors.New("catalog has no problems")
+	}
+
+	checksum := hashBytes(raw)
+	currentChecksum, err := getMetaValue(db, "catalog_checksum")
+	if err != nil {
+		return err
+	}
+
+	if currentChecksum == checksum {
+		var count int
+		if err := db.QueryRow("SELECT COUNT(*) FROM problems").Scan(&count); err != nil {
+			return err
+		}
+		if count == len(expanded) {
+			return nil
+		}
 	}
 
 	tx, err := db.Begin()
@@ -231,47 +234,135 @@ func seedProblems(db *sql.DB) error {
 	}
 	defer solutionInsert.Close()
 
-	for difficulty := 1; difficulty <= 5; difficulty++ {
-		topics := topicsForDifficulty(difficulty)
-		for _, language := range []string{"Java", "Python"} {
-			for i, topic := range topics {
-				title := fmt.Sprintf("%s D%d #%02d", topic, difficulty, i+1)
-				prompt := fmt.Sprintf("Implement %s in %s. Target difficulty %d. Discuss runtime and edge cases.", topic, language, difficulty)
-				if difficulty == 1 {
-					prompt = fmt.Sprintf("Fundamentals task in %s: %s. Keep the solution beginner friendly.", language, topic)
-				}
-				res, err := problemInsert.Exec(language, difficulty, title, prompt)
-				if err != nil {
-					return err
-				}
-				problemID, err := res.LastInsertId()
-				if err != nil {
-					return err
-				}
-
-				solutionCount := 1 + ((difficulty + i) % 3)
-				for s := 1; s <= solutionCount; s++ {
-					solution := buildSolutionText(language, topic, s)
-					if _, err := solutionInsert.Exec(problemID, s, solution); err != nil {
-						return err
-					}
-				}
+	for _, problem := range expanded {
+		res, err := problemInsert.Exec(problem.Language, problem.Difficulty, problem.Title, problem.Prompt)
+		if err != nil {
+			return err
+		}
+		problemID, err := res.LastInsertId()
+		if err != nil {
+			return err
+		}
+		for idx, solution := range problem.Solutions {
+			if _, err := solutionInsert.Exec(problemID, idx+1, solution); err != nil {
+				return err
 			}
 		}
+	}
+
+	if _, err := tx.Exec(
+		"INSERT INTO app_meta(key, value) VALUES('catalog_checksum', ?) ON CONFLICT(key) DO UPDATE SET value=excluded.value",
+		checksum,
+	); err != nil {
+		return err
 	}
 
 	return tx.Commit()
 }
 
-func buildSolutionText(language, topic string, variant int) string {
-	switch variant {
-	case 1:
-		return fmt.Sprintf("%s approach: direct implementation using core data structures for %s.", language, topic)
-	case 2:
-		return fmt.Sprintf("%s approach: optimize time complexity with hashing or memoization for %s.", language, topic)
-	default:
-		return fmt.Sprintf("%s approach: optimize space usage while keeping code interview-friendly for %s.", language, topic)
+func loadCatalog(catalogPath string) (Catalog, []byte, error) {
+	raw, err := os.ReadFile(catalogPath)
+	if err != nil {
+		return Catalog{}, nil, err
 	}
+
+	var catalog Catalog
+	if err := json.Unmarshal(raw, &catalog); err != nil {
+		return Catalog{}, nil, err
+	}
+	if len(catalog.Questions) == 0 {
+		return Catalog{}, nil, errors.New("catalog questions list is empty")
+	}
+
+	for i, question := range catalog.Questions {
+		if question.Difficulty < 1 || question.Difficulty > 5 {
+			return Catalog{}, nil, fmt.Errorf("question %d has invalid difficulty", i)
+		}
+		if strings.TrimSpace(question.Title) == "" {
+			return Catalog{}, nil, fmt.Errorf("question %d has empty title", i)
+		}
+		if strings.TrimSpace(question.Prompt) == "" {
+			return Catalog{}, nil, fmt.Errorf("question %d has empty prompt", i)
+		}
+		if len(question.Solutions) < 1 || len(question.Solutions) > 3 {
+			return Catalog{}, nil, fmt.Errorf("question %d must have 1 to 3 solutions", i)
+		}
+		if len(question.Languages) == 0 {
+			return Catalog{}, nil, fmt.Errorf("question %d has no languages", i)
+		}
+		seenLang := map[string]struct{}{}
+		for _, language := range question.Languages {
+			if _, ok := supportedLanguages[language]; !ok {
+				return Catalog{}, nil, fmt.Errorf("question %d has unsupported language %q", i, language)
+			}
+			if _, exists := seenLang[language]; exists {
+				return Catalog{}, nil, fmt.Errorf("question %d has duplicate language %q", i, language)
+			}
+			seenLang[language] = struct{}{}
+		}
+		for sIdx, solution := range question.Solutions {
+			if strings.TrimSpace(solution) == "" {
+				return Catalog{}, nil, fmt.Errorf("question %d solution %d is empty", i, sIdx)
+			}
+		}
+	}
+
+	return catalog, raw, nil
+}
+
+func expandCatalog(catalog Catalog) ([]ExpandedProblem, error) {
+	perLanguageDifficultyIndex := map[string]int{}
+	var expanded []ExpandedProblem
+
+	for _, question := range catalog.Questions {
+		sortedLanguages := append([]string{}, question.Languages...)
+		sort.Strings(sortedLanguages)
+
+		for _, language := range sortedLanguages {
+			key := fmt.Sprintf("%s-%d", language, question.Difficulty)
+			perLanguageDifficultyIndex[key]++
+			index := perLanguageDifficultyIndex[key]
+
+			title := fmt.Sprintf("%s D%d #%02d", question.Title, question.Difficulty, index)
+			prompt := applyLanguageTemplate(question.Prompt, language)
+			solutions := make([]string, len(question.Solutions))
+			for i, solution := range question.Solutions {
+				solutions[i] = applyLanguageTemplate(solution, language)
+			}
+
+			expanded = append(expanded, ExpandedProblem{
+				Language:   language,
+				Difficulty: question.Difficulty,
+				Title:      title,
+				Prompt:     prompt,
+				Solutions:  solutions,
+			})
+		}
+	}
+
+	return expanded, nil
+}
+
+func applyLanguageTemplate(text, language string) string {
+	text = strings.ReplaceAll(text, "{{language}}", language)
+	return strings.ReplaceAll(text, "{language}", language)
+}
+
+func hashBytes(b []byte) string {
+	sum := sha256.Sum256(b)
+	return hex.EncodeToString(sum[:])
+}
+
+func getMetaValue(db *sql.DB, key string) (string, error) {
+	var value string
+	err := db.QueryRow("SELECT value FROM app_meta WHERE key = ?", key).Scan(&value)
+	if errors.Is(err, sql.ErrNoRows) {
+		return "", nil
+	}
+	if err != nil {
+		return "", err
+	}
+	return value, nil
 }
 
 func parseRequestFilters(r *http.Request) (string, int) {

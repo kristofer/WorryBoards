@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      WORRYBOARDS_DB_PATH: /app/data/worryboards.db
+      WORRYBOARDS_CATALOG_PATH: /app/problems.json
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
