@@ -650,6 +650,246 @@
       "difficulty": 1
     },
     {
+      "title": "What does the WHERE clause do?",
+      "prompt": "SQL fundamentals discussion: explain the purpose of the `WHERE` clause and show how it filters rows before results are returned.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: define `WHERE` as row-level filtering and show one simple condition example.",
+        "SQL approach: contrast filtering numeric ranges with filtering exact text matches."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Sort rows with ORDER BY",
+      "prompt": "SQL fundamentals task: write a query that sorts rows by one column in ascending order and by another column in descending order.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use `ORDER BY col1 ASC, col2 DESC` and explain default sort direction.",
+        "SQL approach: show how ordering affects only presentation, not stored table order."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Limit result size with LIMIT",
+      "prompt": "SQL fundamentals task: write a query that returns only the first 10 rows from a table and explain why limiting results is useful.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: append `LIMIT 10` to a `SELECT` query.",
+        "SQL approach: pair `ORDER BY` with `LIMIT` to make the first rows deterministic."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Remove duplicates with DISTINCT",
+      "prompt": "SQL fundamentals discussion: explain what `DISTINCT` does and when it should be used to remove duplicate values from results.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: show `SELECT DISTINCT column_name FROM table_name;` and explain uniqueness in result sets.",
+        "SQL approach: compare `DISTINCT` results with a regular `SELECT` that includes duplicates."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Rename columns with aliases",
+      "prompt": "SQL fundamentals task: write a query that renames selected columns using aliases so output headers are easier to read.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use `AS` for column aliases and show one readable result example.",
+        "SQL approach: mention that table aliases can also shorten join queries."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Filter with IN",
+      "prompt": "SQL fundamentals task: write a query that returns rows where a column matches any value in a short list using `IN`.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use `WHERE column_name IN (value1, value2, value3)` for concise multi-value filters.",
+        "SQL approach: compare `IN` with multiple `OR` conditions."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Filter with BETWEEN",
+      "prompt": "SQL fundamentals task: write a query that filters rows within a numeric or date range using `BETWEEN`.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use `WHERE value BETWEEN low AND high` and note inclusive boundaries.",
+        "SQL approach: compare `BETWEEN` with equivalent `>=` and `<=` conditions."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Search text with LIKE",
+      "prompt": "SQL fundamentals task: write a query that finds rows whose text column starts with a specific prefix using `LIKE`.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use wildcard patterns such as `prefix%` to match starts-with behavior.",
+        "SQL approach: explain `%` and `_` pattern characters with one short example each."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Understand NULL and IS NULL",
+      "prompt": "SQL fundamentals discussion: explain what `NULL` means in SQL and show how to filter rows with `IS NULL` and `IS NOT NULL`.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: define `NULL` as unknown or missing and show why `= NULL` does not work.",
+        "SQL approach: demonstrate correct predicates using `IS NULL` and `IS NOT NULL`."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Count rows with COUNT",
+      "prompt": "SQL fundamentals task: write a query that counts all rows in a table and another that counts only non-null values in a column.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: compare `COUNT(*)` with `COUNT(column_name)`.",
+        "SQL approach: explain how null values affect aggregate counts."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Find max and min values",
+      "prompt": "SQL fundamentals task: write queries that return the maximum and minimum value from a numeric column.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use `MAX(column_name)` and `MIN(column_name)` aggregates.",
+        "SQL approach: combine both aggregates in one query when helpful for quick range checks."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Compute averages with AVG",
+      "prompt": "SQL fundamentals task: write a query that calculates the average of a numeric column and explain what happens with null values.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use `AVG(column_name)` to compute the mean of available numeric values.",
+        "SQL approach: mention that null entries are ignored by aggregate calculations."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Sum a numeric column",
+      "prompt": "SQL fundamentals task: write a query that totals values in a numeric column with `SUM`.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use `SUM(column_name)` and optionally alias the result for readability.",
+        "SQL approach: pair `WHERE` with `SUM` to total only a filtered subset."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Group rows with GROUP BY",
+      "prompt": "SQL fundamentals task: write a query that groups rows by one column and returns a count per group.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: combine `GROUP BY` with `COUNT(*)` to summarize repeated values.",
+        "SQL approach: explain why non-aggregated selected columns must appear in `GROUP BY`."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Filter grouped results with HAVING",
+      "prompt": "SQL fundamentals task: write a grouped query and keep only groups that pass an aggregate condition using `HAVING`.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use `HAVING` after `GROUP BY` to filter on aggregate results like counts or sums.",
+        "SQL approach: contrast `WHERE` (before grouping) with `HAVING` (after grouping)."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Join two tables with INNER JOIN",
+      "prompt": "SQL fundamentals task: write an `INNER JOIN` query that combines matching rows from two related tables.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: join on matching key columns and return selected fields from both tables.",
+        "SQL approach: explain that unmatched rows from either side are excluded by inner joins."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Keep unmatched rows with LEFT JOIN",
+      "prompt": "SQL fundamentals discussion: explain how `LEFT JOIN` differs from `INNER JOIN` and show a query that keeps all rows from the left table.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: show `LEFT JOIN` syntax and point out nulls on the right side when no match exists.",
+        "SQL approach: compare result size and null behavior against an inner join."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Add new rows with INSERT",
+      "prompt": "SQL fundamentals task: write an `INSERT` statement that adds one new row with explicit column names.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use `INSERT INTO table_name (col1, col2) VALUES (val1, val2);`.",
+        "SQL approach: mention that explicit column lists make inserts safer and clearer."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Modify rows with UPDATE",
+      "prompt": "SQL fundamentals task: write an `UPDATE` statement that changes one column value for a specific row and explain why `WHERE` is important.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: show `UPDATE table_name SET column_name = value WHERE id = ...;`.",
+        "SQL approach: explain that omitting `WHERE` updates every row."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Remove rows with DELETE",
+      "prompt": "SQL fundamentals task: write a `DELETE` statement that removes rows matching a condition, and explain safe usage.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: use `DELETE FROM table_name WHERE ...;` with a clear filter condition.",
+        "SQL approach: suggest previewing matches with `SELECT` before running destructive deletes."
+      ],
+      "difficulty": 1
+    },
+    {
       "difficulty": 2,
       "title": "Two Sum Variant",
       "prompt": "Implement Two Sum Variant in {language}. Target difficulty 2. Discuss runtime and edge cases.",
@@ -779,6 +1019,76 @@
       "difficulty": 2,
       "title": "Sliding Window Maximum",
       "prompt": "Implement Sliding Window Maximum in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Validate Binary Search Tree",
+      "prompt": "Implement Validate Binary Search Tree in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Coin Change Minimum Coins",
+      "prompt": "Implement Coin Change Minimum Coins in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Number of Islands",
+      "prompt": "Implement Number of Islands in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Min Stack Operations",
+      "prompt": "Implement Min Stack Operations in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "languages": [
+        "Java",
+        "Python"
+      ],
+      "solutions": [
+        "{{language}} approach: direct implementation using core data structures.",
+        "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
+        "{{language}} approach: optimize space usage while keeping interview readability."
+      ]
+    },
+    {
+      "difficulty": 2,
+      "title": "Word Search Backtracking",
+      "prompt": "Implement Word Search Backtracking in {language}. Target difficulty 2. Discuss runtime and edge cases.",
       "languages": [
         "Java",
         "Python"
