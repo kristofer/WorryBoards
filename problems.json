@@ -3,7 +3,7 @@
     {
       "difficulty": 1,
       "title": "Print numbers 1 to 10",
-      "prompt": "Fundamentals task in {language}: Print numbers 1 to 10. Keep the solution beginner friendly.",
+      "prompt": "Print the integers from 1 through 10, one per line. Example output: 1 2 3 ... 10. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -16,7 +16,7 @@
     {
       "difficulty": 1,
       "title": "Print even numbers from 2 to 20",
-      "prompt": "Fundamentals task in {language}: Print even numbers from 2 to 20. Keep the solution beginner friendly.",
+      "prompt": "Print only even numbers from 2 through 20 in ascending order. Example output: 2 4 6 8 10 12 14 16 18 20. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -29,7 +29,7 @@
     {
       "difficulty": 1,
       "title": "Sum numbers 1 to 100",
-      "prompt": "Fundamentals task in {language}: Sum numbers 1 to 100. Keep the solution beginner friendly.",
+      "prompt": "Compute the sum of integers from 1 through 100 and print the final number. Example output: 5050. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -42,7 +42,7 @@
     {
       "difficulty": 1,
       "title": "Countdown timer",
-      "prompt": "Fundamentals task in {language}: Countdown timer. Keep the solution beginner friendly.",
+      "prompt": "Print a countdown from 10 to 1 and then print 'Liftoff'. Example output: 10 9 ... 1 Liftoff. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -55,7 +55,7 @@
     {
       "difficulty": 1,
       "title": "Multiplication table (single number)",
-      "prompt": "Fundamentals task in {language}: Multiplication table (single number). Keep the solution beginner friendly.",
+      "prompt": "Given n=7, print the multiplication table from 1 to 10. Example lines: 7 x 1 = 7 and 7 x 10 = 70. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -68,7 +68,7 @@
     {
       "difficulty": 1,
       "title": "Basic string analysis",
-      "prompt": "Fundamentals task in {language}: Basic string analysis. Keep the solution beginner friendly.",
+      "prompt": "Given text='Alphabetical', print its length, vowel count, and consonant count. Example output: length: 12 vowels: 5 consonants: 7. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -81,7 +81,7 @@
     {
       "difficulty": 1,
       "title": "Reverse a word (without slicing shortcuts)",
-      "prompt": "Fundamentals task in {language}: Reverse a word (without slicing shortcuts). Keep the solution beginner friendly.",
+      "prompt": "Given word='straw', reverse it using loops (no slicing shortcuts) and print the result. Example output: warts. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -94,7 +94,7 @@
     {
       "difficulty": 1,
       "title": "Count vowels in a sentence",
-      "prompt": "Fundamentals task in {language}: Count vowels in a sentence. Keep the solution beginner friendly.",
+      "prompt": "Given sentence='We code every day', count vowels (a,e,i,o,u) and print the total. Example output: vowels: 6. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -107,7 +107,7 @@
     {
       "difficulty": 1,
       "title": "Write a function: letter frequency dictionary",
-      "prompt": "Fundamentals task in {language}: Write a function: letter frequency dictionary. Keep the solution beginner friendly.",
+      "prompt": "Write a function that returns a letter-frequency dictionary. Example input: 'banana'; example output: {'b': 1, 'a': 3, 'n': 2}. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -120,7 +120,7 @@
     {
       "difficulty": 1,
       "title": "Find the largest number in a list",
-      "prompt": "Fundamentals task in {language}: Find the largest number in a list. Keep the solution beginner friendly.",
+      "prompt": "Given numbers=[3, 18, 5, 11], find and print the largest value. Example output: 18. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -133,7 +133,7 @@
     {
       "difficulty": 1,
       "title": "Filter positive numbers (list comprehension)",
-      "prompt": "Fundamentals task in {language}: Filter positive numbers (list comprehension). Keep the solution beginner friendly.",
+      "prompt": "Given numbers=[-2, 0, 7, -1, 5], return only positive values using list comprehension. Example output: [7, 5]. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -146,7 +146,7 @@
     {
       "difficulty": 1,
       "title": "Square numbers (list comprehension)",
-      "prompt": "Fundamentals task in {language}: Square numbers (list comprehension). Keep the solution beginner friendly.",
+      "prompt": "Given numbers=[1, 2, 3, 4], return a list of squares using list comprehension. Example output: [1, 4, 9, 16]. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -159,7 +159,7 @@
     {
       "difficulty": 1,
       "title": "Basic dictionary practice",
-      "prompt": "Fundamentals task in {language}: Basic dictionary practice. Keep the solution beginner friendly.",
+      "prompt": "Create a dictionary for a student with name and score, then print score by key lookup. Example output: score: 92. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -172,7 +172,7 @@
     {
       "difficulty": 1,
       "title": "Simple while input loop",
-      "prompt": "Fundamentals task in {language}: Simple while input loop. Keep the solution beginner friendly.",
+      "prompt": "Read integers until the user enters 0, then print their sum. Example input: 4 6 -2 0; example output: sum: 8. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -185,7 +185,7 @@
     {
       "difficulty": 1,
       "title": "FizzBuzz (classic fundamentals)",
-      "prompt": "Fundamentals task in {language}: FizzBuzz (classic fundamentals). Keep the solution beginner friendly.",
+      "prompt": "Print numbers 1 to 20, replacing multiples of 3 with Fizz, 5 with Buzz, and both with FizzBuzz. Example output includes: 1 2 Fizz 4 Buzz ... 14 FizzBuzz ... 20. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -198,7 +198,7 @@
     {
       "difficulty": 1,
       "title": "Print numbers 1 to N",
-      "prompt": "Fundamentals task in {language}: Print numbers 1 to N. Keep the solution beginner friendly.",
+      "prompt": "Given N=5, print numbers from 1 to N in order. Example output: 1 2 3 4 5. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -211,7 +211,7 @@
     {
       "difficulty": 1,
       "title": "Print odd numbers in range",
-      "prompt": "Fundamentals task in {language}: Print odd numbers in range. Keep the solution beginner friendly.",
+      "prompt": "Given start=3 and end=11, print odd numbers in that range. Example output: 3 5 7 9 11. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -224,7 +224,7 @@
     {
       "difficulty": 1,
       "title": "Sum only even numbers 1 to 100",
-      "prompt": "Fundamentals task in {language}: Sum only even numbers 1 to 100. Keep the solution beginner friendly.",
+      "prompt": "Sum only the even integers from 1 through 100 and print the result. Example output: 2550. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -237,7 +237,7 @@
     {
       "difficulty": 1,
       "title": "Countdown timer from N",
-      "prompt": "Fundamentals task in {language}: Countdown timer from N. Keep the solution beginner friendly.",
+      "prompt": "Given N=5, print a countdown to 1 and then 'Done'. Example output: 5 4 3 2 1 Done. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -250,7 +250,7 @@
     {
       "difficulty": 1,
       "title": "Multiplication table (formatted output)",
-      "prompt": "Fundamentals task in {language}: Multiplication table (formatted output). Keep the solution beginner friendly.",
+      "prompt": "Given n=4, print a formatted table line by line from 1..10. Example lines: 4 x 3 = 12 and 4 x 10 = 40. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -263,7 +263,7 @@
     {
       "difficulty": 1,
       "title": "String palindrome check (loop-based)",
-      "prompt": "Fundamentals task in {language}: String palindrome check (loop-based). Keep the solution beginner friendly.",
+      "prompt": "Given word='level', check with a loop whether it is a palindrome. Example output: true. For 'apple', output: false. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -276,7 +276,7 @@
     {
       "difficulty": 1,
       "title": "Reverse sentence words using loops",
-      "prompt": "Fundamentals task in {language}: Reverse sentence words using loops. Keep the solution beginner friendly.",
+      "prompt": "Given sentence='we love coding', reverse word order using loops. Example output: coding love we. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -289,7 +289,7 @@
     {
       "difficulty": 1,
       "title": "Count vowels and consonants",
-      "prompt": "Fundamentals task in {language}: Count vowels and consonants. Keep the solution beginner friendly.",
+      "prompt": "Given a word like 'alphabetical', count vowels and consonants and print both totals. Example output: vowels: 5 consonants: 7. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -302,7 +302,7 @@
     {
       "difficulty": 1,
       "title": "Letter frequency top character",
-      "prompt": "Fundamentals task in {language}: Letter frequency top character. Keep the solution beginner friendly.",
+      "prompt": "Given text='mississippi', build letter counts and print the most frequent character. Example output: s: 4. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -315,7 +315,7 @@
     {
       "difficulty": 1,
       "title": "Find second largest number in a list",
-      "prompt": "Fundamentals task in {language}: Find second largest number in a list. Keep the solution beginner friendly.",
+      "prompt": "Given numbers=[9, 2, 8, 6], find the second largest unique number. Example output: 8. Write your answer in {language}. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java",
         "Python"
@@ -328,7 +328,7 @@
     {
       "difficulty": 1,
       "title": "Drop the first item from a list",
-      "prompt": "Python fundamentals task: write a function that takes a list and returns a new list without the first item. Handle empty and one-item lists cleanly.",
+      "prompt": "Write a function that returns a new list without the first item. Example input: [10, 20, 30]; example output: [20, 30]. For [] return []. Write your answer in Python. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Python"
       ],
@@ -340,7 +340,7 @@
     {
       "difficulty": 1,
       "title": "Drop the last two items from a list",
-      "prompt": "Python fundamentals task: write a function that takes a list and returns a new list with the last two items removed. Decide what should happen when the list has fewer than two items.",
+      "prompt": "Write a function that removes the last two items from a list. Example input: [1,2,3,4,5]; example output: [1,2,3]. If length < 2, return an empty list. Write your answer in Python. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Python"
       ],
@@ -352,7 +352,7 @@
     {
       "difficulty": 1,
       "title": "Concatenate two lists",
-      "prompt": "Python fundamentals task: write a function that accepts two lists and returns a new list containing the items from both lists in order.",
+      "prompt": "Write a function that combines two lists in order. Example input: [1,2] and [3,4]; example output: [1,2,3,4]. Write your answer in Python. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Python"
       ],
@@ -363,7 +363,7 @@
     },
     {
       "title": "Sum integers from 7 to 23",
-      "prompt": "Java fundamentals task: compute the sum of all integers from 7 through 23 and print the result clearly.",
+      "prompt": "Compute and print the sum of all integers from 7 through 23 inclusive. Example output: 255. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -375,7 +375,7 @@
     },
     {
       "title": "Find the smallest integer in an array",
-      "prompt": "Java fundamentals task: given the array `[9, 5, 6, 3, 8, 2, 4]`, find and print the smallest integer.",
+      "prompt": "Given [9, 5, 6, 3, 8, 2, 4], find and print the smallest integer. Example output: 2. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -387,7 +387,7 @@
     },
     {
       "title": "Explain local variables vs instance variables",
-      "prompt": "Java fundamentals discussion: explain the difference between a local variable and an instance variable, then show a short example of each.",
+      "prompt": "Explain local vs instance variables, then show one short code example of each. Example result: local exists only inside a method; instance belongs to each object. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -399,7 +399,7 @@
     },
     {
       "title": "Write the shortest Java class",
-      "prompt": "Java fundamentals task: write the shortest valid Java class you can, then explain why it compiles.",
+      "prompt": "Write the shortest valid Java class and explain why it compiles. Example result: class A {} compiles because it defines a legal class declaration. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -411,7 +411,7 @@
     },
     {
       "title": "Create an object of type Foo",
-      "prompt": "Java fundamentals task: given a class named `Foo`, create a new object of that type and store it in a variable.",
+      "prompt": "Given a class Foo, create a new Foo object and store it in a variable. Example result: Foo f = new Foo(); Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -423,7 +423,7 @@
     },
     {
       "title": "What is Java and what are its key features?",
-      "prompt": "Java fundamentals discussion: explain what Java is and name several key features that make it widely used.",
+      "prompt": "Explain what Java is and list key features such as platform independence and object orientation. Example result includes: 'Java runs on the JVM and uses bytecode for portability.' Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -435,7 +435,7 @@
     },
     {
       "title": "Difference between a class and an object in Java",
-      "prompt": "Java fundamentals discussion: explain the difference between a class and an object, then give a simple example.",
+      "prompt": "Explain class vs object and give a tiny example. Example result: 'Car is a class, myCar is an object created from Car.' Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -447,7 +447,7 @@
     },
     {
       "title": "What is a constructor in Java?",
-      "prompt": "Java fundamentals discussion: explain what a constructor is, when it runs, and why a class might have more than one constructor.",
+      "prompt": "Explain what a constructor is, when it runs, and why overloaded constructors are useful. Example result includes: 'A constructor runs during new Person(...)'. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -459,7 +459,7 @@
     },
     {
       "title": "Static methods vs instance methods in Java",
-      "prompt": "Java fundamentals discussion: explain the difference between a static method and an instance method, including how each is called.",
+      "prompt": "Explain static vs instance methods and show one call style for each. Example result: Math.max(...) is static; obj.printName() is instance. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -471,7 +471,7 @@
     },
     {
       "title": "Purpose of public static void main",
-      "prompt": "Java fundamentals discussion: explain the purpose of the `public static void main(String[] args)` method in a Java program.",
+      "prompt": "Explain the role of public static void main(String[] args) as the Java entry point. Example result includes: 'The JVM calls main to start program execution.' Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -483,7 +483,7 @@
     },
     {
       "title": "Public methods vs private methods in Java",
-      "prompt": "Java fundamentals discussion: explain the difference between public and private methods and when you would choose each one.",
+      "prompt": "Explain when to use public vs private methods. Example result: public methods define API, private methods hide internal helpers. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -495,7 +495,7 @@
     },
     {
       "title": "Public variables vs private variables in Java",
-      "prompt": "Java fundamentals discussion: explain the difference between public and private variables and why private fields are often preferred.",
+      "prompt": "Explain public vs private fields and why private fields plus getters/setters are common. Example result includes encapsulation benefits. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -507,7 +507,7 @@
     },
     {
       "title": "Purpose of the this keyword in Java",
-      "prompt": "Java fundamentals discussion: explain what the `this` keyword refers to and when it is useful inside a class.",
+      "prompt": "Explain what this refers to and when it disambiguates fields from parameters. Example result: this.name = name. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -519,7 +519,7 @@
     },
     {
       "title": "While loops vs for loops in Java",
-      "prompt": "Java fundamentals discussion: explain the difference between a `while` loop and a `for` loop and when each style is a good fit.",
+      "prompt": "Compare while and for loops and give one scenario for each. Example result: for for known counts, while for condition-driven loops. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -531,7 +531,7 @@
     },
     {
       "title": "Declare a floating-point variable",
-      "prompt": "Java fundamentals task: declare a floating-point variable named `x` and initialize it to `3.14`.",
+      "prompt": "Declare a floating-point variable named x initialized to 3.14. Example result: double x = 3.14; Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -543,7 +543,7 @@
     },
     {
       "title": "Write a Java for-loop that prints ZipCode",
-      "prompt": "Java fundamentals task: write a `for` loop from 0 to 9 that prints the index together with the string `ZipCode`.",
+      "prompt": "Write a for loop from 0 to 9 that prints index and 'ZipCode'. Example output line: 0 ZipCode. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -555,7 +555,7 @@
     },
     {
       "title": "What is the void type in Java?",
-      "prompt": "Java fundamentals discussion: explain what the `void` return type means and when a method should use it.",
+      "prompt": "Explain what void means as a return type and when to use it. Example result: methods that only print or mutate state often return void. Write your answer in Java. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "Java"
       ],
@@ -567,7 +567,7 @@
     },
     {
       "title": "What is the SELECT statement?",
-      "prompt": "SQL fundamentals discussion: explain what the `SELECT` statement does and show a simple example query.",
+      "prompt": "Explain what SELECT does in SQL and show a basic query. Example query: SELECT name FROM users; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -579,7 +579,7 @@
     },
     {
       "title": "Common clauses used with SELECT",
-      "prompt": "SQL fundamentals discussion: explain common clauses used with `SELECT`, including `WHERE`, `ORDER BY`, `GROUP BY`, and `HAVING`.",
+      "prompt": "Explain WHERE, ORDER BY, GROUP BY, and HAVING with one short query example. Example: SELECT dept, COUNT(*) FROM employees GROUP BY dept HAVING COUNT(*) > 5; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -591,7 +591,7 @@
     },
     {
       "title": "Entities and relationships in databases",
-      "prompt": "SQL fundamentals discussion: explain what entities and relationships are in a database design context.",
+      "prompt": "Explain entities and relationships in database design. Example result: Student and Course are entities linked by Enrollment. Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -603,7 +603,7 @@
     },
     {
       "title": "Common database relationship types",
-      "prompt": "SQL fundamentals discussion: name common relationship types in relational databases and explain each one briefly.",
+      "prompt": "Describe one-to-one, one-to-many, and many-to-many with examples. Example result: one Author can have many Books. Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -615,7 +615,7 @@
     },
     {
       "title": "What is a primary key?",
-      "prompt": "SQL fundamentals discussion: explain what a primary key is and why each table needs one reliable way to identify rows.",
+      "prompt": "Explain what a primary key is and why it must uniquely identify rows. Example: id INT PRIMARY KEY. Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -627,7 +627,7 @@
     },
     {
       "title": "What is a foreign key?",
-      "prompt": "SQL fundamentals discussion: explain what a foreign key is and how it supports relationships between tables.",
+      "prompt": "Explain what a foreign key is and how it links tables. Example: orders.customer_id references customers.id. Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -639,7 +639,7 @@
     },
     {
       "title": "What is a query?",
-      "prompt": "SQL fundamentals discussion: explain what a query is and contrast a read query with a data-changing query.",
+      "prompt": "Explain what a query is and contrast read vs data-changing queries. Example read: SELECT * FROM products; example write: UPDATE products SET price=10 WHERE id=1; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -651,7 +651,7 @@
     },
     {
       "title": "What does the WHERE clause do?",
-      "prompt": "SQL fundamentals discussion: explain the purpose of the `WHERE` clause and show how it filters rows before results are returned.",
+      "prompt": "Explain how WHERE filters rows before returning results. Example: SELECT * FROM orders WHERE total > 100; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -663,7 +663,7 @@
     },
     {
       "title": "Sort rows with ORDER BY",
-      "prompt": "SQL fundamentals task: write a query that sorts rows by one column in ascending order and by another column in descending order.",
+      "prompt": "Write a query that sorts by last_name ascending and created_at descending. Example: SELECT * FROM users ORDER BY last_name ASC, created_at DESC; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -675,7 +675,7 @@
     },
     {
       "title": "Limit result size with LIMIT",
-      "prompt": "SQL fundamentals task: write a query that returns only the first 10 rows from a table and explain why limiting results is useful.",
+      "prompt": "Write a query that returns only the first 10 rows. Example: SELECT * FROM logs ORDER BY created_at DESC LIMIT 10; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -687,7 +687,7 @@
     },
     {
       "title": "Remove duplicates with DISTINCT",
-      "prompt": "SQL fundamentals discussion: explain what `DISTINCT` does and when it should be used to remove duplicate values from results.",
+      "prompt": "Explain DISTINCT and show how it removes duplicates. Example: SELECT DISTINCT city FROM customers; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -699,7 +699,7 @@
     },
     {
       "title": "Rename columns with aliases",
-      "prompt": "SQL fundamentals task: write a query that renames selected columns using aliases so output headers are easier to read.",
+      "prompt": "Write a query that renames output columns with aliases. Example: SELECT first_name AS first, last_name AS last FROM users; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -711,7 +711,7 @@
     },
     {
       "title": "Filter with IN",
-      "prompt": "SQL fundamentals task: write a query that returns rows where a column matches any value in a short list using `IN`.",
+      "prompt": "Write a query using IN to match a small set of values. Example: SELECT * FROM orders WHERE status IN ('new','paid'); Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -723,7 +723,7 @@
     },
     {
       "title": "Filter with BETWEEN",
-      "prompt": "SQL fundamentals task: write a query that filters rows within a numeric or date range using `BETWEEN`.",
+      "prompt": "Write a query using BETWEEN for a range. Example: SELECT * FROM events WHERE event_date BETWEEN '2026-01-01' AND '2026-01-31'; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -735,7 +735,7 @@
     },
     {
       "title": "Search text with LIKE",
-      "prompt": "SQL fundamentals task: write a query that finds rows whose text column starts with a specific prefix using `LIKE`.",
+      "prompt": "Write a query using LIKE to match a prefix. Example: SELECT * FROM users WHERE email LIKE 'sam%'; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -747,7 +747,7 @@
     },
     {
       "title": "Understand NULL and IS NULL",
-      "prompt": "SQL fundamentals discussion: explain what `NULL` means in SQL and show how to filter rows with `IS NULL` and `IS NOT NULL`.",
+      "prompt": "Explain NULL and how IS NULL / IS NOT NULL are used. Example: SELECT * FROM tasks WHERE completed_at IS NULL; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -759,7 +759,7 @@
     },
     {
       "title": "Count rows with COUNT",
-      "prompt": "SQL fundamentals task: write a query that counts all rows in a table and another that counts only non-null values in a column.",
+      "prompt": "Write one query that counts all rows and one that counts non-null values in a column. Example: SELECT COUNT(*) FROM users; SELECT COUNT(phone) FROM users; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -771,7 +771,7 @@
     },
     {
       "title": "Find max and min values",
-      "prompt": "SQL fundamentals task: write queries that return the maximum and minimum value from a numeric column.",
+      "prompt": "Write queries that return the max and min of a numeric column. Example: SELECT MAX(score), MIN(score) FROM exams; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -783,7 +783,7 @@
     },
     {
       "title": "Compute averages with AVG",
-      "prompt": "SQL fundamentals task: write a query that calculates the average of a numeric column and explain what happens with null values.",
+      "prompt": "Write a query that computes an average and explain NULL handling. Example: SELECT AVG(price) FROM products; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -795,7 +795,7 @@
     },
     {
       "title": "Sum a numeric column",
-      "prompt": "SQL fundamentals task: write a query that totals values in a numeric column with `SUM`.",
+      "prompt": "Write a query that totals a numeric column. Example: SELECT SUM(amount) FROM payments; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -807,7 +807,7 @@
     },
     {
       "title": "Group rows with GROUP BY",
-      "prompt": "SQL fundamentals task: write a query that groups rows by one column and returns a count per group.",
+      "prompt": "Write a grouped query returning one row per department with counts. Example: SELECT department, COUNT(*) FROM employees GROUP BY department; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -819,7 +819,7 @@
     },
     {
       "title": "Filter grouped results with HAVING",
-      "prompt": "SQL fundamentals task: write a grouped query and keep only groups that pass an aggregate condition using `HAVING`.",
+      "prompt": "Write a GROUP BY query and keep only groups passing an aggregate rule. Example: SELECT department, COUNT(*) c FROM employees GROUP BY department HAVING c >= 3; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -831,7 +831,7 @@
     },
     {
       "title": "Join two tables with INNER JOIN",
-      "prompt": "SQL fundamentals task: write an `INNER JOIN` query that combines matching rows from two related tables.",
+      "prompt": "Write an INNER JOIN between customers and orders on customer_id. Example: SELECT c.name, o.id FROM customers c INNER JOIN orders o ON o.customer_id = c.id; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -843,7 +843,7 @@
     },
     {
       "title": "Keep unmatched rows with LEFT JOIN",
-      "prompt": "SQL fundamentals discussion: explain how `LEFT JOIN` differs from `INNER JOIN` and show a query that keeps all rows from the left table.",
+      "prompt": "Explain LEFT JOIN and provide a query that keeps all rows from the left table. Example: SELECT c.name, o.id FROM customers c LEFT JOIN orders o ON o.customer_id = c.id; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -855,7 +855,7 @@
     },
     {
       "title": "Add new rows with INSERT",
-      "prompt": "SQL fundamentals task: write an `INSERT` statement that adds one new row with explicit column names.",
+      "prompt": "Write an INSERT statement with explicit columns. Example: INSERT INTO users (name, email) VALUES ('Sam', 'sam@example.com'); Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -867,7 +867,7 @@
     },
     {
       "title": "Modify rows with UPDATE",
-      "prompt": "SQL fundamentals task: write an `UPDATE` statement that changes one column value for a specific row and explain why `WHERE` is important.",
+      "prompt": "Write an UPDATE statement with a WHERE clause targeting one row. Example: UPDATE users SET status='active' WHERE id=42; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -879,7 +879,7 @@
     },
     {
       "title": "Remove rows with DELETE",
-      "prompt": "SQL fundamentals task: write a `DELETE` statement that removes rows matching a condition, and explain safe usage.",
+      "prompt": "Write a DELETE statement that removes matching rows safely. Example: DELETE FROM sessions WHERE expires_at < '2026-01-01'; Write your answer in SQL. Keep the solution beginner-friendly, using basic control flow and clear variable names.",
       "languages": [
         "SQL"
       ],
@@ -892,7 +892,7 @@
     {
       "difficulty": 2,
       "title": "Two Sum Variant",
-      "prompt": "Implement Two Sum Variant in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -906,7 +906,7 @@
     {
       "difficulty": 2,
       "title": "Balanced Brackets",
-      "prompt": "Implement Balanced Brackets in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -920,7 +920,7 @@
     {
       "difficulty": 2,
       "title": "Reverse Linked List",
-      "prompt": "Implement Reverse Linked List in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -934,7 +934,7 @@
     {
       "difficulty": 2,
       "title": "Merge Intervals",
-      "prompt": "Implement Merge Intervals in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -948,7 +948,7 @@
     {
       "difficulty": 2,
       "title": "Top K Frequent",
-      "prompt": "Implement Top K Frequent in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -962,7 +962,7 @@
     {
       "difficulty": 2,
       "title": "Binary Tree Depth",
-      "prompt": "Implement Binary Tree Depth in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -976,7 +976,7 @@
     {
       "difficulty": 2,
       "title": "LRU Cache Design",
-      "prompt": "Implement LRU Cache Design in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -990,7 +990,7 @@
     {
       "difficulty": 2,
       "title": "Matrix Rotation",
-      "prompt": "Implement Matrix Rotation in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -1004,7 +1004,7 @@
     {
       "difficulty": 2,
       "title": "Anagram Grouping",
-      "prompt": "Implement Anagram Grouping in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -1018,7 +1018,7 @@
     {
       "difficulty": 2,
       "title": "Sliding Window Maximum",
-      "prompt": "Implement Sliding Window Maximum in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -1032,7 +1032,7 @@
     {
       "difficulty": 2,
       "title": "Validate Binary Search Tree",
-      "prompt": "Implement Validate Binary Search Tree in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Validate Binary Search Tree. Example: given root [2,1,3], return true; for [5,1,4,null,null,3,6] return false. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -1046,7 +1046,7 @@
     {
       "difficulty": 2,
       "title": "Coin Change Minimum Coins",
-      "prompt": "Implement Coin Change Minimum Coins in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Coin Change Minimum Coins. Example: given coins=[1,2,5], amount=11, return 3 (5+5+1). Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -1060,7 +1060,7 @@
     {
       "difficulty": 2,
       "title": "Number of Islands",
-      "prompt": "Implement Number of Islands in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Number of Islands. Example: given grid [['1','1','0'],['1','0','0'],['0','0','1']], return 2. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -1074,7 +1074,7 @@
     {
       "difficulty": 2,
       "title": "Min Stack Operations",
-      "prompt": "Implement Min Stack Operations in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Min Stack Operations. Example: after push 3, push 1, push 2, getMin returns 1; after one pop getMin still 1. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -1088,7 +1088,7 @@
     {
       "difficulty": 2,
       "title": "Word Search Backtracking",
-      "prompt": "Implement Word Search Backtracking in {language}. Target difficulty 2. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Word Search Backtracking. Example: board has rows ['ABCE','SFCS','ADEE'] and word='ABCCED', return true. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java",
         "Python"
@@ -1101,7 +1101,7 @@
     },
     {
       "title": "Sum values from a nullable Xaction array",
-      "prompt": "Java task: given an array of `Xaction` objects that may contain nulls, sum every non-null `Xaction.getValue()` result and print the total.",
+      "prompt": "Given an array that may contain null Xaction objects, sum all non-null getValue() results. Example values [null, X(4), X(6)] -> output 10. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1113,7 +1113,7 @@
     },
     {
       "title": "Reverse an array of Xaction objects",
-      "prompt": "Java task: reverse an array of `Xaction` objects in place and explain how you handle the two-pointer swap logic.",
+      "prompt": "Reverse an Xaction array in place using two pointers. Example input [A,B,C,D] -> output [D,C,B,A]. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1125,7 +1125,7 @@
     },
     {
       "title": "What are the four access modifiers in Java?",
-      "prompt": "Java discussion prompt: explain the four access modifiers in Java and describe where each one allows access.",
+      "prompt": "Explain public, protected, package-private, and private, including where each is accessible. Example result: private is only accessible inside the same class. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1137,7 +1137,7 @@
     },
     {
       "title": "What is inheritance in Java?",
-      "prompt": "Java discussion prompt: explain inheritance in Java, how the `extends` keyword works, and when inheritance is useful.",
+      "prompt": "Explain inheritance with extends and show a short parent/child example. Example result: Dog extends Animal and inherits methods. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1149,7 +1149,7 @@
     },
     {
       "title": "What is polymorphism in Java?",
-      "prompt": "Java discussion prompt: explain polymorphism in Java and how overriding or overloading can appear in interview examples.",
+      "prompt": "Explain polymorphism with method overriding and dynamic dispatch. Example result: Animal a = new Dog(); a.speak() calls Dog's version. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1161,7 +1161,7 @@
     },
     {
       "title": "What is an interface in Java?",
-      "prompt": "Java discussion prompt: explain what an interface is in Java and how it differs from a regular class.",
+      "prompt": "Explain interfaces and how classes implement them. Example result: class Car implements Drivable { ... }. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1173,7 +1173,7 @@
     },
     {
       "title": "Purpose of encapsulation in Java",
-      "prompt": "Java discussion prompt: explain encapsulation and why hiding internal state can make code safer and easier to maintain.",
+      "prompt": "Explain encapsulation and why hiding mutable state is useful. Example result: private field + public getter/setter with validation. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1185,7 +1185,7 @@
     },
     {
       "title": "Purpose of the super keyword in Java",
-      "prompt": "Java discussion prompt: explain what the `super` keyword refers to and when you would use it in a subclass.",
+      "prompt": "Explain uses of super for parent constructors and methods. Example result: super(name); and super.toString(). Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1197,7 +1197,7 @@
     },
     {
       "title": "What is an exception in Java?",
-      "prompt": "Java discussion prompt: explain what an exception is in Java and outline how `try`, `catch`, and `finally` work together.",
+      "prompt": "Explain exceptions and how try/catch/finally works. Example result includes one thrown exception and a matching catch. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1209,7 +1209,7 @@
     },
     {
       "title": "Checked vs unchecked exceptions in Java",
-      "prompt": "Java discussion prompt: explain the difference between checked and unchecked exceptions in Java and when each category appears.",
+      "prompt": "Compare checked and unchecked exceptions with examples. Example result: IOException is checked, NullPointerException is unchecked. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1221,7 +1221,7 @@
     },
     {
       "title": "Pass by value vs pass by reference in Java",
-      "prompt": "Java discussion prompt: explain whether Java is pass-by-value or pass-by-reference, and use both a primitive and an object example.",
+      "prompt": "Explain Java parameter passing using a primitive and an object example. Example result: Java is pass-by-value, object references are copied by value. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1233,7 +1233,7 @@
     },
     {
       "title": "Import vs static import in Java",
-      "prompt": "Java discussion prompt: explain the difference between a regular `import` and a `static import`, and show a brief example of each.",
+      "prompt": "Explain regular import vs static import and show one example of each. Example result: import java.util.List; vs import static java.lang.Math.PI; Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1245,7 +1245,7 @@
     },
     {
       "title": "What is an enum in Java?",
-      "prompt": "Java discussion prompt: explain what an `enum` is in Java and give an example of a good use case.",
+      "prompt": "Explain enum usage and give a practical example. Example result: enum Status { NEW, IN_PROGRESS, DONE }. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1257,7 +1257,7 @@
     },
     {
       "title": "What is a JAR in Java?",
-      "prompt": "Java discussion prompt: explain what a JAR file is and why Java projects package code that way.",
+      "prompt": "Explain what a JAR is and why Java code is packaged this way. Example result: app.jar bundles compiled classes/resources for distribution. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1269,7 +1269,7 @@
     },
     {
       "title": "What is a NullPointerException?",
-      "prompt": "Java discussion prompt: explain what a `NullPointerException` is, how it happens, and how to reduce the chances of creating one.",
+      "prompt": "Explain what NullPointerException means, a common trigger, and one prevention technique. Example result: call on null reference causes NPE; add null check. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1281,7 +1281,7 @@
     },
     {
       "title": "Explain exception types in Java",
-      "prompt": "Java discussion prompt: explain the main categories of exceptions in Java and give examples of checked and unchecked cases.",
+      "prompt": "Explain Java exception categories and give at least one checked and one unchecked example. Example result: SQLException (checked), IllegalArgumentException (unchecked). Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1293,7 +1293,7 @@
     },
     {
       "title": "Two ways to handle exceptions in Java",
-      "prompt": "Java discussion prompt: show two different ways to handle exceptions in Java and explain when each approach is appropriate.",
+      "prompt": "Show two handling strategies: catch locally and declare throws. Example result includes both method signatures/snippets. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1305,7 +1305,7 @@
     },
     {
       "title": "What are collections in Java?",
-      "prompt": "Java discussion prompt: explain what the Java Collections Framework is and name a collection class you would choose for a practical use case.",
+      "prompt": "Explain the Java Collections Framework and name classes for list, set, and map use cases. Example result: ArrayList, HashSet, HashMap. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1317,7 +1317,7 @@
     },
     {
       "title": "Create a HashMap with object keys and URL values",
-      "prompt": "Java task: create a `HashMap` that uses an object as the key and a URL as the value, then explain any equality or hashing concerns.",
+      "prompt": "Create a HashMap<Object, URL> and explain equals/hashCode requirements for object keys. Example result notes that equal keys must produce same hashCode. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1329,7 +1329,7 @@
     },
     {
       "title": "What is a subquery and what are its types?",
-      "prompt": "SQL discussion prompt: explain what a subquery is and compare correlated and non-correlated subqueries.",
+      "prompt": "Explain what a subquery is and compare correlated vs non-correlated forms. Example queries should include one of each type. Write your answer in SQL. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "SQL"
       ],
@@ -1341,7 +1341,7 @@
     },
     {
       "title": "Compare abstract classes and interfaces",
-      "prompt": "Java discussion prompt: compare abstract classes and interfaces, and explain when you would prefer one over the other.",
+      "prompt": "Compare abstract classes and interfaces and explain when each is preferable. Example result: interface for capability contracts, abstract class for shared base state. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1353,7 +1353,7 @@
     },
     {
       "title": "Explain Map and HashMap in Java",
-      "prompt": "Java discussion prompt: explain what the `Map` interface represents and how `HashMap` behaves as one implementation.",
+      "prompt": "Explain Map as an interface and HashMap as a concrete implementation. Example result includes put/get usage and key uniqueness. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
         "Java"
       ],
@@ -1366,7 +1366,7 @@
     {
       "difficulty": 3,
       "title": "Two Sum Variant",
-      "prompt": "Implement Two Sum Variant in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java",
         "Python"
@@ -1380,7 +1380,7 @@
     {
       "difficulty": 3,
       "title": "Balanced Brackets",
-      "prompt": "Implement Balanced Brackets in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java",
         "Python"
@@ -1394,7 +1394,7 @@
     {
       "difficulty": 3,
       "title": "Reverse Linked List",
-      "prompt": "Implement Reverse Linked List in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java",
         "Python"
@@ -1408,7 +1408,7 @@
     {
       "difficulty": 3,
       "title": "Merge Intervals",
-      "prompt": "Implement Merge Intervals in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java",
         "Python"
@@ -1422,7 +1422,7 @@
     {
       "difficulty": 3,
       "title": "Top K Frequent",
-      "prompt": "Implement Top K Frequent in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java",
         "Python"
@@ -1436,7 +1436,7 @@
     {
       "difficulty": 3,
       "title": "Binary Tree Depth",
-      "prompt": "Implement Binary Tree Depth in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java",
         "Python"
@@ -1450,7 +1450,7 @@
     {
       "difficulty": 3,
       "title": "LRU Cache Design",
-      "prompt": "Implement LRU Cache Design in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java",
         "Python"
@@ -1464,7 +1464,7 @@
     {
       "difficulty": 3,
       "title": "Matrix Rotation",
-      "prompt": "Implement Matrix Rotation in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java",
         "Python"
@@ -1478,7 +1478,7 @@
     {
       "difficulty": 3,
       "title": "Anagram Grouping",
-      "prompt": "Implement Anagram Grouping in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java",
         "Python"
@@ -1492,7 +1492,7 @@
     {
       "difficulty": 3,
       "title": "Sliding Window Maximum",
-      "prompt": "Implement Sliding Window Maximum in {language}. Target difficulty 3. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java",
         "Python"
@@ -1505,7 +1505,7 @@
     },
     {
       "title": "What are the other modifiers in Java?",
-      "prompt": "Java discussion prompt: explain the purpose of modifiers such as `static`, `final`, `abstract`, `synchronized`, and `volatile`.",
+      "prompt": "Explain modifiers such as static, final, abstract, synchronized, and volatile with one use example each. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1517,7 +1517,7 @@
     },
     {
       "title": "JDK vs JRE vs JVM",
-      "prompt": "Java discussion prompt: explain the differences among the JDK, JRE, and JVM and how they relate to each other.",
+      "prompt": "Explain differences among JDK, JRE, and JVM and how they relate. Example result: JDK includes tools, JRE runtime, JVM executes bytecode. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1529,7 +1529,7 @@
     },
     {
       "title": "Stack vs heap in Java",
-      "prompt": "Java discussion prompt: explain the difference between stack memory and heap memory in Java and what kinds of values live in each.",
+      "prompt": "Explain stack vs heap memory with examples of what lives in each. Example result: local variables on stack, objects on heap. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1541,7 +1541,7 @@
     },
     {
       "title": "Comparable vs Comparator in Java",
-      "prompt": "Java discussion prompt: explain the difference between `Comparable` and `Comparator` and when you would use each one.",
+      "prompt": "Compare Comparable and Comparator and give one sorting example for each. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1553,7 +1553,7 @@
     },
     {
       "title": "Methods of the Object class",
-      "prompt": "Java discussion prompt: name important methods inherited from `Object` and explain what they are used for.",
+      "prompt": "Name key Object methods (toString, equals, hashCode, clone, getClass) and explain what each is used for. Example result: equals compares logical equality while hashCode supports hashed collections. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1565,7 +1565,7 @@
     },
     {
       "title": "Casting in Java and avoiding ClassCastException",
-      "prompt": "Java discussion prompt: explain upcasting and downcasting in Java, including how to avoid `ClassCastException`.",
+      "prompt": "Explain upcasting and downcasting and show how instanceof checks avoid ClassCastException. Example result: if (obj instanceof Dog d) { d.bark(); }. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1577,7 +1577,7 @@
     },
     {
       "title": "What is JIT in Java?",
-      "prompt": "Java discussion prompt: explain what JIT compilation is and how it can improve Java performance at runtime.",
+      "prompt": "Explain JIT compilation and how it improves repeated code execution at runtime. Example result: frequently used bytecode is compiled to native machine instructions. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1589,7 +1589,7 @@
     },
     {
       "title": "Purpose of the Serializable interface",
-      "prompt": "Java discussion prompt: explain what the `Serializable` interface is for and what serialization means in Java.",
+      "prompt": "Explain Serializable and what object serialization means, including one practical persistence or transfer use case. Example result: serialize a User object to store a session snapshot. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1601,7 +1601,7 @@
     },
     {
       "title": "Is there a destructor in Java?",
-      "prompt": "Java discussion prompt: explain whether Java has destructors and how resource cleanup is usually handled instead.",
+      "prompt": "Explain whether Java has destructors and what is used instead for cleanup (try-with-resources/finally). Example result: InputStream closes in try-with-resources without a destructor. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1613,7 +1613,7 @@
     },
     {
       "title": "What is an abstract class in Java?",
-      "prompt": "Java discussion prompt: explain what an abstract class is, what an abstract method is, and why a team might use them.",
+      "prompt": "Explain abstract classes and abstract methods with a short class hierarchy example. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1625,7 +1625,7 @@
     },
     {
       "title": "Build a HashMap from scratch",
-      "prompt": "Java design prompt: describe how you would build a `HashMap` from scratch, including hashing, buckets, collisions, and lookup behavior.",
+      "prompt": "Design a HashMap from scratch: hashing, buckets, collision handling, resizing, and expected operation complexity. Example result should explain lookup flow for one key. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
         "Java"
       ],
@@ -1638,7 +1638,7 @@
     {
       "difficulty": 4,
       "title": "Two Sum Variant",
-      "prompt": "Implement Two Sum Variant in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java",
         "Python"
@@ -1652,7 +1652,7 @@
     {
       "difficulty": 4,
       "title": "Balanced Brackets",
-      "prompt": "Implement Balanced Brackets in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java",
         "Python"
@@ -1666,7 +1666,7 @@
     {
       "difficulty": 4,
       "title": "Reverse Linked List",
-      "prompt": "Implement Reverse Linked List in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java",
         "Python"
@@ -1680,7 +1680,7 @@
     {
       "difficulty": 4,
       "title": "Merge Intervals",
-      "prompt": "Implement Merge Intervals in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java",
         "Python"
@@ -1694,7 +1694,7 @@
     {
       "difficulty": 4,
       "title": "Top K Frequent",
-      "prompt": "Implement Top K Frequent in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java",
         "Python"
@@ -1708,7 +1708,7 @@
     {
       "difficulty": 4,
       "title": "Binary Tree Depth",
-      "prompt": "Implement Binary Tree Depth in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java",
         "Python"
@@ -1722,7 +1722,7 @@
     {
       "difficulty": 4,
       "title": "LRU Cache Design",
-      "prompt": "Implement LRU Cache Design in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java",
         "Python"
@@ -1736,7 +1736,7 @@
     {
       "difficulty": 4,
       "title": "Matrix Rotation",
-      "prompt": "Implement Matrix Rotation in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java",
         "Python"
@@ -1750,7 +1750,7 @@
     {
       "difficulty": 4,
       "title": "Anagram Grouping",
-      "prompt": "Implement Anagram Grouping in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java",
         "Python"
@@ -1764,7 +1764,7 @@
     {
       "difficulty": 4,
       "title": "Sliding Window Maximum",
-      "prompt": "Implement Sliding Window Maximum in {language}. Target difficulty 4. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java",
         "Python"
@@ -1777,7 +1777,7 @@
     },
     {
       "title": "Why is String immutable in Java?",
-      "prompt": "Java discussion prompt: explain why `String` is immutable in Java and what benefits that design choice provides.",
+      "prompt": "Explain why String is immutable and benefits for security, caching, and thread safety. Example result should mention string pool reuse. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java"
       ],
@@ -1789,7 +1789,7 @@
     },
     {
       "title": "Dynamic binding vs static binding in Java",
-      "prompt": "Java discussion prompt: explain the difference between dynamic binding and static binding in Java and when each occurs.",
+      "prompt": "Explain dynamic vs static binding with method overriding and overloading examples. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java"
       ],
@@ -1801,7 +1801,7 @@
     },
     {
       "title": "What is reflection in Java?",
-      "prompt": "Java discussion prompt: explain what reflection is in Java, what it can inspect at runtime, and why teams use it carefully.",
+      "prompt": "Explain reflection, what runtime metadata it can inspect, and one cautious real-world use case. Example result: reading annotation metadata at startup. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java"
       ],
@@ -1813,7 +1813,7 @@
     },
     {
       "title": "What is a classloader in Java?",
-      "prompt": "Java discussion prompt: explain what a classloader does in Java and name the common categories of classloaders.",
+      "prompt": "Explain classloader responsibilities and common loader types (bootstrap, platform, application). Example result: ApplicationClassLoader loads classes from the classpath. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java"
       ],
@@ -1825,7 +1825,7 @@
     },
     {
       "title": "Static class loading vs dynamic class loading",
-      "prompt": "Java discussion prompt: compare static class loading with dynamic class loading and explain when `Class.forName(...)` becomes relevant.",
+      "prompt": "Compare static and dynamic class loading and explain when Class.forName(...) is used. Example result: JDBC drivers can be loaded dynamically at runtime. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
         "Java"
       ],
@@ -1838,7 +1838,7 @@
     {
       "difficulty": 5,
       "title": "Two Sum Variant",
-      "prompt": "Implement Two Sum Variant in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.",
       "languages": [
         "Java",
         "Python"
@@ -1852,7 +1852,7 @@
     {
       "difficulty": 5,
       "title": "Balanced Brackets",
-      "prompt": "Implement Balanced Brackets in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.",
       "languages": [
         "Java",
         "Python"
@@ -1866,7 +1866,7 @@
     {
       "difficulty": 5,
       "title": "Reverse Linked List",
-      "prompt": "Implement Reverse Linked List in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.",
       "languages": [
         "Java",
         "Python"
@@ -1880,7 +1880,7 @@
     {
       "difficulty": 5,
       "title": "Merge Intervals",
-      "prompt": "Implement Merge Intervals in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.",
       "languages": [
         "Java",
         "Python"
@@ -1894,7 +1894,7 @@
     {
       "difficulty": 5,
       "title": "Top K Frequent",
-      "prompt": "Implement Top K Frequent in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.",
       "languages": [
         "Java",
         "Python"
@@ -1908,7 +1908,7 @@
     {
       "difficulty": 5,
       "title": "Binary Tree Depth",
-      "prompt": "Implement Binary Tree Depth in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.",
       "languages": [
         "Java",
         "Python"
@@ -1922,7 +1922,7 @@
     {
       "difficulty": 5,
       "title": "LRU Cache Design",
-      "prompt": "Implement LRU Cache Design in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.",
       "languages": [
         "Java",
         "Python"
@@ -1936,7 +1936,7 @@
     {
       "difficulty": 5,
       "title": "Matrix Rotation",
-      "prompt": "Implement Matrix Rotation in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.",
       "languages": [
         "Java",
         "Python"
@@ -1950,7 +1950,7 @@
     {
       "difficulty": 5,
       "title": "Anagram Grouping",
-      "prompt": "Implement Anagram Grouping in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.",
       "languages": [
         "Java",
         "Python"
@@ -1964,7 +1964,7 @@
     {
       "difficulty": 5,
       "title": "Sliding Window Maximum",
-      "prompt": "Implement Sliding Window Maximum in {language}. Target difficulty 5. Discuss runtime and edge cases.",
+      "prompt": "Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.",
       "languages": [
         "Java",
         "Python"

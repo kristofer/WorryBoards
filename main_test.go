@@ -1,9 +1,11 @@
 package main
 
 import (
+	"encoding/json"
 	"database/sql"
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
@@ -32,6 +34,42 @@ func catalogPathForTest(t *testing.T) string {
 		t.Fatalf("getwd: %v", err)
 	}
 	return filepath.Join(wd, "problems.json")
+}
+
+func TestCatalogPromptsIncludeExamplesAndDifficultyGuidance(t *testing.T) {
+	b, err := os.ReadFile(catalogPathForTest(t))
+	if err != nil {
+		t.Fatalf("read catalog: %v", err)
+	}
+
+	var catalog Catalog
+	if err := json.Unmarshal(b, &catalog); err != nil {
+		t.Fatalf("unmarshal catalog: %v", err)
+	}
+
+	guidanceByDifficulty := map[int]string{
+		1: "Keep the solution beginner-friendly",
+		2: "Use core data structures",
+		3: "Use an efficient approach",
+		4: "Use near-optimal complexity",
+		5: "Provide an optimized, production-grade approach",
+	}
+
+	for _, q := range catalog.Questions {
+		if strings.Contains(q.Prompt, "Fundamentals task in {language}:") {
+			t.Fatalf("legacy prompt format still present for %q", q.Title)
+		}
+		if !strings.Contains(strings.ToLower(q.Prompt), "example") {
+			t.Fatalf("prompt %q should contain an example", q.Title)
+		}
+		guidance, ok := guidanceByDifficulty[q.Difficulty]
+		if !ok {
+			t.Fatalf("unexpected difficulty %d for %q", q.Difficulty, q.Title)
+		}
+		if !strings.Contains(q.Prompt, guidance) {
+			t.Fatalf("prompt %q should include guidance %q", q.Title, guidance)
+		}
+	}
 }
 
 func TestSeedProblemCounts(t *testing.T) {
