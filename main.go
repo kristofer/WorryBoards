@@ -53,6 +53,12 @@ type SelectedProblemData struct {
 	Problem Problem
 }
 
+type SolutionsData struct {
+	ProblemID int
+	Solutions []Solution
+	NextCount int
+}
+
 type Catalog struct {
 	Questions []CatalogQuestion `json:"questions"`
 }
@@ -590,7 +596,29 @@ func (a *App) handleProblemSolutions(w http.ResponseWriter, r *http.Request, id 
 		http.NotFound(w, r)
 		return
 	}
-	if err := a.templates.ExecuteTemplate(w, "solutions", solutions); err != nil {
+
+	count := 1
+	if countParam := strings.TrimSpace(r.URL.Query().Get("count")); countParam != "" {
+		parsedCount, err := strconv.Atoi(countParam)
+		if err != nil || parsedCount < 1 {
+			http.Error(w, "invalid count", http.StatusBadRequest)
+			return
+		}
+		count = parsedCount
+	}
+	if count > len(solutions) {
+		count = len(solutions)
+	}
+
+	data := SolutionsData{
+		ProblemID: id,
+		Solutions: solutions[:count],
+	}
+	if count < len(solutions) {
+		data.NextCount = count + 1
+	}
+
+	if err := a.templates.ExecuteTemplate(w, "solutions", data); err != nil {
 		http.Error(w, "failed to render solutions", http.StatusInternalServerError)
 	}
 }
@@ -693,19 +721,28 @@ const templates = `
 <p class="text-body-secondary mb-1">{{.Problem.Language}} · Difficulty {{.Problem.Difficulty}}</p>
 <p class="mb-3">{{.Problem.Prompt}}</p>
 <div id="solutions-{{.Problem.ID}}"
-     hx-get="/problem/{{.Problem.ID}}/solutions"
-     hx-trigger="load delay:3s"
      hx-swap="innerHTML">
-  <div class="alert alert-info mb-0">Possible solutions unlock in a few seconds...</div>
+  <button class="btn btn-outline-success btn-sm"
+          hx-get="/problem/{{.Problem.ID}}/solutions?count=1"
+          hx-target="#solutions-{{.Problem.ID}}"
+          hx-swap="innerHTML"
+          type="button">Show first hint</button>
 </div>
 {{end}}
 
 {{define "solutions"}}
 <h6>Possible Solutions</h6>
 <ol class="mb-0">
-  {{range .}}
+  {{range .Solutions}}
     <li>{{.Solution}}</li>
   {{end}}
 </ol>
+{{if gt .NextCount 0}}
+  <button class="btn btn-outline-success btn-sm mt-3"
+          hx-get="/problem/{{.ProblemID}}/solutions?count={{.NextCount}}"
+          hx-target="#solutions-{{.ProblemID}}"
+          hx-swap="innerHTML"
+          type="button">{{if eq .NextCount 2}}Show second hint{{else}}Show next hint{{end}}</button>
+{{end}}
 {{end}}
 `
