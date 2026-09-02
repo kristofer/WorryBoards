@@ -326,6 +326,42 @@
       ]
     },
     {
+      "difficulty": 1,
+      "title": "Drop the first item from a list",
+      "prompt": "Python fundamentals task: write a function that takes a list and returns a new list without the first item. Handle empty and one-item lists cleanly.",
+      "languages": [
+        "Python"
+      ],
+      "solutions": [
+        "Python approach: return a slice that starts at index 1.",
+        "Python approach: build a new list with a loop so the interviewer can see the indexing logic."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Drop the last two items from a list",
+      "prompt": "Python fundamentals task: write a function that takes a list and returns a new list with the last two items removed. Decide what should happen when the list has fewer than two items.",
+      "languages": [
+        "Python"
+      ],
+      "solutions": [
+        "Python approach: use slicing to return everything except the last two positions.",
+        "Python approach: compute the stop index explicitly, then copy values into a new list."
+      ]
+    },
+    {
+      "difficulty": 1,
+      "title": "Concatenate two lists",
+      "prompt": "Python fundamentals task: write a function that accepts two lists and returns a new list containing the items from both lists in order.",
+      "languages": [
+        "Python"
+      ],
+      "solutions": [
+        "Python approach: return the result of list concatenation with `+`.",
+        "Python approach: start with a copy of the first list, then append items from the second list in a loop."
+      ]
+    },
+    {
       "difficulty": 2,
       "title": "Two Sum Variant",
       "prompt": "Implement Two Sum Variant in {language}. Target difficulty 2. Discuss runtime and edge cases.",

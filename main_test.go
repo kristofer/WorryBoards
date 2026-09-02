@@ -41,8 +41,8 @@ func TestSeedProblemCounts(t *testing.T) {
 	if err := db.QueryRow("SELECT COUNT(*) FROM problems").Scan(&total); err != nil {
 		t.Fatalf("count total: %v", err)
 	}
-	if total != 130 {
-		t.Fatalf("expected 130 problems, got %d", total)
+	if total != 133 {
+		t.Fatalf("expected 133 problems, got %d", total)
 	}
 
 	for difficulty := 1; difficulty <= 5; difficulty++ {
@@ -52,7 +52,7 @@ func TestSeedProblemCounts(t *testing.T) {
 		}
 		expected := 20
 		if difficulty == 1 {
-			expected = 50
+			expected = 53
 		}
 		if c != expected {
 			t.Fatalf("expected %d problems for difficulty %d, got %d", expected, difficulty, c)
@@ -86,8 +86,8 @@ GROUP BY problem_id`)
 	if err := rows.Err(); err != nil {
 		t.Fatalf("rows err: %v", err)
 	}
-	if seen != 130 {
-		t.Fatalf("expected 130 seeded solution groups, got %d", seen)
+	if seen != 133 {
+		t.Fatalf("expected 133 seeded solution groups, got %d", seen)
 	}
 }
 
@@ -145,6 +145,40 @@ func TestLevelOneCoreTopicsExistForBothLanguages(t *testing.T) {
 			if c != 1 {
 				t.Fatalf("expected exactly one difficulty-1 problem for %q in %s, got %d", topic, language, c)
 			}
+		}
+	}
+}
+
+func TestPythonStarterOnlyTopicsExist(t *testing.T) {
+	db := setupTestDB(t)
+
+	topics := []string{
+		"Drop the first item from a list",
+		"Drop the last two items from a list",
+		"Concatenate two lists",
+	}
+
+	for _, topic := range topics {
+		var pythonCount int
+		if err := db.QueryRow(
+			"SELECT COUNT(*) FROM problems WHERE difficulty = 1 AND language = 'Python' AND title GLOB ?",
+			topic+" D1 #[0-9][0-9]",
+		).Scan(&pythonCount); err != nil {
+			t.Fatalf("count python topic %q: %v", topic, err)
+		}
+		if pythonCount != 1 {
+			t.Fatalf("expected exactly one Python difficulty-1 problem for %q, got %d", topic, pythonCount)
+		}
+
+		var javaCount int
+		if err := db.QueryRow(
+			"SELECT COUNT(*) FROM problems WHERE difficulty = 1 AND language = 'Java' AND title GLOB ?",
+			topic+" D1 #[0-9][0-9]",
+		).Scan(&javaCount); err != nil {
+			t.Fatalf("count java topic %q: %v", topic, err)
+		}
+		if javaCount != 0 {
+			t.Fatalf("expected no Java difficulty-1 problem for %q, got %d", topic, javaCount)
 		}
 	}
 }
