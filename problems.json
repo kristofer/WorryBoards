@@ -362,6 +362,294 @@
       ]
     },
     {
+      "title": "Sum integers from 7 to 23",
+      "prompt": "Java fundamentals task: compute the sum of all integers from 7 through 23 and print the result clearly.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: use a straightforward for-loop and an accumulator variable.",
+        "Java approach: extract the summing logic into a helper method, then print the returned total."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Find the smallest integer in an array",
+      "prompt": "Java fundamentals task: given the array `[9, 5, 6, 3, 8, 2, 4]`, find and print the smallest integer.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: track the current smallest value while scanning the array once.",
+        "Java approach: wrap the scan in a helper method that returns the minimum value."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Explain local variables vs instance variables",
+      "prompt": "Java fundamentals discussion: explain the difference between a local variable and an instance variable, then show a short example of each.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: define each term, then contrast lifetime, scope, and where each variable is declared.",
+        "Java approach: pair the explanation with a tiny class that shows one field and one method-local variable."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Write the shortest Java class",
+      "prompt": "Java fundamentals task: write the shortest valid Java class you can, then explain why it compiles.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: show a minimal class declaration with matching braces and explain the required pieces.",
+        "Java approach: compare a package-private class with a public class to explain the extra filename rule."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Create an object of type Foo",
+      "prompt": "Java fundamentals task: given a class named `Foo`, create a new object of that type and store it in a variable.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: instantiate `Foo` with `new` and assign it to a local variable.",
+        "Java approach: explain what the reference stores after object creation."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "What is Java and what are its key features?",
+      "prompt": "Java fundamentals discussion: explain what Java is and name several key features that make it widely used.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: define Java as an object-oriented language on the JVM, then cover portability, libraries, and memory management.",
+        "Java approach: organize the answer as a short definition followed by a concise feature list."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Difference between a class and an object in Java",
+      "prompt": "Java fundamentals discussion: explain the difference between a class and an object, then give a simple example.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: describe a class as a blueprint and an object as a concrete instance.",
+        "Java approach: use a tiny example class and one created instance to illustrate the distinction."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "What is a constructor in Java?",
+      "prompt": "Java fundamentals discussion: explain what a constructor is, when it runs, and why a class might have more than one constructor.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: define constructor behavior and mention object initialization with `new`.",
+        "Java approach: contrast a no-argument constructor with an overloaded constructor that accepts initial state."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Static methods vs instance methods in Java",
+      "prompt": "Java fundamentals discussion: explain the difference between a static method and an instance method, including how each is called.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare class-level behavior against object-level behavior and note what each method can access.",
+        "Java approach: include a tiny example showing one static method call and one instance method call."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Purpose of public static void main",
+      "prompt": "Java fundamentals discussion: explain the purpose of the `public static void main(String[] args)` method in a Java program.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: explain each keyword and describe why the JVM starts execution there.",
+        "Java approach: mention command-line arguments and show a minimal runnable example."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Public methods vs private methods in Java",
+      "prompt": "Java fundamentals discussion: explain the difference between public and private methods and when you would choose each one.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare visibility from inside and outside the class.",
+        "Java approach: connect the answer to encapsulation and implementation hiding."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Public variables vs private variables in Java",
+      "prompt": "Java fundamentals discussion: explain the difference between public and private variables and why private fields are often preferred.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare direct external access with controlled access through methods.",
+        "Java approach: mention encapsulation and the ability to validate state changes."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Purpose of the this keyword in Java",
+      "prompt": "Java fundamentals discussion: explain what the `this` keyword refers to and when it is useful inside a class.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: explain that `this` refers to the current object and helps disambiguate field names.",
+        "Java approach: show a constructor or setter where a parameter name matches a field name."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "While loops vs for loops in Java",
+      "prompt": "Java fundamentals discussion: explain the difference between a `while` loop and a `for` loop and when each style is a good fit.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare known-iteration and condition-driven looping patterns.",
+        "Java approach: pair the explanation with one short example of each loop form."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Declare a floating-point variable",
+      "prompt": "Java fundamentals task: declare a floating-point variable named `x` and initialize it to `3.14`.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: declare and initialize the variable in one line using `double`.",
+        "Java approach: declare first, then assign the value on the next line."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Write a Java for-loop that prints ZipCode",
+      "prompt": "Java fundamentals task: write a `for` loop from 0 to 9 that prints the index together with the string `ZipCode`.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: use a counted `for` loop and print both values on each iteration.",
+        "Java approach: build the output line with string concatenation or formatted printing."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "What is the void type in Java?",
+      "prompt": "Java fundamentals discussion: explain what the `void` return type means and when a method should use it.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: explain that `void` means a method returns no value.",
+        "Java approach: compare a `void` method with one that returns data to the caller."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "What is the SELECT statement?",
+      "prompt": "SQL fundamentals discussion: explain what the `SELECT` statement does and show a simple example query.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: define `SELECT` as a way to read data and demonstrate `SELECT * FROM table_name;`.",
+        "SQL approach: explain how selecting specific columns differs from selecting every column."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Common clauses used with SELECT",
+      "prompt": "SQL fundamentals discussion: explain common clauses used with `SELECT`, including `WHERE`, `ORDER BY`, `GROUP BY`, and `HAVING`.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: define each clause briefly, then show one combined example query.",
+        "SQL approach: emphasize how filtering before grouping differs from filtering aggregated results."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Entities and relationships in databases",
+      "prompt": "SQL fundamentals discussion: explain what entities and relationships are in a database design context.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: define entities as things you store and relationships as the links between them.",
+        "SQL approach: use a small example such as students and courses to ground the explanation."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "Common database relationship types",
+      "prompt": "SQL fundamentals discussion: name common relationship types in relational databases and explain each one briefly.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: cover one-to-one, one-to-many, many-to-one, and self-referencing relationships.",
+        "SQL approach: tie each relationship type to a simple table example."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "What is a primary key?",
+      "prompt": "SQL fundamentals discussion: explain what a primary key is and why each table needs one reliable way to identify rows.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: explain uniqueness and non-null behavior, then show a short `CREATE TABLE` example.",
+        "SQL approach: compare a single-column primary key with a composite primary key."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "What is a foreign key?",
+      "prompt": "SQL fundamentals discussion: explain what a foreign key is and how it supports relationships between tables.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: define referential integrity and show a parent-child table example.",
+        "SQL approach: explain what column in one table points at the primary key of another table."
+      ],
+      "difficulty": 1
+    },
+    {
+      "title": "What is a query?",
+      "prompt": "SQL fundamentals discussion: explain what a query is and contrast a read query with a data-changing query.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: define a query as a request for data or a change to stored data.",
+        "SQL approach: compare a `SELECT` query with an `UPDATE` example."
+      ],
+      "difficulty": 1
+    },
+    {
       "difficulty": 2,
       "title": "Two Sum Variant",
       "prompt": "Implement Two Sum Variant in {language}. Target difficulty 2. Discuss runtime and edge cases.",
@@ -500,6 +788,270 @@
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
       ]
+    },
+    {
+      "title": "Sum values from a nullable Xaction array",
+      "prompt": "Java task: given an array of `Xaction` objects that may contain nulls, sum every non-null `Xaction.getValue()` result and print the total.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: scan the array once, skip null entries, and accumulate each value.",
+        "Java approach: extract a helper method that safely converts each array element into a numeric contribution."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Reverse an array of Xaction objects",
+      "prompt": "Java task: reverse an array of `Xaction` objects in place and explain how you handle the two-pointer swap logic.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: use left and right indexes and swap until they cross.",
+        "Java approach: create a reversed copy if interview constraints do not require an in-place solution."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "What are the four access modifiers in Java?",
+      "prompt": "Java discussion prompt: explain the four access modifiers in Java and describe where each one allows access.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: cover private, package-private, protected, and public from narrowest to widest visibility.",
+        "Java approach: use a same-class, same-package, subclass, and external-package comparison."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "What is inheritance in Java?",
+      "prompt": "Java discussion prompt: explain inheritance in Java, how the `extends` keyword works, and when inheritance is useful.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: describe a superclass-subclass relationship and show one small example.",
+        "Java approach: explain code reuse together with method overriding."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "What is polymorphism in Java?",
+      "prompt": "Java discussion prompt: explain polymorphism in Java and how overriding or overloading can appear in interview examples.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: describe one interface or superclass reference that can point to different concrete objects.",
+        "Java approach: contrast overriding with overloading so the interviewer can see both ideas clearly."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "What is an interface in Java?",
+      "prompt": "Java discussion prompt: explain what an interface is in Java and how it differs from a regular class.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: describe an interface as a contract for behavior and mention `implements`.",
+        "Java approach: compare shared behavior contracts against concrete stateful class implementations."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Purpose of encapsulation in Java",
+      "prompt": "Java discussion prompt: explain encapsulation and why hiding internal state can make code safer and easier to maintain.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: connect private fields with public methods that enforce invariants.",
+        "Java approach: discuss how encapsulation lets implementations change without breaking callers."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Purpose of the super keyword in Java",
+      "prompt": "Java discussion prompt: explain what the `super` keyword refers to and when you would use it in a subclass.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: show `super(...)` for constructor chaining and `super.methodName()` for inherited behavior.",
+        "Java approach: explain how `super` helps a subclass reuse part of a parent implementation."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "What is an exception in Java?",
+      "prompt": "Java discussion prompt: explain what an exception is in Java and outline how `try`, `catch`, and `finally` work together.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: define exceptions as runtime error signals and walk through a short `try/catch/finally` example.",
+        "Java approach: distinguish throwing an exception from handling one."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Checked vs unchecked exceptions in Java",
+      "prompt": "Java discussion prompt: explain the difference between checked and unchecked exceptions in Java and when each category appears.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare compiler-enforced handling with runtime exceptions.",
+        "Java approach: give one example of each kind and explain why the distinction matters."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Pass by value vs pass by reference in Java",
+      "prompt": "Java discussion prompt: explain whether Java is pass-by-value or pass-by-reference, and use both a primitive and an object example.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: explain that Java always passes values, including copied object references.",
+        "Java approach: contrast reassigning a parameter with mutating the object it points to."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Import vs static import in Java",
+      "prompt": "Java discussion prompt: explain the difference between a regular `import` and a `static import`, and show a brief example of each.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare importing types with importing static members.",
+        "Java approach: explain when static import improves readability and when it can make code harder to follow."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "What is an enum in Java?",
+      "prompt": "Java discussion prompt: explain what an `enum` is in Java and give an example of a good use case.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: describe enums as a fixed set of named constants.",
+        "Java approach: show how enums can also include fields or methods when needed."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "What is a JAR in Java?",
+      "prompt": "Java discussion prompt: explain what a JAR file is and why Java projects package code that way.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: define a JAR as a ZIP-based archive for classes and resources.",
+        "Java approach: mention portability, packaging, and executable application use cases."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "What is a NullPointerException?",
+      "prompt": "Java discussion prompt: explain what a `NullPointerException` is, how it happens, and how to reduce the chances of creating one.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: describe what happens when code dereferences a null reference.",
+        "Java approach: mention defensive initialization, validation, and null-safe design habits."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Explain exception types in Java",
+      "prompt": "Java discussion prompt: explain the main categories of exceptions in Java and give examples of checked and unchecked cases.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: classify exceptions by compiler enforcement and typical runtime behavior.",
+        "Java approach: use examples like file I/O for checked exceptions and invalid indexing for unchecked exceptions."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Two ways to handle exceptions in Java",
+      "prompt": "Java discussion prompt: show two different ways to handle exceptions in Java and explain when each approach is appropriate.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare handling with `try/catch` against declaring with `throws`.",
+        "Java approach: explain the tradeoff between immediate handling and letting callers decide."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "What are collections in Java?",
+      "prompt": "Java discussion prompt: explain what the Java Collections Framework is and name a collection class you would choose for a practical use case.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: define the framework and compare a few common interfaces or implementations.",
+        "Java approach: justify one favorite collection type based on ordering, lookup, or update needs."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Create a HashMap with object keys and URL values",
+      "prompt": "Java task: create a `HashMap` that uses an object as the key and a URL as the value, then explain any equality or hashing concerns.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: declare the map with generic types and add one or two example entries.",
+        "Java approach: explain why custom key classes should implement `equals()` and `hashCode()` consistently."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "What is a subquery and what are its types?",
+      "prompt": "SQL discussion prompt: explain what a subquery is and compare correlated and non-correlated subqueries.",
+      "languages": [
+        "SQL"
+      ],
+      "solutions": [
+        "SQL approach: define a nested query and explain how its result helps the outer query.",
+        "SQL approach: contrast a self-contained inner query with one that depends on the outer row context."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Compare abstract classes and interfaces",
+      "prompt": "Java discussion prompt: compare abstract classes and interfaces, and explain when you would prefer one over the other.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare shared state plus partial implementation against pure behavior contracts.",
+        "Java approach: answer with one scenario that favors inheritance and one that favors an interface."
+      ],
+      "difficulty": 2
+    },
+    {
+      "title": "Explain Map and HashMap in Java",
+      "prompt": "Java discussion prompt: explain what the `Map` interface represents and how `HashMap` behaves as one implementation.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: define key-value mapping behavior and explain why keys must compare consistently.",
+        "Java approach: mention ordering expectations, null handling, and average lookup performance."
+      ],
+      "difficulty": 2
     },
     {
       "difficulty": 3,
@@ -642,6 +1194,138 @@
       ]
     },
     {
+      "title": "What are the other modifiers in Java?",
+      "prompt": "Java discussion prompt: explain the purpose of modifiers such as `static`, `final`, `abstract`, `synchronized`, and `volatile`.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: define each modifier and explain the kind of code element it can modify.",
+        "Java approach: compare how some modifiers affect memory, inheritance, or concurrency."
+      ],
+      "difficulty": 3
+    },
+    {
+      "title": "JDK vs JRE vs JVM",
+      "prompt": "Java discussion prompt: explain the differences among the JDK, JRE, and JVM and how they relate to each other.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: describe the JVM as the runtime engine, the JRE as the runtime package, and the JDK as the developer toolkit.",
+        "Java approach: answer by following the flow from writing code to compiling and then running it."
+      ],
+      "difficulty": 3
+    },
+    {
+      "title": "Stack vs heap in Java",
+      "prompt": "Java discussion prompt: explain the difference between stack memory and heap memory in Java and what kinds of values live in each.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare method-local storage with dynamically allocated objects.",
+        "Java approach: mention recursion, object lifetime, and common errors like stack overflow or out-of-memory conditions."
+      ],
+      "difficulty": 3
+    },
+    {
+      "title": "Comparable vs Comparator in Java",
+      "prompt": "Java discussion prompt: explain the difference between `Comparable` and `Comparator` and when you would use each one.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare natural ordering built into a class with an external comparison strategy.",
+        "Java approach: mention how each integrates with sorting APIs or sorted collections."
+      ],
+      "difficulty": 3
+    },
+    {
+      "title": "Methods of the Object class",
+      "prompt": "Java discussion prompt: name important methods inherited from `Object` and explain what they are used for.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: cover methods like `equals`, `hashCode`, `toString`, and `getClass` first.",
+        "Java approach: mention which methods developers most often override in interview-style code."
+      ],
+      "difficulty": 3
+    },
+    {
+      "title": "Casting in Java and avoiding ClassCastException",
+      "prompt": "Java discussion prompt: explain upcasting and downcasting in Java, including how to avoid `ClassCastException`.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: contrast safe upcasting with risky downcasting and explain `instanceof` checks.",
+        "Java approach: use one small example that succeeds and one that would fail at runtime."
+      ],
+      "difficulty": 3
+    },
+    {
+      "title": "What is JIT in Java?",
+      "prompt": "Java discussion prompt: explain what JIT compilation is and how it can improve Java performance at runtime.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: define the just-in-time compiler and connect it to JVM execution.",
+        "Java approach: mention that runtime profiling can guide optimizations."
+      ],
+      "difficulty": 3
+    },
+    {
+      "title": "Purpose of the Serializable interface",
+      "prompt": "Java discussion prompt: explain what the `Serializable` interface is for and what serialization means in Java.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: define serialization as converting object state into bytes for storage or transfer.",
+        "Java approach: mention how class structure and superclass behavior affect serializability."
+      ],
+      "difficulty": 3
+    },
+    {
+      "title": "Is there a destructor in Java?",
+      "prompt": "Java discussion prompt: explain whether Java has destructors and how resource cleanup is usually handled instead.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: explain garbage collection and why explicit destructors are not part of the language.",
+        "Java approach: mention `try-with-resources` or explicit `close()` patterns for non-memory resources."
+      ],
+      "difficulty": 3
+    },
+    {
+      "title": "What is an abstract class in Java?",
+      "prompt": "Java discussion prompt: explain what an abstract class is, what an abstract method is, and why a team might use them.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: describe partial implementation plus required subclass behavior.",
+        "Java approach: contrast a concrete method in an abstract base class with an abstract method that subclasses must implement."
+      ],
+      "difficulty": 3
+    },
+    {
+      "title": "Build a HashMap from scratch",
+      "prompt": "Java design prompt: describe how you would build a `HashMap` from scratch, including hashing, buckets, collisions, and lookup behavior.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: start with an array of buckets, then explain hashing and collision resolution.",
+        "Java approach: discuss tradeoffs such as resizing, load factor, and worst-case lookup behavior."
+      ],
+      "difficulty": 3
+    },
+    {
       "difficulty": 4,
       "title": "Two Sum Variant",
       "prompt": "Implement Two Sum Variant in {language}. Target difficulty 4. Discuss runtime and edge cases.",
@@ -780,6 +1464,66 @@
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
       ]
+    },
+    {
+      "title": "Why is String immutable in Java?",
+      "prompt": "Java discussion prompt: explain why `String` is immutable in Java and what benefits that design choice provides.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: discuss safety in hashing, sharing, threading, and security-sensitive contexts.",
+        "Java approach: contrast immutable strings with mutable alternatives such as `StringBuilder`."
+      ],
+      "difficulty": 4
+    },
+    {
+      "title": "Dynamic binding vs static binding in Java",
+      "prompt": "Java discussion prompt: explain the difference between dynamic binding and static binding in Java and when each occurs.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: connect static binding to compile-time resolution and dynamic binding to runtime dispatch.",
+        "Java approach: use an overload versus override example to illustrate the distinction."
+      ],
+      "difficulty": 4
+    },
+    {
+      "title": "What is reflection in Java?",
+      "prompt": "Java discussion prompt: explain what reflection is in Java, what it can inspect at runtime, and why teams use it carefully.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: describe runtime inspection of fields, methods, and constructors through the reflection APIs.",
+        "Java approach: mention flexibility together with readability, performance, and security tradeoffs."
+      ],
+      "difficulty": 4
+    },
+    {
+      "title": "What is a classloader in Java?",
+      "prompt": "Java discussion prompt: explain what a classloader does in Java and name the common categories of classloaders.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: describe how classes are loaded into the JVM on demand.",
+        "Java approach: mention bootstrap, extension/platform, and system/application classloaders."
+      ],
+      "difficulty": 4
+    },
+    {
+      "title": "Static class loading vs dynamic class loading",
+      "prompt": "Java discussion prompt: compare static class loading with dynamic class loading and explain when `Class.forName(...)` becomes relevant.",
+      "languages": [
+        "Java"
+      ],
+      "solutions": [
+        "Java approach: compare compile-time known types with runtime-resolved types.",
+        "Java approach: use plugin or driver loading as a concrete example of dynamic loading."
+      ],
+      "difficulty": 4
     },
     {
       "difficulty": 5,

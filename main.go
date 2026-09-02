@@ -76,6 +76,7 @@ type ExpandedProblem struct {
 var supportedLanguages = map[string]struct{}{
 	"Java":   {},
 	"Python": {},
+	"SQL":    {},
 }
 
 func main() {
@@ -150,10 +151,66 @@ func openAndInitDB(dbPath, catalogPath string) (*sql.DB, error) {
 }
 
 func initSchema(db *sql.DB) error {
-	schema := `
+	if _, err := db.Exec(`
+CREATE TABLE IF NOT EXISTS app_meta (
+	key TEXT PRIMARY KEY,
+	value TEXT NOT NULL
+);
+`); err != nil {
+		return err
+	}
+
+	if err := ensureCatalogTables(db); err != nil {
+		return err
+	}
+
+	_, err := db.Exec(`
+CREATE INDEX IF NOT EXISTS idx_problems_language_difficulty ON problems(language, difficulty);
+CREATE INDEX IF NOT EXISTS idx_problem_solutions_problem_id ON problem_solutions(problem_id);
+`)
+	return err
+}
+
+func ensureCatalogTables(db *sql.DB) error {
+	var existingProblemsSQL string
+	err := db.QueryRow("SELECT sql FROM sqlite_master WHERE type = 'table' AND name = 'problems'").Scan(&existingProblemsSQL)
+	if err != nil && !errors.Is(err, sql.ErrNoRows) {
+		return err
+	}
+
+	if errors.Is(err, sql.ErrNoRows) {
+		_, err = db.Exec(catalogTablesSchema)
+		return err
+	}
+
+	if strings.Contains(existingProblemsSQL, "'SQL'") {
+		_, err = db.Exec(catalogTablesSchema)
+		return err
+	}
+
+	tx, err := db.Begin()
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback()
+
+	if _, err := tx.Exec("DROP TABLE IF EXISTS problem_solutions"); err != nil {
+		return err
+	}
+	if _, err := tx.Exec("DROP TABLE IF EXISTS problems"); err != nil {
+		return err
+	}
+	if _, err := tx.Exec(catalogTablesSchema); err != nil {
+		return err
+	}
+
+	return tx.Commit()
+}
+
+const catalogTablesSchema = `
 CREATE TABLE IF NOT EXISTS problems (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
-	language TEXT NOT NULL CHECK(language IN ('Java', 'Python')),
+	language TEXT NOT NULL CHECK(language IN ('Java', 'Python', 'SQL')),
 	difficulty INTEGER NOT NULL CHECK(difficulty BETWEEN 1 AND 5),
 	title TEXT NOT NULL,
 	prompt TEXT NOT NULL
@@ -166,18 +223,7 @@ CREATE TABLE IF NOT EXISTS problem_solutions (
 	solution TEXT NOT NULL,
 	FOREIGN KEY(problem_id) REFERENCES problems(id) ON DELETE CASCADE
 );
-
-CREATE TABLE IF NOT EXISTS app_meta (
-	key TEXT PRIMARY KEY,
-	value TEXT NOT NULL
-);
-
-CREATE INDEX IF NOT EXISTS idx_problems_language_difficulty ON problems(language, difficulty);
-CREATE INDEX IF NOT EXISTS idx_problem_solutions_problem_id ON problem_solutions(problem_id);
 `
-	_, err := db.Exec(schema)
-	return err
-}
 
 func migrateCatalog(db *sql.DB, catalogPath string) error {
 	catalog, raw, err := loadCatalog(catalogPath)
@@ -580,6 +626,7 @@ const templates = `
             <select class="form-select" name="language">
               <option value="Java" {{if eq .Language "Java"}}selected{{end}}>Java</option>
               <option value="Python" {{if eq .Language "Python"}}selected{{end}}>Python</option>
+              <option value="SQL" {{if eq .Language "SQL"}}selected{{end}}>SQL</option>
             </select>
           </div>
           <div class="col-md-4">
