@@ -530,6 +530,11 @@ func TestSelectedProblemUsesClickToRevealFirstHint(t *testing.T) {
 		!strings.Contains(body, "revealActualSolutionAfterDelay(this") {
 		t.Fatalf("expected disabled actual-solution button with auto-unlock in selected problem response, got: %s", body)
 	}
+	if !strings.Contains(body, `aria-describedby="actual-solution-status-`) ||
+		!strings.Contains(body, `id="actual-solution-status-`) ||
+		!strings.Contains(body, "Actual solution available in 60 seconds.") {
+		t.Fatalf("expected accessible status text for actual-solution button unlock timing, got: %s", body)
+	}
 	if strings.Index(body, "Show first hint") > strings.Index(body, "Show actual solution (available in 60s)") {
 		t.Fatalf("expected actual-solution button to render below hint button area, got: %s", body)
 	}

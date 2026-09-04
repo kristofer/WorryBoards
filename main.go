@@ -825,19 +825,30 @@ const templates = `
       if (!button || button.dataset.timerStarted === "true") {
         return;
       }
+      const statusId = button.getAttribute("aria-describedby");
+      const status = statusId ? document.getElementById(statusId) : null;
       button.dataset.timerStarted = "true";
       button.disabled = true;
       let remaining = delaySeconds;
       button.textContent = "Show actual solution (available in " + remaining + "s)";
+      if (status) {
+        status.textContent = "Actual solution available in " + remaining + " seconds.";
+      }
       const timer = setInterval(function () {
         remaining -= 1;
         if (remaining <= 0) {
           clearInterval(timer);
           button.disabled = false;
           button.textContent = "Show actual solution";
+          if (status) {
+            status.textContent = "Actual solution is now available.";
+          }
           return;
         }
         button.textContent = "Show actual solution (available in " + remaining + "s)";
+        if (status) {
+          status.textContent = "Actual solution available in " + remaining + " seconds.";
+        }
       }, 1000);
     }
     function revealActualSolutionAfterDelay(button, url, targetId) {
@@ -849,10 +860,15 @@ const templates = `
       }
       const originalLabel = "Show actual solution";
       const target = document.getElementById(targetId);
+      const statusId = button.getAttribute("aria-describedby");
+      const status = statusId ? document.getElementById(statusId) : null;
       button.dataset.pending = "true";
       button.disabled = true;
       if (target) {
         target.setAttribute("aria-busy", "true");
+      }
+      if (status) {
+        status.textContent = "Loading actual solution.";
       }
       fetch(url)
         .then(function (response) {
@@ -867,6 +883,9 @@ const templates = `
             target.setAttribute("aria-busy", "false");
           }
           button.textContent = "Actual solution shown";
+          if (status) {
+            status.textContent = "Actual solution shown.";
+          }
         })
         .catch(function () {
           button.dataset.pending = "false";
@@ -874,6 +893,9 @@ const templates = `
           button.textContent = originalLabel;
           if (target) {
             target.setAttribute("aria-busy", "false");
+          }
+          if (status) {
+            status.textContent = "Failed to load actual solution. Please try again.";
           }
         });
     }
@@ -925,7 +947,9 @@ const templates = `
           class="btn btn-outline-warning btn-sm"
           type="button"
           disabled
+          aria-describedby="actual-solution-status-{{.Problem.ID}}"
           onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution", "actual-solution-{{.Problem.ID}}")'>Show actual solution (available in 60s)</button>
+  <span id="actual-solution-status-{{.Problem.ID}}" class="visually-hidden" aria-live="polite">Actual solution available in 60 seconds.</span>
 </div>
 <div id="actual-solution-{{.Problem.ID}}" class="mt-3" aria-live="polite" aria-busy="false"></div>
 <script>
