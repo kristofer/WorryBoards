@@ -975,7 +975,7 @@ const templates = `
           disabled
           data-unlock-seconds="60"
           aria-describedby="actual-solution-status-{{.Problem.ID}}"
-          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution?language={{.Problem.Language | urlquery}}", "actual-solution-{{.Problem.ID}}")'>Show actual solution (available in 60s)</button>
+          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution", "actual-solution-{{.Problem.ID}}")'>Show actual solution (available in 60s)</button>
   <span id="actual-solution-status-{{.Problem.ID}}" class="visually-hidden" aria-live="polite">Actual solution available in 60 seconds.</span>
 </div>
 <div id="actual-solution-{{.Problem.ID}}" class="mt-3" aria-live="polite" aria-busy="false"></div>
