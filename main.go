@@ -562,12 +562,12 @@ ORDER BY solution_order ASC`, problemID)
 	return result, rows.Err()
 }
 
-func getProblemPotentialSolutions(db *sql.DB, problemID int, language string) ([]PotentialSolution, error) {
+func getProblemPotentialSolutions(db *sql.DB, problemID int) ([]PotentialSolution, error) {
 	rows, err := db.Query(`
 SELECT language, solution
 FROM problem_potential_solutions
-WHERE problem_id = ? AND language = ?
-ORDER BY CASE language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID, language)
+WHERE problem_id = ? AND language = (SELECT language FROM problems WHERE id = ?)
+ORDER BY CASE language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID, problemID)
 	if err != nil {
 		return nil, err
 	}
@@ -722,17 +722,7 @@ func (a *App) handleProblemSolutions(w http.ResponseWriter, r *http.Request, id 
 }
 
 func (a *App) handleProblemActualSolutions(w http.ResponseWriter, r *http.Request, id int) {
-	problem, err := getProblemByID(a.db, id)
-	if err != nil {
-		if errors.Is(err, sql.ErrNoRows) {
-			http.NotFound(w, r)
-			return
-		}
-		http.Error(w, "failed to load problem", http.StatusInternalServerError)
-		return
-	}
-
-	solutions, err := getProblemPotentialSolutions(a.db, id, problem.Language)
+	solutions, err := getProblemPotentialSolutions(a.db, id)
 	if err != nil {
 		http.Error(w, "failed to load potential solutions", http.StatusInternalServerError)
 		return
