@@ -177,6 +177,37 @@ GROUP BY p.id, p.language`)
 	}
 }
 
+func TestCatalogPotentialSolutionsContainCodeSnippets(t *testing.T) {
+	b, err := os.ReadFile(catalogPathForTest(t))
+	if err != nil {
+		t.Fatalf("read catalog: %v", err)
+	}
+
+	var catalog Catalog
+	if err := json.Unmarshal(b, &catalog); err != nil {
+		t.Fatalf("unmarshal catalog: %v", err)
+	}
+
+	for _, q := range catalog.Questions {
+		if len(q.Languages) == 1 && q.Languages[0] == "SQL" {
+			sqlSnippet := q.PotentialSolutions["SQL"]
+			if !strings.Contains(sqlSnippet, "SELECT") || !strings.Contains(sqlSnippet, "\n") {
+				t.Fatalf("expected SQL code snippet for %q, got: %s", q.Title, sqlSnippet)
+			}
+			continue
+		}
+
+		javaSnippet := q.PotentialSolutions["Java"]
+		pythonSnippet := q.PotentialSolutions["Python"]
+		if !strings.Contains(javaSnippet, "public class Solution") || !strings.Contains(javaSnippet, "\n") {
+			t.Fatalf("expected Java code snippet for %q, got: %s", q.Title, javaSnippet)
+		}
+		if !strings.Contains(pythonSnippet, "def solve():") || !strings.Contains(pythonSnippet, "\n") {
+			t.Fatalf("expected Python code snippet for %q, got: %s", q.Title, pythonSnippet)
+		}
+	}
+}
+
 func TestGetProblemsRespectsFiltersAndLimit(t *testing.T) {
 	db := setupTestDB(t)
 
@@ -546,8 +577,11 @@ func TestProblemPotentialSolutionsShowsJavaAndPythonForNonSQL(t *testing.T) {
 	if !strings.Contains(strings.ToLower(body), "actual solution") {
 		t.Fatalf("expected actual solution heading, got: %s", body)
 	}
-	if !strings.Contains(body, "Java potential solution:") || !strings.Contains(body, "Python potential solution:") {
-		t.Fatalf("expected language-specific potential solution text, got: %s", body)
+	if !strings.Contains(body, "<pre") || !strings.Contains(body, "<code>") {
+		t.Fatalf("expected code formatting in rendered actual solutions, got: %s", body)
+	}
+	if !strings.Contains(body, "public class Solution") || !strings.Contains(body, "def solve():") {
+		t.Fatalf("expected language-specific code snippets in response, got: %s", body)
 	}
 }
 
@@ -568,6 +602,9 @@ func TestProblemPotentialSolutionsShowsSQLForSQLProblem(t *testing.T) {
 	}
 	if strings.Contains(body, ">Java<") || strings.Contains(body, ">Python<") {
 		t.Fatalf("did not expect Java/Python labels for SQL problem, got: %s", body)
+	}
+	if !strings.Contains(body, "<pre") || !strings.Contains(body, "<code>") || !strings.Contains(body, "SELECT") {
+		t.Fatalf("expected SQL code snippet formatting and content, got: %s", body)
 	}
 }
 

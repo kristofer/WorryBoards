@@ -13,8 +13,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Print numbers 1 to 10\n        // Prompt: Print the integers from 1 through 10, one per line. Example output: 1 2 3 ... 10. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Print numbers 1 to 10\n    # Prompt: Print the integers from 1 through 10, one per line. Example output: 1 2 3 ... 10. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -30,8 +30,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Print even numbers from 2 to 20\n        // Prompt: Print only even numbers from 2 through 20 in ascending order. Example output: 2 4 6 8 10 12 14 16 18 20. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Print even numbers from 2 to 20\n    # Prompt: Print only even numbers from 2 through 20 in ascending order. Example output: 2 4 6 8 10 12 14 16 18 20. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -47,8 +47,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Sum numbers 1 to 100\n        // Prompt: Compute the sum of integers from 1 through 100 and print the final number. Example output: 5050. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Sum numbers 1 to 100\n    # Prompt: Compute the sum of integers from 1 through 100 and print the final number. Example output: 5050. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -64,8 +64,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Countdown timer\n        // Prompt: Print a countdown from 10 to 1 and then print 'Liftoff'. Example output: 10 9 ... 1 Liftoff. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Countdown timer\n    # Prompt: Print a countdown from 10 to 1 and then print 'Liftoff'. Example output: 10 9 ... 1 Liftoff. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -81,8 +81,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Multiplication table (single number)\n        // Prompt: Given n=7, print the multiplication table from 1 to 10. Example lines: 7 x 1 = 7 and 7 x 10 = 70. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Multiplication table (single number)\n    # Prompt: Given n=7, print the multiplication table from 1 to 10. Example lines: 7 x 1 = 7 and 7 x 10 = 70. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -98,8 +98,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Basic string analysis\n        // Prompt: Given text='Alphabetical', print its length, vowel count, and consonant count. Example output: length: 12 vowels: 5 consonants: 7. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Basic string analysis\n    # Prompt: Given text='Alphabetical', print its length, vowel count, and consonant count. Example output: length: 12 vowels: 5 consonants: 7. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -115,8 +115,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Reverse a word (without slicing shortcuts)\n        // Prompt: Given word='straw', reverse it using loops (no slicing shortcuts) and print the result. Example output: warts. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Reverse a word (without slicing shortcuts)\n    # Prompt: Given word='straw', reverse it using loops (no slicing shortcuts) and print the result. Example output: warts. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -132,8 +132,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Count vowels in a sentence\n        // Prompt: Given sentence='We code every day', count vowels (a,e,i,o,u) and print the total. Example output: vowels: 6. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Count vowels in a sentence\n    # Prompt: Given sentence='We code every day', count vowels (a,e,i,o,u) and print the total. Example output: vowels: 6. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -149,8 +149,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Write a function: letter frequency dictionary\n        // Prompt: Write a function that returns a letter-frequency dictionary. Example: call the function with 'mississippi' and print m: 1, i: 4, s: 4, p: 2. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Write a function: letter frequency dictionary\n    # Prompt: Write a function that returns a letter-frequency dictionary. Example: call the function with 'mississippi' and print m: 1, i: 4, s: 4, p: 2. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -166,8 +166,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Find the largest number in a list\n        // Prompt: Given numbers=[3, 18, 5, 11], find and print the largest value. Example output: 18. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Find the largest number in a list\n    # Prompt: Given numbers=[3, 18, 5, 11], find and print the largest value. Example output: 18. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -183,8 +183,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Filter positive numbers (list comprehension)\n        // Prompt: Given numbers=[-2, 0, 7, -1, 5], return only positive values using list comprehension. Example output: [7, 5]. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Filter positive numbers (list comprehension)\n    # Prompt: Given numbers=[-2, 0, 7, -1, 5], return only positive values using list comprehension. Example output: [7, 5]. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -200,8 +200,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Square numbers (list comprehension)\n        // Prompt: Given numbers=[1, 2, 3, 4], return a list of squares using list comprehension. Example output: [1, 4, 9, 16]. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Square numbers (list comprehension)\n    # Prompt: Given numbers=[1, 2, 3, 4], return a list of squares using list comprehension. Example output: [1, 4, 9, 16]. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -217,8 +217,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Basic dictionary practice\n        // Prompt: Create a dictionary for a student with name and score, then print score by key lookup. Example output: score: 92. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Basic dictionary practice\n    # Prompt: Create a dictionary for a student with name and score, then print score by key lookup. Example output: score: 92. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -234,8 +234,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Simple while input loop\n        // Prompt: Read integers until the user enters 0, then print their sum. Example input: 4 6 -2 0; example output: sum: 8. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Simple while input loop\n    # Prompt: Read integers until the user enters 0, then print their sum. Example input: 4 6 -2 0; example output: sum: 8. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -251,8 +251,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: FizzBuzz (classic fundamentals)\n        // Prompt: Print numbers 1 to 20, replacing multiples of 3 with Fizz, 5 with Buzz, and both with FizzBuzz. Example output includes: 1 2 Fizz 4 Buzz ... 14 FizzBuzz ... 20. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: FizzBuzz (classic fundamentals)\n    # Prompt: Print numbers 1 to 20, replacing multiples of 3 with Fizz, 5 with Buzz, and both with FizzBuzz. Example output includes: 1 2 Fizz 4 Buzz ... 14 FizzBuzz ... 20. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -268,8 +268,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Print numbers 1 to N\n        // Prompt: Given N=5, print numbers from 1 to N in order. Example output: 1 2 3 4 5. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Print numbers 1 to N\n    # Prompt: Given N=5, print numbers from 1 to N in order. Example output: 1 2 3 4 5. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -285,8 +285,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Print odd numbers in range\n        // Prompt: Given start=3 and end=11, print odd numbers in that range. Example output: 3 5 7 9 11. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Print odd numbers in range\n    # Prompt: Given start=3 and end=11, print odd numbers in that range. Example output: 3 5 7 9 11. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -302,8 +302,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Sum only even numbers 1 to 100\n        // Prompt: Sum only the even integers from 1 through 100 and print the result. Example output: 2550. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Sum only even numbers 1 to 100\n    # Prompt: Sum only the even integers from 1 through 100 and print the result. Example output: 2550. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -319,8 +319,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Countdown timer from N\n        // Prompt: Given N=5, print a countdown to 1 and then 'Done'. Example output: 5 4 3 2 1 Done. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Countdown timer from N\n    # Prompt: Given N=5, print a countdown to 1 and then 'Done'. Example output: 5 4 3 2 1 Done. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -336,8 +336,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Multiplication table (formatted output)\n        // Prompt: Given n=4, print a formatted table line by line from 1..10. Example lines: 4 x 3 = 12 and 4 x 10 = 40. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Multiplication table (formatted output)\n    # Prompt: Given n=4, print a formatted table line by line from 1..10. Example lines: 4 x 3 = 12 and 4 x 10 = 40. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -353,8 +353,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: String palindrome check (loop-based)\n        // Prompt: Given word='level', check with a loop whether it is a palindrome. Example output: true. For 'apple', output: false. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: String palindrome check (loop-based)\n    # Prompt: Given word='level', check with a loop whether it is a palindrome. Example output: true. For 'apple', output: false. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -370,8 +370,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Reverse sentence words using loops\n        // Prompt: Given sentence='we love coding', reverse word order using loops. Example output: coding love we. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Reverse sentence words using loops\n    # Prompt: Given sentence='we love coding', reverse word order using loops. Example output: coding love we. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -387,8 +387,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Count vowels and consonants\n        // Prompt: Given a word like 'alphabetical', count vowels and consonants and print both totals. Example output: vowels: 5 consonants: 7. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Count vowels and consonants\n    # Prompt: Given a word like 'alphabetical', count vowels and consonants and print both totals. Example output: vowels: 5 consonants: 7. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -404,8 +404,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Letter frequency top character\n        // Prompt: Given text='mississippi', build letter counts and print the most frequent character. Example output: s: 4. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Letter frequency top character\n    # Prompt: Given text='mississippi', build letter counts and print the most frequent character. Example output: s: 4. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -421,8 +421,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Find second largest number in a list\n        // Prompt: Given numbers=[9, 2, 8, 6], find the second largest unique number. Example output: 8. Write your answer in {language}.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Find second largest number in a list\n    # Prompt: Given numbers=[9, 2, 8, 6], find the second largest unique number. Example output: 8. Write your answer in {language}.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -437,8 +437,8 @@
         "Python approach: build a new list with a loop so the interviewer can see the indexing logic."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Drop the first item from a list\n        // Prompt: Write a function that returns a new list without the first item. Example input: [10, 20, 30]; example output: [20, 30]. For [] return []. Write your answer in Python.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Drop the first item from a list\n    # Prompt: Write a function that returns a new list without the first item. Example input: [10, 20, 30]; example output: [20, 30]. For [] return []. Write your answer in Python.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -453,8 +453,8 @@
         "Python approach: compute the stop index explicitly, then copy values into a new list."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Drop the last two items from a list\n        // Prompt: Write a function that removes the last two items from a list. Example input: [1,2,3,4,5]; example output: [1,2,3]. If length < 2, return an empty list. Write your answer in Python.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Drop the last two items from a list\n    # Prompt: Write a function that removes the last two items from a list. Example input: [1,2,3,4,5]; example output: [1,2,3]. If length < 2, return an empty list. Write your answer in Python.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -469,8 +469,8 @@
         "Python approach: start with a copy of the first list, then append items from the second list in a loop."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Concatenate two lists\n        // Prompt: Write a function that combines two lists in order. Example input: [1,2] and [3,4]; example output: [1,2,3,4]. Write your answer in Python.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Concatenate two lists\n    # Prompt: Write a function that combines two lists in order. Example input: [1,2] and [3,4]; example output: [1,2,3,4]. Write your answer in Python.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -485,8 +485,8 @@
         "Java approach: extract the summing logic into a helper method, then print the returned total."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Sum integers from 7 to 23\n        // Prompt: Compute and print the sum of all integers from 7 through 23 inclusive. Example output: 255. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Sum integers from 7 to 23\n    # Prompt: Compute and print the sum of all integers from 7 through 23 inclusive. Example output: 255. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -501,8 +501,8 @@
         "Java approach: wrap the scan in a helper method that returns the minimum value."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Find the smallest integer in an array\n        // Prompt: Given [9, 5, 6, 3, 8, 2, 4], find and print the smallest integer. Example output: 2. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Find the smallest integer in an array\n    # Prompt: Given [9, 5, 6, 3, 8, 2, 4], find and print the smallest integer. Example output: 2. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -517,8 +517,8 @@
         "Java approach: pair the explanation with a tiny class that shows one field and one method-local variable."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Explain local variables vs instance variables\n        // Prompt: Explain local vs instance variables, then show one short code example of each. Example result: local exists only inside a method; instance belongs to each object. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Explain local variables vs instance variables\n    # Prompt: Explain local vs instance variables, then show one short code example of each. Example result: local exists only inside a method; instance belongs to each object. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -533,8 +533,8 @@
         "Java approach: compare a package-private class with a public class to explain the extra filename rule."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Write the shortest Java class\n        // Prompt: Write the shortest valid Java class and explain why it compiles. Example result: class A {} compiles because it defines a legal class declaration. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Write the shortest Java class\n    # Prompt: Write the shortest valid Java class and explain why it compiles. Example result: class A {} compiles because it defines a legal class declaration. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -549,8 +549,8 @@
         "Java approach: explain what the reference stores after object creation."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Create an object of type Foo\n        // Prompt: Given a class Foo, create a new Foo object and store it in a variable. Example result: Foo f = new Foo(); Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Create an object of type Foo\n    # Prompt: Given a class Foo, create a new Foo object and store it in a variable. Example result: Foo f = new Foo(); Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -565,8 +565,8 @@
         "Java approach: organize the answer as a short definition followed by a concise feature list."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is Java and what are its key features?\n        // Prompt: Explain what Java is and list key features such as platform independence and object orientation. Example result includes: 'Java runs on the JVM and uses bytecode for portability.' Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is Java and what are its key features?\n    # Prompt: Explain what Java is and list key features such as platform independence and object orientation. Example result includes: 'Java runs on the JVM and uses bytecode for portability.' Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -581,8 +581,8 @@
         "Java approach: use a tiny example class and one created instance to illustrate the distinction."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Difference between a class and an object in Java\n        // Prompt: Explain class vs object and give a tiny example. Example result: 'Car is a class, myCar is an object created from Car.' Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Difference between a class and an object in Java\n    # Prompt: Explain class vs object and give a tiny example. Example result: 'Car is a class, myCar is an object created from Car.' Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -597,8 +597,8 @@
         "Java approach: contrast a no-argument constructor with an overloaded constructor that accepts initial state."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is a constructor in Java?\n        // Prompt: Explain what a constructor is, when it runs, and why overloaded constructors are useful. Example result includes: 'A constructor runs during new Person(...)'. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is a constructor in Java?\n    # Prompt: Explain what a constructor is, when it runs, and why overloaded constructors are useful. Example result includes: 'A constructor runs during new Person(...)'. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -613,8 +613,8 @@
         "Java approach: include a tiny example showing one static method call and one instance method call."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Static methods vs instance methods in Java\n        // Prompt: Explain static vs instance methods and show one call style for each. Example result: Math.max(...) is static; obj.printName() is instance. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Static methods vs instance methods in Java\n    # Prompt: Explain static vs instance methods and show one call style for each. Example result: Math.max(...) is static; obj.printName() is instance. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -629,8 +629,8 @@
         "Java approach: mention command-line arguments and show a minimal runnable example."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Purpose of public static void main\n        // Prompt: Explain the role of public static void main(String[] args) as the Java entry point. Example result includes: 'The JVM calls main to start program execution.' Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Purpose of public static void main\n    # Prompt: Explain the role of public static void main(String[] args) as the Java entry point. Example result includes: 'The JVM calls main to start program execution.' Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -645,8 +645,8 @@
         "Java approach: connect the answer to encapsulation and implementation hiding."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Public methods vs private methods in Java\n        // Prompt: Explain when to use public vs private methods. Example result: public methods define API, private methods hide internal helpers. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Public methods vs private methods in Java\n    # Prompt: Explain when to use public vs private methods. Example result: public methods define API, private methods hide internal helpers. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -661,8 +661,8 @@
         "Java approach: mention encapsulation and the ability to validate state changes."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Public variables vs private variables in Java\n        // Prompt: Explain public vs private fields and why private fields plus getters/setters are common. Example result includes encapsulation benefits. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Public variables vs private variables in Java\n    # Prompt: Explain public vs private fields and why private fields plus getters/setters are common. Example result includes encapsulation benefits. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -677,8 +677,8 @@
         "Java approach: show a constructor or setter where a parameter name matches a field name."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Purpose of the this keyword in Java\n        // Prompt: Explain what this refers to and when it disambiguates fields from parameters. Example result: this.name = name. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Purpose of the this keyword in Java\n    # Prompt: Explain what this refers to and when it disambiguates fields from parameters. Example result: this.name = name. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -693,8 +693,8 @@
         "Java approach: pair the explanation with one short example of each loop form."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: While loops vs for loops in Java\n        // Prompt: Compare while and for loops and give one scenario for each. Example result: for for known counts, while for condition-driven loops. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: While loops vs for loops in Java\n    # Prompt: Compare while and for loops and give one scenario for each. Example result: for for known counts, while for condition-driven loops. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -709,8 +709,8 @@
         "Java approach: declare first, then assign the value on the next line."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Declare a floating-point variable\n        // Prompt: Declare a floating-point variable named x initialized to 3.14. Example result: double x = 3.14; Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Declare a floating-point variable\n    # Prompt: Declare a floating-point variable named x initialized to 3.14. Example result: double x = 3.14; Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -725,8 +725,8 @@
         "Java approach: build the output line with string concatenation or formatted printing."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Write a Java for-loop that prints ZipCode\n        // Prompt: Write a for loop from 0 to 9 that prints index and 'ZipCode'. Example output line: 0 ZipCode. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Write a Java for-loop that prints ZipCode\n    # Prompt: Write a for loop from 0 to 9 that prints index and 'ZipCode'. Example output line: 0 ZipCode. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -741,8 +741,8 @@
         "Java approach: compare a `void` method with one that returns data to the caller."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is the void type in Java?\n        // Prompt: Explain what void means as a return type and when to use it. Example result: methods that only print or mutate state often return void. Write your answer in Java.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is the void type in Java?\n    # Prompt: Explain what void means as a return type and when to use it. Example result: methods that only print or mutate state often return void. Write your answer in Java.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -757,7 +757,7 @@
         "SQL approach: explain how selecting specific columns differs from selecting every column."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: What is the SELECT statement?\n-- Prompt: Explain what SELECT does in SQL and show a basic query. Example query: SELECT name FROM users; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -772,7 +772,7 @@
         "SQL approach: emphasize how filtering before grouping differs from filtering aggregated results."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Common clauses used with SELECT\n-- Prompt: Explain WHERE, ORDER BY, GROUP BY, and HAVING with one short query example. Example: SELECT dept, COUNT(*) FROM employees GROUP BY dept HAVING COUNT(*) > 5; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -787,7 +787,7 @@
         "SQL approach: use a small example such as students and courses to ground the explanation."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Entities and relationships in databases\n-- Prompt: Explain entities and relationships in database design. Example result: Student and Course are entities linked by Enrollment. Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -802,7 +802,7 @@
         "SQL approach: tie each relationship type to a simple table example."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Common database relationship types\n-- Prompt: Describe one-to-one, one-to-many, and many-to-many with examples. Example result: one Author can have many Books. Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -817,7 +817,7 @@
         "SQL approach: compare a single-column primary key with a composite primary key."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: What is a primary key?\n-- Prompt: Explain what a primary key is and why it must uniquely identify rows. Example: id INT PRIMARY KEY. Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -832,7 +832,7 @@
         "SQL approach: explain what column in one table points at the primary key of another table."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: What is a foreign key?\n-- Prompt: Explain what a foreign key is and how it links tables. Example: orders.customer_id references customers.id. Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -847,7 +847,7 @@
         "SQL approach: compare a `SELECT` query with an `UPDATE` example."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: What is a query?\n-- Prompt: Explain what a query is and contrast read vs data-changing queries. Example read: SELECT * FROM products; example write: UPDATE products SET price=10 WHERE id=1; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -862,7 +862,7 @@
         "SQL approach: contrast filtering numeric ranges with filtering exact text matches."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: What does the WHERE clause do?\n-- Prompt: Explain how WHERE filters rows before returning results. Example: SELECT * FROM orders WHERE total > 100; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -877,7 +877,7 @@
         "SQL approach: show how ordering affects only presentation, not stored table order."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Sort rows with ORDER BY\n-- Prompt: Write a query that sorts by last_name ascending and created_at descending. Example: SELECT * FROM users ORDER BY last_name ASC, created_at DESC; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -892,7 +892,7 @@
         "SQL approach: pair `ORDER BY` with `LIMIT` to make the first rows deterministic."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Limit result size with LIMIT\n-- Prompt: Write a query that returns only the first 10 rows. Example: SELECT * FROM logs ORDER BY created_at DESC LIMIT 10; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -907,7 +907,7 @@
         "SQL approach: compare `DISTINCT` results with a regular `SELECT` that includes duplicates."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Remove duplicates with DISTINCT\n-- Prompt: Explain DISTINCT and show how it removes duplicates. Example: SELECT DISTINCT city FROM customers; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -922,7 +922,7 @@
         "SQL approach: mention that table aliases can also shorten join queries."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Rename columns with aliases\n-- Prompt: Write a query that renames output columns with aliases. Example: SELECT first_name AS first, last_name AS last FROM users; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -937,7 +937,7 @@
         "SQL approach: compare `IN` with multiple `OR` conditions."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Filter with IN\n-- Prompt: Write a query using IN to match a small set of values. Example: SELECT * FROM orders WHERE status IN ('new','paid'); Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -952,7 +952,7 @@
         "SQL approach: compare `BETWEEN` with equivalent `>=` and `<=` conditions."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Filter with BETWEEN\n-- Prompt: Write a query using BETWEEN for a range. Example: SELECT * FROM events WHERE event_date BETWEEN '2026-01-01' AND '2026-01-31'; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -967,7 +967,7 @@
         "SQL approach: explain `%` and `_` pattern characters with one short example each."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Search text with LIKE\n-- Prompt: Write a query using LIKE to match a prefix. Example: SELECT * FROM users WHERE email LIKE 'sam%'; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -982,7 +982,7 @@
         "SQL approach: demonstrate correct predicates using `IS NULL` and `IS NOT NULL`."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Understand NULL and IS NULL\n-- Prompt: Explain NULL and how IS NULL / IS NOT NULL are used. Example: SELECT * FROM tasks WHERE completed_at IS NULL; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -997,7 +997,7 @@
         "SQL approach: explain how null values affect aggregate counts."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Count rows with COUNT\n-- Prompt: Write one query that counts all rows and one that counts non-null values in a column. Example: SELECT COUNT(*) FROM users; SELECT COUNT(phone) FROM users; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1012,7 +1012,7 @@
         "SQL approach: combine both aggregates in one query when helpful for quick range checks."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Find max and min values\n-- Prompt: Write queries that return the max and min of a numeric column. Example: SELECT MAX(score), MIN(score) FROM exams; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1027,7 +1027,7 @@
         "SQL approach: mention that null entries are ignored by aggregate calculations."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Compute averages with AVG\n-- Prompt: Write a query that computes an average and explain NULL handling. Example: SELECT AVG(price) FROM products; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1042,7 +1042,7 @@
         "SQL approach: pair `WHERE` with `SUM` to total only a filtered subset."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Sum a numeric column\n-- Prompt: Write a query that totals a numeric column. Example: SELECT SUM(amount) FROM payments; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1057,7 +1057,7 @@
         "SQL approach: explain why non-aggregated selected columns must appear in `GROUP BY`."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Group rows with GROUP BY\n-- Prompt: Write a grouped query returning one row per department with counts. Example: SELECT department, COUNT(*) FROM employees GROUP BY department; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1072,7 +1072,7 @@
         "SQL approach: contrast `WHERE` (before grouping) with `HAVING` (after grouping)."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Filter grouped results with HAVING\n-- Prompt: Write a GROUP BY query and keep only groups passing an aggregate rule. Example: SELECT department, COUNT(*) c FROM employees GROUP BY department HAVING c >= 3; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1087,7 +1087,7 @@
         "SQL approach: explain that unmatched rows from either side are excluded by inner joins."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Join two tables with INNER JOIN\n-- Prompt: Write an INNER JOIN between customers and orders on customer_id. Example: SELECT c.name, o.id FROM customers c INNER JOIN orders o ON o.customer_id = c.id; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1102,7 +1102,7 @@
         "SQL approach: compare result size and null behavior against an inner join."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Keep unmatched rows with LEFT JOIN\n-- Prompt: Explain LEFT JOIN and provide a query that keeps all rows from the left table. Example: SELECT c.name, o.id FROM customers c LEFT JOIN orders o ON o.customer_id = c.id; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1117,7 +1117,7 @@
         "SQL approach: mention that explicit column lists make inserts safer and clearer."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Add new rows with INSERT\n-- Prompt: Write an INSERT statement with explicit columns. Example: INSERT INTO users (name, email) VALUES ('Sam', 'sam@example.com'); Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1132,7 +1132,7 @@
         "SQL approach: explain that omitting `WHERE` updates every row."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Modify rows with UPDATE\n-- Prompt: Write an UPDATE statement with a WHERE clause targeting one row. Example: UPDATE users SET status='active' WHERE id=42; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1147,7 +1147,7 @@
         "SQL approach: suggest previewing matches with `SELECT` before running destructive deletes."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: Remove rows with DELETE\n-- Prompt: Write a DELETE statement that removes matching rows safely. Example: DELETE FROM sessions WHERE expires_at < '2026-01-01'; Write your answer in SQL.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1164,8 +1164,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Two Sum Variant\n        // Prompt: Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Two Sum Variant\n    # Prompt: Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1182,8 +1182,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Balanced Brackets\n        // Prompt: Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Balanced Brackets\n    # Prompt: Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1200,8 +1200,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Reverse Linked List\n        // Prompt: Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Reverse Linked List\n    # Prompt: Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1218,8 +1218,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Merge Intervals\n        // Prompt: Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Merge Intervals\n    # Prompt: Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1236,8 +1236,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Top K Frequent\n        // Prompt: Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Top K Frequent\n    # Prompt: Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1254,8 +1254,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Binary Tree Depth\n        // Prompt: Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Binary Tree Depth\n    # Prompt: Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1272,8 +1272,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: LRU Cache Design\n        // Prompt: Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: LRU Cache Design\n    # Prompt: Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1290,8 +1290,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Matrix Rotation\n        // Prompt: Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Matrix Rotation\n    # Prompt: Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1308,8 +1308,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Anagram Grouping\n        // Prompt: Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Anagram Grouping\n    # Prompt: Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1326,8 +1326,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Sliding Window Maximum\n        // Prompt: Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Sliding Window Maximum\n    # Prompt: Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1344,8 +1344,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Validate Binary Search Tree\n        // Prompt: Solve this in {language}: Validate Binary Search Tree. Example: given root [2,1,3], return true; for [5,1,4,null,null,3,6] return false. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Validate Binary Search Tree\n    # Prompt: Solve this in {language}: Validate Binary Search Tree. Example: given root [2,1,3], return true; for [5,1,4,null,null,3,6] return false. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1362,8 +1362,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Coin Change Minimum Coins\n        // Prompt: Solve this in {language}: Coin Change Minimum Coins. Example: given coins=[1,2,5], amount=11, return 3 (5+5+1). Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Coin Change Minimum Coins\n    # Prompt: Solve this in {language}: Coin Change Minimum Coins. Example: given coins=[1,2,5], amount=11, return 3 (5+5+1). Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1380,8 +1380,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Number of Islands\n        // Prompt: Solve this in {language}: Number of Islands. Example: given grid [['1','1','0'],['1','0','0'],['0','0','1']], return 2. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Number of Islands\n    # Prompt: Solve this in {language}: Number of Islands. Example: given grid [['1','1','0'],['1','0','0'],['0','0','1']], return 2. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1398,8 +1398,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Min Stack Operations\n        // Prompt: Solve this in {language}: Min Stack Operations. Example: after push 3, push 1, push 2, getMin returns 1; after one pop getMin still 1. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Min Stack Operations\n    # Prompt: Solve this in {language}: Min Stack Operations. Example: after push 3, push 1, push 2, getMin returns 1; after one pop getMin still 1. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1416,8 +1416,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Word Search Backtracking\n        // Prompt: Solve this in {language}: Word Search Backtracking. Example: board has rows ['ABCE','SFCS','ADEE'] and word='ABCCED', return true. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Word Search Backtracking\n    # Prompt: Solve this in {language}: Word Search Backtracking. Example: board has rows ['ABCE','SFCS','ADEE'] and word='ABCCED', return true. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1432,8 +1432,8 @@
         "Java approach: extract a helper method that safely converts each array element into a numeric contribution."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Sum values from a nullable Xaction array\n        // Prompt: Given an array that may contain null Xaction objects, sum all non-null getValue() results. Example values [null, X(4), X(6)] -> output 10. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Sum values from a nullable Xaction array\n    # Prompt: Given an array that may contain null Xaction objects, sum all non-null getValue() results. Example values [null, X(4), X(6)] -> output 10. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1448,8 +1448,8 @@
         "Java approach: create a reversed copy if interview constraints do not require an in-place solution."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Reverse an array of Xaction objects\n        // Prompt: Reverse an Xaction array in place using two pointers. Example input [A,B,C,D] -> output [D,C,B,A]. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Reverse an array of Xaction objects\n    # Prompt: Reverse an Xaction array in place using two pointers. Example input [A,B,C,D] -> output [D,C,B,A]. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1464,8 +1464,8 @@
         "Java approach: use a same-class, same-package, subclass, and external-package comparison."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What are the four access modifiers in Java?\n        // Prompt: Explain public, protected, package-private, and private, including where each is accessible. Example result: private is only accessible inside the same class. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What are the four access modifiers in Java?\n    # Prompt: Explain public, protected, package-private, and private, including where each is accessible. Example result: private is only accessible inside the same class. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1480,8 +1480,8 @@
         "Java approach: explain code reuse together with method overriding."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is inheritance in Java?\n        // Prompt: Explain inheritance with extends and show a short parent/child example. Example result: Dog extends Animal and inherits methods. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is inheritance in Java?\n    # Prompt: Explain inheritance with extends and show a short parent/child example. Example result: Dog extends Animal and inherits methods. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1496,8 +1496,8 @@
         "Java approach: contrast overriding with overloading so the interviewer can see both ideas clearly."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is polymorphism in Java?\n        // Prompt: Explain polymorphism with method overriding and dynamic dispatch. Example result: Animal a = new Dog(); a.speak() calls Dog's version. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is polymorphism in Java?\n    # Prompt: Explain polymorphism with method overriding and dynamic dispatch. Example result: Animal a = new Dog(); a.speak() calls Dog's version. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1512,8 +1512,8 @@
         "Java approach: compare shared behavior contracts against concrete stateful class implementations."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is an interface in Java?\n        // Prompt: Explain interfaces and how classes implement them. Example result: class Car implements Drivable { ... }. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is an interface in Java?\n    # Prompt: Explain interfaces and how classes implement them. Example result: class Car implements Drivable { ... }. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1528,8 +1528,8 @@
         "Java approach: discuss how encapsulation lets implementations change without breaking callers."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Purpose of encapsulation in Java\n        // Prompt: Explain encapsulation and why hiding mutable state is useful. Example result: private field + public getter/setter with validation. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Purpose of encapsulation in Java\n    # Prompt: Explain encapsulation and why hiding mutable state is useful. Example result: private field + public getter/setter with validation. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1544,8 +1544,8 @@
         "Java approach: explain how `super` helps a subclass reuse part of a parent implementation."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Purpose of the super keyword in Java\n        // Prompt: Explain uses of super for parent constructors and methods. Example result: super(name); and super.toString(). Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Purpose of the super keyword in Java\n    # Prompt: Explain uses of super for parent constructors and methods. Example result: super(name); and super.toString(). Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1560,8 +1560,8 @@
         "Java approach: distinguish throwing an exception from handling one."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is an exception in Java?\n        // Prompt: Explain exceptions and how try/catch/finally works. Example result includes one thrown exception and a matching catch. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is an exception in Java?\n    # Prompt: Explain exceptions and how try/catch/finally works. Example result includes one thrown exception and a matching catch. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1576,8 +1576,8 @@
         "Java approach: give one example of each kind and explain why the distinction matters."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Checked vs unchecked exceptions in Java\n        // Prompt: Compare checked and unchecked exceptions with examples. Example result: IOException is checked, NullPointerException is unchecked. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Checked vs unchecked exceptions in Java\n    # Prompt: Compare checked and unchecked exceptions with examples. Example result: IOException is checked, NullPointerException is unchecked. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1592,8 +1592,8 @@
         "Java approach: contrast reassigning a parameter with mutating the object it points to."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Pass by value vs pass by reference in Java\n        // Prompt: Explain Java parameter passing using a primitive and an object example. Example result: Java is pass-by-value, object references are copied by value. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Pass by value vs pass by reference in Java\n    # Prompt: Explain Java parameter passing using a primitive and an object example. Example result: Java is pass-by-value, object references are copied by value. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1608,8 +1608,8 @@
         "Java approach: explain when static import improves readability and when it can make code harder to follow."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Import vs static import in Java\n        // Prompt: Explain regular import vs static import and show one example of each. Example result: import java.util.List; vs import static java.lang.Math.PI; Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Import vs static import in Java\n    # Prompt: Explain regular import vs static import and show one example of each. Example result: import java.util.List; vs import static java.lang.Math.PI; Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1624,8 +1624,8 @@
         "Java approach: show how enums can also include fields or methods when needed."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is an enum in Java?\n        // Prompt: Explain enum usage and give a practical example. Example result: enum Status { NEW, IN_PROGRESS, DONE }. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is an enum in Java?\n    # Prompt: Explain enum usage and give a practical example. Example result: enum Status { NEW, IN_PROGRESS, DONE }. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1640,8 +1640,8 @@
         "Java approach: mention portability, packaging, and executable application use cases."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is a JAR in Java?\n        // Prompt: Explain what a JAR is and why Java code is packaged this way. Example result: app.jar bundles compiled classes/resources for distribution. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is a JAR in Java?\n    # Prompt: Explain what a JAR is and why Java code is packaged this way. Example result: app.jar bundles compiled classes/resources for distribution. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1656,8 +1656,8 @@
         "Java approach: mention defensive initialization, validation, and null-safe design habits."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is a NullPointerException?\n        // Prompt: Explain what NullPointerException means, a common trigger, and one prevention technique. Example result: call on null reference causes NPE; add null check. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is a NullPointerException?\n    # Prompt: Explain what NullPointerException means, a common trigger, and one prevention technique. Example result: call on null reference causes NPE; add null check. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1672,8 +1672,8 @@
         "Java approach: use examples like file I/O for checked exceptions and invalid indexing for unchecked exceptions."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Explain exception types in Java\n        // Prompt: Explain Java exception categories and give at least one checked and one unchecked example. Example result: SQLException (checked), IllegalArgumentException (unchecked). Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Explain exception types in Java\n    # Prompt: Explain Java exception categories and give at least one checked and one unchecked example. Example result: SQLException (checked), IllegalArgumentException (unchecked). Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1688,8 +1688,8 @@
         "Java approach: explain the tradeoff between immediate handling and letting callers decide."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Two ways to handle exceptions in Java\n        // Prompt: Show two handling strategies: catch locally and declare throws. Example result includes both method signatures/snippets. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Two ways to handle exceptions in Java\n    # Prompt: Show two handling strategies: catch locally and declare throws. Example result includes both method signatures/snippets. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1704,8 +1704,8 @@
         "Java approach: justify one favorite collection type based on ordering, lookup, or update needs."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What are collections in Java?\n        // Prompt: Explain the Java Collections Framework and name classes for list, set, and map use cases. Example result: ArrayList, HashSet, HashMap. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What are collections in Java?\n    # Prompt: Explain the Java Collections Framework and name classes for list, set, and map use cases. Example result: ArrayList, HashSet, HashMap. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1720,8 +1720,8 @@
         "Java approach: explain why custom key classes should implement `equals()` and `hashCode()` consistently."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Create a HashMap with object keys and URL values\n        // Prompt: Create a HashMap<Object, URL> and explain equals/hashCode requirements for object keys. Example result notes that equal keys must produce same hashCode. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Create a HashMap with object keys and URL values\n    # Prompt: Create a HashMap<Object, URL> and explain equals/hashCode requirements for object keys. Example result notes that equal keys must produce same hashCode. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1736,7 +1736,7 @@
         "SQL approach: contrast a self-contained inner query with one that depends on the outer row context."
       ],
       "potential_solutions": {
-        "SQL": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "SQL": "-- Problem: What is a subquery and what are its types?\n-- Prompt: Explain what a subquery is and compare correlated vs non-correlated forms. Example queries should include one of each type. Write your answer in SQL. Use core data structures and mention runtime/space complexity briefly.\n-- Potential solution: adapt table/column names and predicates to match the question details.\nSELECT *\nFROM your_table\nWHERE 1 = 1;"
       }
     },
     {
@@ -1751,8 +1751,8 @@
         "Java approach: answer with one scenario that favors inheritance and one that favors an interface."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Compare abstract classes and interfaces\n        // Prompt: Compare abstract classes and interfaces and explain when each is preferable. Example result: interface for capability contracts, abstract class for shared base state. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Compare abstract classes and interfaces\n    # Prompt: Compare abstract classes and interfaces and explain when each is preferable. Example result: interface for capability contracts, abstract class for shared base state. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1767,8 +1767,8 @@
         "Java approach: mention ordering expectations, null handling, and average lookup performance."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Explain Map and HashMap in Java\n        // Prompt: Explain Map as an interface and HashMap as a concrete implementation. Example result includes put/get usage and key uniqueness. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Explain Map and HashMap in Java\n    # Prompt: Explain Map as an interface and HashMap as a concrete implementation. Example result includes put/get usage and key uniqueness. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1785,8 +1785,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Two Sum Variant\n        // Prompt: Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Two Sum Variant\n    # Prompt: Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1803,8 +1803,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Balanced Brackets\n        // Prompt: Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Balanced Brackets\n    # Prompt: Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1821,8 +1821,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Reverse Linked List\n        // Prompt: Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Reverse Linked List\n    # Prompt: Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1839,8 +1839,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Merge Intervals\n        // Prompt: Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Merge Intervals\n    # Prompt: Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1857,8 +1857,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Top K Frequent\n        // Prompt: Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Top K Frequent\n    # Prompt: Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1875,8 +1875,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Binary Tree Depth\n        // Prompt: Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Binary Tree Depth\n    # Prompt: Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1893,8 +1893,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: LRU Cache Design\n        // Prompt: Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: LRU Cache Design\n    # Prompt: Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1911,8 +1911,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Matrix Rotation\n        // Prompt: Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Matrix Rotation\n    # Prompt: Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1929,8 +1929,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Anagram Grouping\n        // Prompt: Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Anagram Grouping\n    # Prompt: Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1947,8 +1947,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Sliding Window Maximum\n        // Prompt: Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Sliding Window Maximum\n    # Prompt: Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1963,8 +1963,8 @@
         "Java approach: compare how some modifiers affect memory, inheritance, or concurrency."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What are the other modifiers in Java?\n        // Prompt: Explain modifiers such as static, final, abstract, synchronized, and volatile with one use example each. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What are the other modifiers in Java?\n    # Prompt: Explain modifiers such as static, final, abstract, synchronized, and volatile with one use example each. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1979,8 +1979,8 @@
         "Java approach: answer by following the flow from writing code to compiling and then running it."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: JDK vs JRE vs JVM\n        // Prompt: Explain differences among JDK, JRE, and JVM and how they relate. Example result: JDK includes tools, JRE runtime, JVM executes bytecode. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: JDK vs JRE vs JVM\n    # Prompt: Explain differences among JDK, JRE, and JVM and how they relate. Example result: JDK includes tools, JRE runtime, JVM executes bytecode. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -1995,8 +1995,8 @@
         "Java approach: mention recursion, object lifetime, and common errors like stack overflow or out-of-memory conditions."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Stack vs heap in Java\n        // Prompt: Explain stack vs heap memory with examples of what lives in each. Example result: local variables on stack, objects on heap. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Stack vs heap in Java\n    # Prompt: Explain stack vs heap memory with examples of what lives in each. Example result: local variables on stack, objects on heap. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2011,8 +2011,8 @@
         "Java approach: mention how each integrates with sorting APIs or sorted collections."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Comparable vs Comparator in Java\n        // Prompt: Compare Comparable and Comparator and give one sorting example for each. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Comparable vs Comparator in Java\n    # Prompt: Compare Comparable and Comparator and give one sorting example for each. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2027,8 +2027,8 @@
         "Java approach: mention which methods developers most often override in interview-style code."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Methods of the Object class\n        // Prompt: Name key Object methods (toString, equals, hashCode, clone, getClass) and explain what each is used for. Example result: equals compares logical equality while hashCode supports hashed collections. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Methods of the Object class\n    # Prompt: Name key Object methods (toString, equals, hashCode, clone, getClass) and explain what each is used for. Example result: equals compares logical equality while hashCode supports hashed collections. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2043,8 +2043,8 @@
         "Java approach: use one small example that succeeds and one that would fail at runtime."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Casting in Java and avoiding ClassCastException\n        // Prompt: Explain upcasting and downcasting and show how instanceof checks avoid ClassCastException. Example result: if (obj instanceof Dog d) { d.bark(); }. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Casting in Java and avoiding ClassCastException\n    # Prompt: Explain upcasting and downcasting and show how instanceof checks avoid ClassCastException. Example result: if (obj instanceof Dog d) { d.bark(); }. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2059,8 +2059,8 @@
         "Java approach: mention that runtime profiling can guide optimizations."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is JIT in Java?\n        // Prompt: Explain JIT compilation and how it improves repeated code execution at runtime. Example result: frequently used bytecode is compiled to native machine instructions. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is JIT in Java?\n    # Prompt: Explain JIT compilation and how it improves repeated code execution at runtime. Example result: frequently used bytecode is compiled to native machine instructions. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2075,8 +2075,8 @@
         "Java approach: mention how class structure and superclass behavior affect serializability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Purpose of the Serializable interface\n        // Prompt: Explain Serializable and what object serialization means, including one practical persistence or transfer use case. Example result: serialize a User object to store a session snapshot. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Purpose of the Serializable interface\n    # Prompt: Explain Serializable and what object serialization means, including one practical persistence or transfer use case. Example result: serialize a User object to store a session snapshot. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2091,8 +2091,8 @@
         "Java approach: mention `try-with-resources` or explicit `close()` patterns for non-memory resources."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Is there a destructor in Java?\n        // Prompt: Explain whether Java has destructors and what is used instead for cleanup (try-with-resources/finally). Example result: InputStream closes in try-with-resources without a destructor. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Is there a destructor in Java?\n    # Prompt: Explain whether Java has destructors and what is used instead for cleanup (try-with-resources/finally). Example result: InputStream closes in try-with-resources without a destructor. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2107,8 +2107,8 @@
         "Java approach: contrast a concrete method in an abstract base class with an abstract method that subclasses must implement."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is an abstract class in Java?\n        // Prompt: Explain abstract classes and abstract methods with a short class hierarchy example. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is an abstract class in Java?\n    # Prompt: Explain abstract classes and abstract methods with a short class hierarchy example. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2123,8 +2123,8 @@
         "Java approach: discuss tradeoffs such as resizing, load factor, and worst-case lookup behavior."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Build a HashMap from scratch\n        // Prompt: Design a HashMap from scratch: hashing, buckets, collision handling, resizing, and expected operation complexity. Example result should explain lookup flow for one key. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Build a HashMap from scratch\n    # Prompt: Design a HashMap from scratch: hashing, buckets, collision handling, resizing, and expected operation complexity. Example result should explain lookup flow for one key. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2141,8 +2141,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Two Sum Variant\n        // Prompt: Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Two Sum Variant\n    # Prompt: Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2159,8 +2159,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Balanced Brackets\n        // Prompt: Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Balanced Brackets\n    # Prompt: Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2177,8 +2177,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Reverse Linked List\n        // Prompt: Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Reverse Linked List\n    # Prompt: Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2195,8 +2195,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Merge Intervals\n        // Prompt: Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Merge Intervals\n    # Prompt: Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2213,8 +2213,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Top K Frequent\n        // Prompt: Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Top K Frequent\n    # Prompt: Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2231,8 +2231,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Binary Tree Depth\n        // Prompt: Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Binary Tree Depth\n    # Prompt: Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2249,8 +2249,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: LRU Cache Design\n        // Prompt: Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: LRU Cache Design\n    # Prompt: Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2267,8 +2267,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Matrix Rotation\n        // Prompt: Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Matrix Rotation\n    # Prompt: Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2285,8 +2285,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Anagram Grouping\n        // Prompt: Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Anagram Grouping\n    # Prompt: Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2303,8 +2303,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Sliding Window Maximum\n        // Prompt: Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Sliding Window Maximum\n    # Prompt: Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2319,8 +2319,8 @@
         "Java approach: contrast immutable strings with mutable alternatives such as `StringBuilder`."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Why is String immutable in Java?\n        // Prompt: Explain why String is immutable and benefits for security, caching, and thread safety. Example result should mention string pool reuse. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Why is String immutable in Java?\n    # Prompt: Explain why String is immutable and benefits for security, caching, and thread safety. Example result should mention string pool reuse. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2335,8 +2335,8 @@
         "Java approach: use an overload versus override example to illustrate the distinction."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Dynamic binding vs static binding in Java\n        // Prompt: Explain dynamic vs static binding with method overriding and overloading examples. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Dynamic binding vs static binding in Java\n    # Prompt: Explain dynamic vs static binding with method overriding and overloading examples. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2351,8 +2351,8 @@
         "Java approach: mention flexibility together with readability, performance, and security tradeoffs."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is reflection in Java?\n        // Prompt: Explain reflection, what runtime metadata it can inspect, and one cautious real-world use case. Example result: reading annotation metadata at startup. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is reflection in Java?\n    # Prompt: Explain reflection, what runtime metadata it can inspect, and one cautious real-world use case. Example result: reading annotation metadata at startup. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2367,8 +2367,8 @@
         "Java approach: mention bootstrap, extension/platform, and system/application classloaders."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: What is a classloader in Java?\n        // Prompt: Explain classloader responsibilities and common loader types (bootstrap, platform, application). Example result: ApplicationClassLoader loads classes from the classpath. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: What is a classloader in Java?\n    # Prompt: Explain classloader responsibilities and common loader types (bootstrap, platform, application). Example result: ApplicationClassLoader loads classes from the classpath. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2383,8 +2383,8 @@
         "Java approach: use plugin or driver loading as a concrete example of dynamic loading."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Static class loading vs dynamic class loading\n        // Prompt: Compare static and dynamic class loading and explain when Class.forName(...) is used. Example result: JDBC drivers can be loaded dynamically at runtime. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Static class loading vs dynamic class loading\n    # Prompt: Compare static and dynamic class loading and explain when Class.forName(...) is used. Example result: JDBC drivers can be loaded dynamically at runtime. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2401,8 +2401,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Two Sum Variant\n        // Prompt: Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Two Sum Variant\n    # Prompt: Solve this in {language}: Two Sum Variant. Example: given nums=[2,7,11,15] and target=9, return indices [0,1]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2419,8 +2419,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Balanced Brackets\n        // Prompt: Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Balanced Brackets\n    # Prompt: Solve this in {language}: Balanced Brackets. Example: given s='({[]})', return true; for s='([)]' return false. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2437,8 +2437,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Reverse Linked List\n        // Prompt: Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Reverse Linked List\n    # Prompt: Solve this in {language}: Reverse Linked List. Example: given 1->2->3->null, return 3->2->1->null. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2455,8 +2455,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Merge Intervals\n        // Prompt: Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Merge Intervals\n    # Prompt: Solve this in {language}: Merge Intervals. Example: given [[1,3],[2,6],[8,10],[15,18]], return [[1,6],[8,10],[15,18]]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2473,8 +2473,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Top K Frequent\n        // Prompt: Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Top K Frequent\n    # Prompt: Solve this in {language}: Top K Frequent. Example: given nums=[1,1,1,2,2,3], k=2, return [1,2] (order can vary). Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2491,8 +2491,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Binary Tree Depth\n        // Prompt: Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Binary Tree Depth\n    # Prompt: Solve this in {language}: Binary Tree Depth. Example: given root [3,9,20,null,null,15,7], return 3. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2509,8 +2509,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: LRU Cache Design\n        // Prompt: Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: LRU Cache Design\n    # Prompt: Solve this in {language}: LRU Cache Design. Example: capacity=2, operations put(1,1), put(2,2), get(1), put(3,3), get(2), expected get results are [1,-1]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2527,8 +2527,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Matrix Rotation\n        // Prompt: Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Matrix Rotation\n    # Prompt: Solve this in {language}: Matrix Rotation. Example: given matrix [[1,2,3],[4,5,6],[7,8,9]], return [[7,4,1],[8,5,2],[9,6,3]]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2545,8 +2545,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Anagram Grouping\n        // Prompt: Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Anagram Grouping\n    # Prompt: Solve this in {language}: Anagram Grouping. Example: given ['eat','tea','tan','ate','nat','bat'], return groups like [['eat','tea','ate'],['tan','nat'],['bat']]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     },
     {
@@ -2563,8 +2563,8 @@
         "{{language}} approach: optimize space usage while keeping interview readability."
       ],
       "potential_solutions": {
-        "Java": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example.",
-        "Python": "{{language}} potential solution: implement a complete, correct answer for this prompt and validate it against the example."
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Problem: Sliding Window Maximum\n        // Prompt: Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n        // Potential solution: implement and print/return the expected result for this prompt.\n    }\n}",
+        "Python": "def solve():\n    # Problem: Sliding Window Maximum\n    # Prompt: Solve this in {language}: Sliding Window Maximum. Example: given nums=[1,3,-1,-3,5,3,6,7], k=3, return [3,3,5,5,6,7]. Provide an optimized, production-grade approach with complexity justification and robust edge-case handling.\n    # Potential solution: implement and print/return the expected result for this prompt.\n    pass\n\nif __name__ == \"__main__\":\n    solve()"
       }
     }
   ]

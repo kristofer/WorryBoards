@@ -934,7 +934,8 @@ const templates = `
 <ul class="list-unstyled mb-0">
   {{range .Solutions}}
     <li class="mb-2">
-      <span class="badge text-bg-secondary me-2">{{.Language}}</span>{{.Solution}}
+      <span class="badge text-bg-secondary me-2">{{.Language}}</span>
+      <pre class="bg-light border rounded p-2 mt-2 mb-0"><code>{{.Solution}}</code></pre>
     </li>
   {{end}}
 </ul>
