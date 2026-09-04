@@ -438,7 +438,7 @@
       ],
       "potential_solutions": {
         "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        List<String> items = new ArrayList<>(List.of(\"a\", \"b\", \"c\", \"d\"));\n        items.remove(0);\n        System.out.println(items);\n    }\n}",
-        "Python": "def drop_first(items: list[int]) -> list[int]:\n    return items[1:] if items else []\n\nprint(drop_first([10, 20, 30]))\nprint(drop_first([]))"
+        "Python": "def drop_first(items):\n    return items[1:] if items else []\n\nprint(drop_first([10, 20, 30]))\nprint(drop_first([]))"
       }
     },
     {
@@ -454,7 +454,7 @@
       ],
       "potential_solutions": {
         "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        List<Integer> items = new ArrayList<>(List.of(1, 2, 3, 4, 5));\n        items = items.subList(0, items.size() - 2);\n        System.out.println(items);\n    }\n}",
-        "Python": "def drop_last_two(items: list[int]) -> list[int]:\n    if len(items) < 2:\n        return []\n    return items[:-2]\n\nprint(drop_last_two([1, 2, 3, 4, 5]))\nprint(drop_last_two([1]))"
+        "Python": "def drop_last_two(items):\n    return items[:-2]\n\nprint(drop_last_two([1, 2, 3, 4, 5]))\nprint(drop_last_two([1]))"
       }
     },
     {
