@@ -8,7 +8,9 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"os"
+	"os/exec"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"testing"
 )
@@ -211,6 +213,94 @@ func TestCatalogPotentialSolutionsContainCodeSnippets(t *testing.T) {
 			t.Fatalf("expected Python code snippet for %q, got: %s", q.Title, pythonSnippet)
 		}
 	}
+}
+
+func TestCatalogPythonPotentialSolutionsProduceExpectedOutputs(t *testing.T) {
+	b, err := os.ReadFile(catalogPathForTest(t))
+	if err != nil {
+		t.Fatalf("read catalog: %v", err)
+	}
+
+	var catalog Catalog
+	if err := json.Unmarshal(b, &catalog); err != nil {
+		t.Fatalf("unmarshal catalog: %v", err)
+	}
+
+	type expectation struct {
+		stdin string
+		want  string
+	}
+
+	expectations := map[string]expectation{
+		"Basic string analysis":                        {want: "length: 12 vowels: 5 consonants: 7"},
+		"Reverse a word (without slicing shortcuts)":  {want: "warts"},
+		"Count vowels in a sentence":                   {want: "vowels: 6"},
+		"Find the largest number in a list":            {want: "18"},
+		"Filter positive numbers (list comprehension)": {want: "[7, 5]"},
+		"Square numbers (list comprehension)":          {want: "[1, 4, 9, 16]"},
+		"Basic dictionary practice":                    {want: "score: 92"},
+		"Simple while input loop":                      {stdin: "4\n6\n-2\n0\n", want: "sum: 8"},
+		"FizzBuzz (classic fundamentals)":              {want: "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n16\n17\nFizz\n19\nBuzz"},
+		"Print numbers 1 to N":                         {want: "1\n2\n3\n4\n5"},
+		"Print odd numbers in range":                   {want: "3\n5\n7\n9\n11"},
+		"Countdown timer from N":                       {want: "5\n4\n3\n2\n1\nDone"},
+		"Multiplication table (formatted output)":      {want: "4 x 1 = 4\n4 x 2 = 8\n4 x 3 = 12\n4 x 4 = 16\n4 x 5 = 20\n4 x 6 = 24\n4 x 7 = 28\n4 x 8 = 32\n4 x 9 = 36\n4 x 10 = 40"},
+		"String palindrome check (loop-based)":         {want: "true\nfalse"},
+		"Reverse sentence words using loops":           {want: "coding love we"},
+		"Count vowels and consonants":                  {want: "vowels: 5 consonants: 7"},
+		"Letter frequency top character":               {want: "s: 4"},
+		"Find second largest number in a list":         {want: "8"},
+		"Drop the first item from a list":              {want: "[20, 30]\n[]"},
+		"Drop the last two items from a list":          {want: "[1, 2, 3]\n[]"},
+		"Concatenate two lists":                        {want: "[1, 2, 3, 4]"},
+	}
+
+	checked := 0
+	for _, q := range catalog.Questions {
+		python := strings.TrimSpace(q.PotentialSolutions["Python"])
+		if python == "" {
+			if len(q.Languages) == 1 && q.Languages[0] == "SQL" {
+				continue
+			}
+			t.Fatalf("question %q is missing a Python potential solution", q.Title)
+		}
+
+		exp, shouldCheck := expectations[q.Title]
+		var stdin string
+		if shouldCheck {
+			stdin = exp.stdin
+		}
+
+		got, err := runPythonSnippet(t, python, stdin)
+		if err != nil {
+			t.Fatalf("run Python potential solution for %q: %v", q.Title, err)
+		}
+		if shouldCheck && normalizeOutput(got) != normalizeOutput(exp.want) {
+			t.Fatalf("unexpected output for %q\nwant: %q\ngot:  %q", q.Title, exp.want, got)
+		}
+		if shouldCheck {
+			checked++
+		}
+	}
+
+	if checked != len(expectations) {
+		t.Fatalf("expected to check %d authoritative output cases, checked %d", len(expectations), checked)
+	}
+}
+
+func runPythonSnippet(t *testing.T, code, stdin string) (string, error) {
+	t.Helper()
+
+	cmd := exec.Command("python3", "-c", code)
+	cmd.Stdin = strings.NewReader(stdin)
+	out, err := cmd.CombinedOutput()
+	return string(out), err
+}
+
+var whitespacePattern = regexp.MustCompile(`\s+`)
+
+func normalizeOutput(s string) string {
+	return whitespacePattern.ReplaceAllString(strings.ToLower(strings.TrimSpace(s)), "")
 }
 
 func TestGetProblemsRespectsFiltersAndLimit(t *testing.T) {
