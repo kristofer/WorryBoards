@@ -564,11 +564,10 @@ ORDER BY solution_order ASC`, problemID)
 
 func getProblemPotentialSolutions(db *sql.DB, problemID int) ([]PotentialSolution, error) {
 	rows, err := db.Query(`
-SELECT pps.language, pps.solution
-FROM problem_potential_solutions pps
-JOIN problems p ON p.id = pps.problem_id
-WHERE pps.problem_id = ? AND pps.language = p.language
-ORDER BY CASE pps.language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID)
+SELECT language, solution
+FROM problem_potential_solutions
+WHERE problem_id = ? AND language = (SELECT language FROM problems WHERE id = ?)
+ORDER BY CASE language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID, problemID)
 	if err != nil {
 		return nil, err
 	}
