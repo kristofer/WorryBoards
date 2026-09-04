@@ -564,10 +564,11 @@ ORDER BY solution_order ASC`, problemID)
 
 func getProblemPotentialSolutions(db *sql.DB, problemID int) ([]PotentialSolution, error) {
 	rows, err := db.Query(`
-SELECT language, solution
-FROM problem_potential_solutions
-WHERE problem_id = ?
-ORDER BY CASE language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID)
+SELECT pps.language, pps.solution
+FROM problem_potential_solutions pps
+JOIN problems p ON p.id = pps.problem_id
+WHERE pps.problem_id = ? AND pps.language = p.language
+ORDER BY CASE pps.language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID)
 	if err != nil {
 		return nil, err
 	}
@@ -820,49 +821,131 @@ const templates = `
         }, 1200);
       });
     }
+    function initActualSolutionButtons(root) {
+      const scope = root && root.querySelectorAll ? root : document;
+      scope.querySelectorAll("button[data-unlock-seconds]").forEach(function (button) {
+        const delaySeconds = parseInt(button.getAttribute("data-unlock-seconds"), 10);
+        if (!Number.isNaN(delaySeconds) && delaySeconds > 0) {
+          armActualSolutionDelay(button, delaySeconds);
+        }
+      });
+    }
+    function armActualSolutionDelay(button, delaySeconds) {
+      if (!button || button.dataset.timerStarted === "true") {
+        return;
+      }
+      const statusId = button.getAttribute("aria-describedby");
+      const status = statusId ? document.getElementById(statusId) : null;
+      const problemID = button.getAttribute("data-problem-id");
+      const storageKey = problemID ? "actual-solution-unlock-at:" + problemID : "";
+      const now = Date.now();
+      let unlockAt = now + delaySeconds * 1000;
+      if (storageKey) {
+        try {
+          const stored = parseInt(sessionStorage.getItem(storageKey) || "", 10);
+          if (!Number.isNaN(stored) && stored > now) {
+            unlockAt = stored;
+          } else {
+            sessionStorage.setItem(storageKey, String(unlockAt));
+          }
+        } catch (e) {}
+      }
+      button.dataset.timerStarted = "true";
+      button.disabled = true;
+      let remaining = Math.max(0, Math.ceil((unlockAt - now) / 1000));
+      button.textContent = "Show actual solution (available in " + remaining + "s)";
+      if (status) {
+        status.textContent = "Actual solution available in " + remaining + " seconds.";
+      }
+      if (remaining <= 0) {
+        button.disabled = false;
+        button.textContent = "Show actual solution";
+        if (status) {
+          status.textContent = "Actual solution is now available.";
+        }
+        return;
+      }
+      const timer = setInterval(function () {
+        remaining = Math.max(0, Math.ceil((unlockAt - Date.now()) / 1000));
+        if (remaining <= 0) {
+          clearInterval(timer);
+          button.disabled = false;
+          button.textContent = "Show actual solution";
+          if (status) {
+            status.textContent = "Actual solution is now available.";
+          }
+          return;
+        }
+        button.textContent = "Show actual solution (available in " + remaining + "s)";
+        if (status) {
+          status.textContent = "Actual solution available in " + remaining + " seconds.";
+        }
+      }, 1000);
+    }
     function revealActualSolutionAfterDelay(button, url, targetId) {
+      if (button.disabled) {
+        return;
+      }
       if (button.dataset.pending === "true") {
         return;
       }
-      const originalLabel = "Show actual solution (60s delay)";
+      const originalLabel = "Show actual solution";
       const target = document.getElementById(targetId);
+      const statusId = button.getAttribute("aria-describedby");
+      const status = statusId ? document.getElementById(statusId) : null;
       button.dataset.pending = "true";
       button.disabled = true;
       if (target) {
         target.setAttribute("aria-busy", "true");
       }
-      let remaining = 60;
-      button.textContent = "Unlocking in " + remaining + "s...";
-      const timer = setInterval(function () {
-        remaining -= 1;
-        if (remaining <= 0) {
-          clearInterval(timer);
-          fetch(url)
-            .then(function (response) {
-              if (!response.ok) {
-                throw new Error("request failed");
-              }
-              return response.text();
-            })
-            .then(function (html) {
-              if (target) {
-                target.innerHTML = html;
-                target.setAttribute("aria-busy", "false");
-              }
-              button.textContent = "Actual solution shown";
-            })
-            .catch(function () {
-              button.dataset.pending = "false";
-              button.disabled = false;
-              button.textContent = originalLabel;
-              if (target) {
-                target.setAttribute("aria-busy", "false");
-              }
-            });
-          return;
+      if (status) {
+        status.textContent = "Loading actual solution.";
+      }
+      fetch(url)
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error("request failed");
+          }
+          return response.text();
+        })
+        .then(function (html) {
+          if (target) {
+            target.innerHTML = html;
+            target.setAttribute("aria-busy", "false");
+          }
+          button.textContent = "Actual solution shown";
+          if (status) {
+            status.textContent = "Actual solution shown.";
+          }
+        })
+        .catch(function () {
+          button.dataset.pending = "false";
+          button.disabled = false;
+          button.textContent = originalLabel;
+          if (target) {
+            target.setAttribute("aria-busy", "false");
+          }
+          if (status) {
+            status.textContent = "Failed to load actual solution. Please try again.";
+          }
+        });
+    }
+    function wireActualSolutionButtonInit() {
+      initActualSolutionButtons(document);
+      if (document.body) {
+        if (document.body.dataset.actualSolutionInitBound !== "true") {
+          document.body.dataset.actualSolutionInitBound = "true";
+          document.body.addEventListener("htmx:afterSwap", function (event) {
+            const swapTarget = event.detail && event.detail.target ? event.detail.target : document;
+            initActualSolutionButtons(swapTarget);
+          });
         }
-        button.textContent = "Unlocking in " + remaining + "s...";
-      }, 1000);
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", wireActualSolutionButtonInit);
+    } else {
+      wireActualSolutionButtonInit();
     }
   </script>
 </body>
@@ -898,9 +981,6 @@ const templates = `
   <button class="btn btn-outline-primary btn-sm"
           type="button"
           onclick='copyProblemPrompt(this, "{{.Problem.Prompt | js}}")'>Copy question</button>
-  <button class="btn btn-outline-warning btn-sm"
-          type="button"
-          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution", "actual-solution-{{.Problem.ID}}")'>Show actual solution (60s delay)</button>
 </div>
 <div id="solutions-{{.Problem.ID}}"
      hx-swap="innerHTML">
@@ -909,6 +989,17 @@ const templates = `
           hx-target="#solutions-{{.Problem.ID}}"
           hx-swap="innerHTML"
           type="button">Show first hint</button>
+</div>
+<div class="mt-3">
+  <button id="actual-solution-button-{{.Problem.ID}}"
+          class="btn btn-outline-warning btn-sm"
+          type="button"
+          disabled
+          data-problem-id="{{.Problem.ID}}"
+          data-unlock-seconds="60"
+          aria-describedby="actual-solution-status-{{.Problem.ID}}"
+          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution", "actual-solution-{{.Problem.ID}}")'>Show actual solution (available in 60s)</button>
+  <span id="actual-solution-status-{{.Problem.ID}}" class="visually-hidden" aria-live="polite">Actual solution available in 60 seconds.</span>
 </div>
 <div id="actual-solution-{{.Problem.ID}}" class="mt-3" aria-live="polite" aria-busy="false"></div>
 {{end}}

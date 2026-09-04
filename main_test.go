@@ -524,8 +524,21 @@ func TestSelectedProblemUsesClickToRevealFirstHint(t *testing.T) {
 	if !strings.Contains(body, "Copy question") || !strings.Contains(body, "copyProblemPrompt(this") {
 		t.Fatalf("expected copy-question button in selected problem response, got: %s", body)
 	}
-	if !strings.Contains(body, "Show actual solution (60s delay)") || !strings.Contains(body, "revealActualSolutionAfterDelay(this") {
-		t.Fatalf("expected delayed actual-solution button in selected problem response, got: %s", body)
+	if !strings.Contains(body, `id="actual-solution-button-`) ||
+		!strings.Contains(body, "Show actual solution (available in 60s)") ||
+		!strings.Contains(body, `data-problem-id="`) ||
+		!strings.Contains(body, `data-unlock-seconds="60"`) ||
+		!strings.Contains(body, `/actual-solution", "actual-solution-`) ||
+		!strings.Contains(body, "revealActualSolutionAfterDelay(this") {
+		t.Fatalf("expected disabled actual-solution button with auto-unlock in selected problem response, got: %s", body)
+	}
+	if !strings.Contains(body, `aria-describedby="actual-solution-status-`) ||
+		!strings.Contains(body, `id="actual-solution-status-`) ||
+		!strings.Contains(body, "Actual solution available in 60 seconds.") {
+		t.Fatalf("expected accessible status text for actual-solution button unlock timing, got: %s", body)
+	}
+	if strings.Index(body, "Show first hint") > strings.Index(body, "Show actual solution (available in 60s)") {
+		t.Fatalf("expected actual-solution button to render below hint button area, got: %s", body)
 	}
 }
 
@@ -564,7 +577,7 @@ func TestProblemSolutionsRevealHintsIncrementally(t *testing.T) {
 	}
 }
 
-func TestProblemPotentialSolutionsShowsJavaAndPythonForNonSQL(t *testing.T) {
+func TestProblemPotentialSolutionsShowsSelectedLanguageOnly(t *testing.T) {
 	app := newTestApp(t)
 	problemID := firstProblemIDForLanguage(t, app.db, "Java")
 
@@ -576,8 +589,11 @@ func TestProblemPotentialSolutionsShowsJavaAndPythonForNonSQL(t *testing.T) {
 		t.Fatalf("expected status 200, got %d", rr.Code)
 	}
 	body := rr.Body.String()
-	if !strings.Contains(body, ">Java<") || !strings.Contains(body, ">Python<") {
-		t.Fatalf("expected Java and Python labeled potential solutions, got: %s", body)
+	if !strings.Contains(body, ">Java<") {
+		t.Fatalf("expected Java labeled potential solution, got: %s", body)
+	}
+	if strings.Contains(body, ">Python<") || strings.Contains(body, ">SQL<") {
+		t.Fatalf("did not expect non-selected-language labels, got: %s", body)
 	}
 	if !strings.Contains(strings.ToLower(body), "actual solution") {
 		t.Fatalf("expected actual solution heading, got: %s", body)
@@ -585,8 +601,11 @@ func TestProblemPotentialSolutionsShowsJavaAndPythonForNonSQL(t *testing.T) {
 	if !strings.Contains(body, "<pre") || !strings.Contains(body, "<code>") {
 		t.Fatalf("expected code formatting in rendered actual solutions, got: %s", body)
 	}
-	if !strings.Contains(body, "public class Solution") || !strings.Contains(body, "range(1, 11)") {
-		t.Fatalf("expected language-specific code snippets in response, got: %s", body)
+	if !strings.Contains(body, "public class Solution") {
+		t.Fatalf("expected Java code snippet in response, got: %s", body)
+	}
+	if strings.Contains(body, "range(1, 11)") {
+		t.Fatalf("did not expect Python code snippet in response, got: %s", body)
 	}
 }
 
