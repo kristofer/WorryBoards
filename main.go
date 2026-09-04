@@ -936,7 +936,8 @@ const templates = `
         if (document.body.dataset.actualSolutionInitBound !== "true") {
           document.body.dataset.actualSolutionInitBound = "true";
           document.body.addEventListener("htmx:afterSwap", function (event) {
-            initActualSolutionButtons(event.target);
+            const swapTarget = event.detail && event.detail.target ? event.detail.target : document;
+            initActualSolutionButtons(swapTarget);
           });
         }
       }
