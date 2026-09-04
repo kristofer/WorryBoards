@@ -140,6 +140,79 @@ GROUP BY problem_id`)
 	}
 }
 
+func TestEachProblemHasExpectedPotentialSolutions(t *testing.T) {
+	db := setupTestDB(t)
+
+	rows, err := db.Query(`
+SELECT p.id, p.language, COUNT(pps.id) as potential_count
+FROM problems p
+LEFT JOIN problem_potential_solutions pps ON p.id = pps.problem_id
+GROUP BY p.id, p.language`)
+	if err != nil {
+		t.Fatalf("query potential solution counts: %v", err)
+	}
+	defer rows.Close()
+
+	seen := 0
+	for rows.Next() {
+		var problemID, count int
+		var language string
+		if err := rows.Scan(&problemID, &language, &count); err != nil {
+			t.Fatalf("scan row: %v", err)
+		}
+		expected := 2
+		if language == "SQL" {
+			expected = 1
+		}
+		if count != expected {
+			t.Fatalf("problem %d (%s) expected %d potential solutions, got %d", problemID, language, expected, count)
+		}
+		seen++
+	}
+	if err := rows.Err(); err != nil {
+		t.Fatalf("rows err: %v", err)
+	}
+	if seen != 225 {
+		t.Fatalf("expected 225 seeded potential-solution groups, got %d", seen)
+	}
+}
+
+func TestCatalogPotentialSolutionsContainCodeSnippets(t *testing.T) {
+	b, err := os.ReadFile(catalogPathForTest(t))
+	if err != nil {
+		t.Fatalf("read catalog: %v", err)
+	}
+
+	var catalog Catalog
+	if err := json.Unmarshal(b, &catalog); err != nil {
+		t.Fatalf("unmarshal catalog: %v", err)
+	}
+
+	for _, q := range catalog.Questions {
+		if len(q.Languages) == 1 && q.Languages[0] == "SQL" {
+			sqlSnippet := q.PotentialSolutions["SQL"]
+			hasSQLKeyword := strings.Contains(sqlSnippet, "SELECT") ||
+				strings.Contains(sqlSnippet, "CREATE TABLE") ||
+				strings.Contains(sqlSnippet, "INSERT") ||
+				strings.Contains(sqlSnippet, "UPDATE") ||
+				strings.Contains(sqlSnippet, "DELETE")
+			if strings.TrimSpace(sqlSnippet) == "" || !hasSQLKeyword {
+				t.Fatalf("expected SQL code snippet for %q, got: %s", q.Title, sqlSnippet)
+			}
+			continue
+		}
+
+		javaSnippet := q.PotentialSolutions["Java"]
+		pythonSnippet := q.PotentialSolutions["Python"]
+		if strings.TrimSpace(javaSnippet) == "" || !strings.Contains(javaSnippet, "class") {
+			t.Fatalf("expected Java code snippet for %q, got: %s", q.Title, javaSnippet)
+		}
+		if strings.TrimSpace(pythonSnippet) == "" || !(strings.Contains(pythonSnippet, "def ") || strings.Contains(pythonSnippet, "for ") || strings.Contains(pythonSnippet, "class ") || strings.Contains(pythonSnippet, "print(") || strings.Contains(pythonSnippet, "=")) {
+			t.Fatalf("expected Python code snippet for %q, got: %s", q.Title, pythonSnippet)
+		}
+	}
+}
+
 func TestGetProblemsRespectsFiltersAndLimit(t *testing.T) {
 	db := setupTestDB(t)
 
@@ -378,6 +451,14 @@ func TestInitSchemaUpgradesProblemLanguageConstraint(t *testing.T) {
 	if c == 0 {
 		t.Fatal("expected SQL problems after upgrading old schema")
 	}
+
+	var potentialCount int
+	if err := db.QueryRow("SELECT COUNT(*) FROM problem_potential_solutions").Scan(&potentialCount); err != nil {
+		t.Fatalf("count potential solutions after schema upgrade: %v", err)
+	}
+	if potentialCount == 0 {
+		t.Fatal("expected potential solutions after upgrading old schema")
+	}
 }
 
 func TestMigrateCatalogUpdatesWhenJSONChanges(t *testing.T) {
@@ -394,7 +475,7 @@ func TestMigrateCatalogUpdatesWhenJSONChanges(t *testing.T) {
 	tmpDir := t.TempDir()
 	catalogPath := filepath.Join(tmpDir, "catalog.json")
 
-	firstCatalog := `{"questions":[{"difficulty":1,"title":"A","prompt":"Do A in {{language}}","languages":["Java"],"solutions":["S1"]}]}`
+	firstCatalog := `{"questions":[{"difficulty":1,"title":"A","prompt":"Do A in {{language}}","languages":["Java"],"solutions":["S1"],"potential_solutions":{"Java":"Java sol A","Python":"Python sol A"}}]}`
 	if err := os.WriteFile(catalogPath, []byte(firstCatalog), 0o644); err != nil {
 		t.Fatalf("write first catalog: %v", err)
 	}
@@ -409,7 +490,7 @@ func TestMigrateCatalogUpdatesWhenJSONChanges(t *testing.T) {
 		t.Fatalf("expected 1 problem after first migration, got %d", count)
 	}
 
-	secondCatalog := `{"questions":[{"difficulty":1,"title":"A","prompt":"Do A in {{language}}","languages":["Java"],"solutions":["S1"]},{"difficulty":1,"title":"B","prompt":"Do B in {{language}}","languages":["Java"],"solutions":["S1","S2"]}]}`
+	secondCatalog := `{"questions":[{"difficulty":1,"title":"A","prompt":"Do A in {{language}}","languages":["Java"],"solutions":["S1"],"potential_solutions":{"Java":"Java sol A","Python":"Python sol A"}},{"difficulty":1,"title":"B","prompt":"Do B in {{language}}","languages":["Java"],"solutions":["S1","S2"],"potential_solutions":{"Java":"Java sol B","Python":"Python sol B"}}]}`
 	if err := os.WriteFile(catalogPath, []byte(secondCatalog), 0o644); err != nil {
 		t.Fatalf("write second catalog: %v", err)
 	}
@@ -443,8 +524,8 @@ func TestSelectedProblemUsesClickToRevealFirstHint(t *testing.T) {
 	if !strings.Contains(body, "Copy question") || !strings.Contains(body, "copyProblemPrompt(this") {
 		t.Fatalf("expected copy-question button in selected problem response, got: %s", body)
 	}
-	if strings.Contains(body, "unlock in a few seconds") {
-		t.Fatalf("timer-based hint message should not be present, got: %s", body)
+	if !strings.Contains(body, "Show actual solution (60s delay)") || !strings.Contains(body, "revealActualSolutionAfterDelay(this") {
+		t.Fatalf("expected delayed actual-solution button in selected problem response, got: %s", body)
 	}
 }
 
@@ -483,6 +564,71 @@ func TestProblemSolutionsRevealHintsIncrementally(t *testing.T) {
 	}
 }
 
+func TestProblemPotentialSolutionsShowsJavaAndPythonForNonSQL(t *testing.T) {
+	app := newTestApp(t)
+	problemID := firstProblemIDForLanguage(t, app.db, "Java")
+
+	req := httptest.NewRequest(http.MethodGet, fmt.Sprintf("/problem/%d/actual-solution", problemID), nil)
+	rr := httptest.NewRecorder()
+	app.handleProblemActualSolutions(rr, req, problemID)
+
+	if rr.Code != http.StatusOK {
+		t.Fatalf("expected status 200, got %d", rr.Code)
+	}
+	body := rr.Body.String()
+	if !strings.Contains(body, ">Java<") || !strings.Contains(body, ">Python<") {
+		t.Fatalf("expected Java and Python labeled potential solutions, got: %s", body)
+	}
+	if !strings.Contains(strings.ToLower(body), "actual solution") {
+		t.Fatalf("expected actual solution heading, got: %s", body)
+	}
+	if !strings.Contains(body, "<pre") || !strings.Contains(body, "<code>") {
+		t.Fatalf("expected code formatting in rendered actual solutions, got: %s", body)
+	}
+	if !strings.Contains(body, "public class Solution") || !strings.Contains(body, "range(1, 11)") {
+		t.Fatalf("expected language-specific code snippets in response, got: %s", body)
+	}
+}
+
+func TestProblemPotentialSolutionsShowsSQLForSQLProblem(t *testing.T) {
+	app := newTestApp(t)
+	problemID := firstProblemIDForLanguage(t, app.db, "SQL")
+
+	req := httptest.NewRequest(http.MethodGet, fmt.Sprintf("/problem/%d/actual-solution", problemID), nil)
+	rr := httptest.NewRecorder()
+	app.handleProblemActualSolutions(rr, req, problemID)
+
+	if rr.Code != http.StatusOK {
+		t.Fatalf("expected status 200, got %d", rr.Code)
+	}
+	body := rr.Body.String()
+	if !strings.Contains(body, ">SQL<") {
+		t.Fatalf("expected SQL labeled potential solution, got: %s", body)
+	}
+	if strings.Contains(body, ">Java<") || strings.Contains(body, ">Python<") {
+		t.Fatalf("did not expect Java/Python labels for SQL problem, got: %s", body)
+	}
+	if !strings.Contains(body, "<pre") || !strings.Contains(body, "<code>") || !strings.Contains(body, "SELECT") {
+		t.Fatalf("expected SQL code snippet formatting and content, got: %s", body)
+	}
+}
+
+func TestHomePageFiltersAutoLoadOnMenuChange(t *testing.T) {
+	app := newTestApp(t)
+
+	req := httptest.NewRequest(http.MethodGet, "/", nil)
+	rr := httptest.NewRecorder()
+	app.handleHome(rr, req)
+
+	if rr.Code != http.StatusOK {
+		t.Fatalf("expected status 200, got %d", rr.Code)
+	}
+	body := rr.Body.String()
+	if !strings.Contains(body, `hx-trigger="change from:select, submit"`) {
+		t.Fatalf("expected auto-refresh trigger on filter form, got: %s", body)
+	}
+}
+
 func newTestApp(t *testing.T) *App {
 	t.Helper()
 
@@ -515,6 +661,16 @@ ORDER BY problem_id
 LIMIT 1`, expectedCount).Scan(&id)
 	if err != nil {
 		t.Fatalf("select problem id with %d solutions: %v", expectedCount, err)
+	}
+	return id
+}
+
+func firstProblemIDForLanguage(t *testing.T, db *sql.DB, language string) int {
+	t.Helper()
+
+	var id int
+	if err := db.QueryRow("SELECT id FROM problems WHERE language = ? ORDER BY id LIMIT 1", language).Scan(&id); err != nil {
+		t.Fatalf("select first %s problem id: %v", language, err)
 	}
 	return id
 }

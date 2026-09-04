@@ -32,6 +32,11 @@ type Solution struct {
 	Solution      string
 }
 
+type PotentialSolution struct {
+	Language string
+	Solution string
+}
+
 type App struct {
 	db        *sql.DB
 	templates *template.Template
@@ -59,24 +64,30 @@ type SolutionsData struct {
 	NextCount int
 }
 
+type PotentialSolutionsData struct {
+	Solutions []PotentialSolution
+}
+
 type Catalog struct {
 	Questions []CatalogQuestion `json:"questions"`
 }
 
 type CatalogQuestion struct {
-	Difficulty int      `json:"difficulty"`
-	Title      string   `json:"title"`
-	Prompt     string   `json:"prompt"`
-	Languages  []string `json:"languages"`
-	Solutions  []string `json:"solutions"`
+	Difficulty         int               `json:"difficulty"`
+	Title              string            `json:"title"`
+	Prompt             string            `json:"prompt"`
+	Languages          []string          `json:"languages"`
+	Solutions          []string          `json:"solutions"`
+	PotentialSolutions map[string]string `json:"potential_solutions"`
 }
 
 type ExpandedProblem struct {
-	Language   string
-	Difficulty int
-	Title      string
-	Prompt     string
-	Solutions  []string
+	Language           string
+	Difficulty         int
+	Title              string
+	Prompt             string
+	Solutions          []string
+	PotentialSolutions []PotentialSolution
 }
 
 var supportedLanguages = map[string]struct{}{
@@ -173,6 +184,7 @@ CREATE TABLE IF NOT EXISTS app_meta (
 	_, err := db.Exec(`
 CREATE INDEX IF NOT EXISTS idx_problems_language_difficulty ON problems(language, difficulty);
 CREATE INDEX IF NOT EXISTS idx_problem_solutions_problem_id ON problem_solutions(problem_id);
+CREATE INDEX IF NOT EXISTS idx_problem_potential_solutions_problem_id ON problem_potential_solutions(problem_id);
 `)
 	return err
 }
@@ -189,7 +201,12 @@ func ensureCatalogTables(db *sql.DB) error {
 		return err
 	}
 
-	if strings.Contains(existingProblemsSQL, "'SQL'") {
+	var hasPotentialSolutionsTable int
+	if err := db.QueryRow("SELECT COUNT(*) FROM sqlite_master WHERE type = 'table' AND name = 'problem_potential_solutions'").Scan(&hasPotentialSolutionsTable); err != nil {
+		return err
+	}
+
+	if strings.Contains(existingProblemsSQL, "'SQL'") && hasPotentialSolutionsTable == 1 {
 		_, err = db.Exec(catalogTablesSchema)
 		return err
 	}
@@ -201,6 +218,9 @@ func ensureCatalogTables(db *sql.DB) error {
 	defer tx.Rollback()
 
 	if _, err := tx.Exec("DROP TABLE IF EXISTS problem_solutions"); err != nil {
+		return err
+	}
+	if _, err := tx.Exec("DROP TABLE IF EXISTS problem_potential_solutions"); err != nil {
 		return err
 	}
 	if _, err := tx.Exec("DROP TABLE IF EXISTS problems"); err != nil {
@@ -227,6 +247,15 @@ CREATE TABLE IF NOT EXISTS problem_solutions (
 	problem_id INTEGER NOT NULL,
 	solution_order INTEGER NOT NULL,
 	solution TEXT NOT NULL,
+	FOREIGN KEY(problem_id) REFERENCES problems(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS problem_potential_solutions (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	problem_id INTEGER NOT NULL,
+	language TEXT NOT NULL CHECK(language IN ('Java', 'Python', 'SQL')),
+	solution TEXT NOT NULL,
+	UNIQUE(problem_id, language),
 	FOREIGN KEY(problem_id) REFERENCES problems(id) ON DELETE CASCADE
 );
 `
@@ -270,6 +299,9 @@ func migrateCatalog(db *sql.DB, catalogPath string) error {
 	if _, err := tx.Exec("DELETE FROM problem_solutions"); err != nil {
 		return err
 	}
+	if _, err := tx.Exec("DELETE FROM problem_potential_solutions"); err != nil {
+		return err
+	}
 	if _, err := tx.Exec("DELETE FROM problems"); err != nil {
 		return err
 	}
@@ -286,6 +318,12 @@ func migrateCatalog(db *sql.DB, catalogPath string) error {
 	}
 	defer solutionInsert.Close()
 
+	potentialSolutionInsert, err := tx.Prepare("INSERT INTO problem_potential_solutions(problem_id, language, solution) VALUES(?, ?, ?)")
+	if err != nil {
+		return err
+	}
+	defer potentialSolutionInsert.Close()
+
 	for _, problem := range expanded {
 		res, err := problemInsert.Exec(problem.Language, problem.Difficulty, problem.Title, problem.Prompt)
 		if err != nil {
@@ -297,6 +335,11 @@ func migrateCatalog(db *sql.DB, catalogPath string) error {
 		}
 		for idx, solution := range problem.Solutions {
 			if _, err := solutionInsert.Exec(problemID, idx+1, solution); err != nil {
+				return err
+			}
+		}
+		for _, potential := range problem.PotentialSolutions {
+			if _, err := potentialSolutionInsert.Exec(problemID, potential.Language, potential.Solution); err != nil {
 				return err
 			}
 		}
@@ -357,6 +400,16 @@ func loadCatalog(catalogPath string) (Catalog, []byte, error) {
 				return Catalog{}, nil, fmt.Errorf("question %d solution %d is empty", i, sIdx)
 			}
 		}
+		requiredPotentialLanguages := []string{"Java", "Python"}
+		if isSQLOnlyQuestion(question.Languages) {
+			requiredPotentialLanguages = []string{"SQL"}
+		}
+		for _, requiredLanguage := range requiredPotentialLanguages {
+			potential := strings.TrimSpace(question.PotentialSolutions[requiredLanguage])
+			if potential == "" {
+				return Catalog{}, nil, fmt.Errorf("question %d missing potential solution for %s", i, requiredLanguage)
+			}
+		}
 	}
 
 	return catalog, raw, nil
@@ -381,18 +434,37 @@ func expandCatalog(catalog Catalog) ([]ExpandedProblem, error) {
 			for i, solution := range question.Solutions {
 				solutions[i] = applyLanguageTemplate(solution, language)
 			}
+			var potentialSolutions []PotentialSolution
+			for _, potentialLanguage := range []string{"Java", "Python", "SQL"} {
+				potentialSolution, ok := question.PotentialSolutions[potentialLanguage]
+				if !ok {
+					continue
+				}
+				potentialSolutions = append(potentialSolutions, PotentialSolution{
+					Language: potentialLanguage,
+					Solution: applyLanguageTemplate(potentialSolution, potentialLanguage),
+				})
+			}
 
 			expanded = append(expanded, ExpandedProblem{
-				Language:   language,
-				Difficulty: question.Difficulty,
-				Title:      title,
-				Prompt:     prompt,
-				Solutions:  solutions,
+				Language:           language,
+				Difficulty:         question.Difficulty,
+				Title:              title,
+				Prompt:             prompt,
+				Solutions:          solutions,
+				PotentialSolutions: potentialSolutions,
 			})
 		}
 	}
 
 	return expanded, nil
+}
+
+func isSQLOnlyQuestion(languages []string) bool {
+	if len(languages) != 1 {
+		return false
+	}
+	return languages[0] == "SQL"
 }
 
 func applyLanguageTemplate(text, language string) string {
@@ -490,6 +562,28 @@ ORDER BY solution_order ASC`, problemID)
 	return result, rows.Err()
 }
 
+func getProblemPotentialSolutions(db *sql.DB, problemID int) ([]PotentialSolution, error) {
+	rows, err := db.Query(`
+SELECT language, solution
+FROM problem_potential_solutions
+WHERE problem_id = ?
+ORDER BY CASE language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	var result []PotentialSolution
+	for rows.Next() {
+		var s PotentialSolution
+		if err := rows.Scan(&s.Language, &s.Solution); err != nil {
+			return nil, err
+		}
+		result = append(result, s)
+	}
+	return result, rows.Err()
+}
+
 func (a *App) handleHome(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodGet {
 		http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
@@ -566,6 +660,10 @@ func (a *App) handleProblemRoutes(w http.ResponseWriter, r *http.Request) {
 		a.handleProblemSolutions(w, r, id)
 		return
 	}
+	if len(parts) == 2 && (parts[1] == "actual-solution" || parts[1] == "potential-solutions") {
+		a.handleProblemActualSolutions(w, r, id)
+		return
+	}
 	http.NotFound(w, r)
 }
 
@@ -623,6 +721,23 @@ func (a *App) handleProblemSolutions(w http.ResponseWriter, r *http.Request, id 
 	}
 }
 
+func (a *App) handleProblemActualSolutions(w http.ResponseWriter, r *http.Request, id int) {
+	solutions, err := getProblemPotentialSolutions(a.db, id)
+	if err != nil {
+		http.Error(w, "failed to load potential solutions", http.StatusInternalServerError)
+		return
+	}
+	if len(solutions) == 0 {
+		http.NotFound(w, r)
+		return
+	}
+
+	data := PotentialSolutionsData{Solutions: solutions}
+	if err := a.templates.ExecuteTemplate(w, "actual_solutions", data); err != nil {
+		http.Error(w, "failed to render potential solutions", http.StatusInternalServerError)
+	}
+}
+
 const templates = `
 {{define "page"}}
 <!doctype html>
@@ -647,6 +762,7 @@ const templates = `
       <div class="card-body">
         <form id="filters" class="row g-3"
               hx-get="/problems"
+              hx-trigger="change from:select, submit"
               hx-target="#problem-list"
               hx-swap="innerHTML">
           <div class="col-md-4">
@@ -704,6 +820,50 @@ const templates = `
         }, 1200);
       });
     }
+    function revealActualSolutionAfterDelay(button, url, targetId) {
+      if (button.dataset.pending === "true") {
+        return;
+      }
+      const originalLabel = "Show actual solution (60s delay)";
+      const target = document.getElementById(targetId);
+      button.dataset.pending = "true";
+      button.disabled = true;
+      if (target) {
+        target.setAttribute("aria-busy", "true");
+      }
+      let remaining = 60;
+      button.textContent = "Unlocking in " + remaining + "s...";
+      const timer = setInterval(function () {
+        remaining -= 1;
+        if (remaining <= 0) {
+          clearInterval(timer);
+          fetch(url)
+            .then(function (response) {
+              if (!response.ok) {
+                throw new Error("request failed");
+              }
+              return response.text();
+            })
+            .then(function (html) {
+              if (target) {
+                target.innerHTML = html;
+                target.setAttribute("aria-busy", "false");
+              }
+              button.textContent = "Actual solution shown";
+            })
+            .catch(function () {
+              button.dataset.pending = "false";
+              button.disabled = false;
+              button.textContent = originalLabel;
+              if (target) {
+                target.setAttribute("aria-busy", "false");
+              }
+            });
+          return;
+        }
+        button.textContent = "Unlocking in " + remaining + "s...";
+      }, 1000);
+    }
   </script>
 </body>
 </html>
@@ -734,9 +894,14 @@ const templates = `
 <h5 class="text-success">{{.Problem.Title}}</h5>
 <p class="text-body-secondary mb-1">{{.Problem.Language}} · Difficulty {{.Problem.Difficulty}}</p>
 <p class="mb-2">{{.Problem.Prompt}}</p>
-<button class="btn btn-outline-primary btn-sm mb-3"
-        type="button"
-        onclick='copyProblemPrompt(this, "{{.Problem.Prompt | js}}")'>Copy question</button>
+<div class="d-flex flex-wrap gap-2 mb-3">
+  <button class="btn btn-outline-primary btn-sm"
+          type="button"
+          onclick='copyProblemPrompt(this, "{{.Problem.Prompt | js}}")'>Copy question</button>
+  <button class="btn btn-outline-warning btn-sm"
+          type="button"
+          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution", "actual-solution-{{.Problem.ID}}")'>Show actual solution (60s delay)</button>
+</div>
 <div id="solutions-{{.Problem.ID}}"
      hx-swap="innerHTML">
   <button class="btn btn-outline-success btn-sm"
@@ -745,6 +910,7 @@ const templates = `
           hx-swap="innerHTML"
           type="button">Show first hint</button>
 </div>
+<div id="actual-solution-{{.Problem.ID}}" class="mt-3" aria-live="polite" aria-busy="false"></div>
 {{end}}
 
 {{define "solutions"}}
@@ -761,5 +927,17 @@ const templates = `
           hx-swap="innerHTML"
           type="button">{{if eq .NextCount 2}}Show second hint{{else}}Show next hint{{end}}</button>
 {{end}}
+{{end}}
+
+{{define "actual_solutions"}}
+<h6>Actual Solution{{if gt (len .Solutions) 1}}s{{end}} (Potential Approaches)</h6>
+<ul class="list-unstyled mb-0">
+  {{range .Solutions}}
+    <li class="mb-2">
+      <span class="badge text-bg-secondary me-2">{{.Language}}</span>
+      <pre class="bg-light border rounded p-2 mt-2 mb-0"><code>{{.Solution}}</code></pre>
+    </li>
+  {{end}}
+</ul>
 {{end}}
 `
