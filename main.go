@@ -722,21 +722,17 @@ func (a *App) handleProblemSolutions(w http.ResponseWriter, r *http.Request, id 
 }
 
 func (a *App) handleProblemActualSolutions(w http.ResponseWriter, r *http.Request, id int) {
-	language := strings.TrimSpace(r.URL.Query().Get("language"))
-	if language == "" {
-		problem, err := getProblemByID(a.db, id)
-		if err != nil {
-			if errors.Is(err, sql.ErrNoRows) {
-				http.NotFound(w, r)
-				return
-			}
-			http.Error(w, "failed to load problem", http.StatusInternalServerError)
+	problem, err := getProblemByID(a.db, id)
+	if err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			http.NotFound(w, r)
 			return
 		}
-		language = problem.Language
+		http.Error(w, "failed to load problem", http.StatusInternalServerError)
+		return
 	}
 
-	solutions, err := getProblemPotentialSolutions(a.db, id, language)
+	solutions, err := getProblemPotentialSolutions(a.db, id, problem.Language)
 	if err != nil {
 		http.Error(w, "failed to load potential solutions", http.StatusInternalServerError)
 		return
@@ -923,9 +919,11 @@ const templates = `
     }
     document.addEventListener("DOMContentLoaded", function () {
       initActualSolutionButtons(document);
-    });
-    document.body.addEventListener("htmx:afterSwap", function (event) {
-      initActualSolutionButtons(event.target);
+      if (document.body) {
+        document.body.addEventListener("htmx:afterSwap", function (event) {
+          initActualSolutionButtons(event.target);
+        });
+      }
     });
   </script>
 </body>
