@@ -845,15 +845,37 @@ const templates = `
       }
       const statusId = button.getAttribute("aria-describedby");
       const status = statusId ? document.getElementById(statusId) : null;
+      const problemID = button.getAttribute("data-problem-id");
+      const storageKey = problemID ? "actual-solution-unlock-at:" + problemID : "";
+      const now = Date.now();
+      let unlockAt = now + delaySeconds * 1000;
+      if (storageKey) {
+        try {
+          const stored = parseInt(sessionStorage.getItem(storageKey) || "", 10);
+          if (!Number.isNaN(stored) && stored > now) {
+            unlockAt = stored;
+          } else {
+            sessionStorage.setItem(storageKey, String(unlockAt));
+          }
+        } catch (e) {}
+      }
       button.dataset.timerStarted = "true";
       button.disabled = true;
-      let remaining = delaySeconds;
+      let remaining = Math.max(0, Math.ceil((unlockAt - now) / 1000));
       button.textContent = "Show actual solution (available in " + remaining + "s)";
       if (status) {
         status.textContent = "Actual solution available in " + remaining + " seconds.";
       }
+      if (remaining <= 0) {
+        button.disabled = false;
+        button.textContent = "Show actual solution";
+        if (status) {
+          status.textContent = "Actual solution is now available.";
+        }
+        return;
+      }
       const timer = setInterval(function () {
-        remaining -= 1;
+        remaining = Math.max(0, Math.ceil((unlockAt - Date.now()) / 1000));
         if (remaining <= 0) {
           clearInterval(timer);
           button.disabled = false;
@@ -973,6 +995,7 @@ const templates = `
           class="btn btn-outline-warning btn-sm"
           type="button"
           disabled
+          data-problem-id="{{.Problem.ID}}"
           data-unlock-seconds="60"
           aria-describedby="actual-solution-status-{{.Problem.ID}}"
           onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution", "actual-solution-{{.Problem.ID}}")'>Show actual solution (available in 60s)</button>

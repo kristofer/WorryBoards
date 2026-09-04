@@ -526,6 +526,7 @@ func TestSelectedProblemUsesClickToRevealFirstHint(t *testing.T) {
 	}
 	if !strings.Contains(body, `id="actual-solution-button-`) ||
 		!strings.Contains(body, "Show actual solution (available in 60s)") ||
+		!strings.Contains(body, `data-problem-id="`) ||
 		!strings.Contains(body, `data-unlock-seconds="60"`) ||
 		!strings.Contains(body, `/actual-solution", "actual-solution-`) ||
 		!strings.Contains(body, "revealActualSolutionAfterDelay(this") {
