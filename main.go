@@ -564,10 +564,11 @@ ORDER BY solution_order ASC`, problemID)
 
 func getProblemPotentialSolutions(db *sql.DB, problemID int) ([]PotentialSolution, error) {
 	rows, err := db.Query(`
-SELECT language, solution
-FROM problem_potential_solutions
-WHERE problem_id = ? AND language = (SELECT language FROM problems WHERE id = ?)
-ORDER BY CASE language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID, problemID)
+SELECT pps.language, pps.solution
+FROM problem_potential_solutions pps
+JOIN problems p ON p.id = pps.problem_id
+WHERE pps.problem_id = ? AND pps.language = p.language
+ORDER BY CASE pps.language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID)
 	if err != nil {
 		return nil, err
 	}
@@ -929,14 +930,22 @@ const templates = `
           }
         });
     }
-    document.addEventListener("DOMContentLoaded", function () {
+    function wireActualSolutionButtonInit() {
       initActualSolutionButtons(document);
       if (document.body) {
-        document.body.addEventListener("htmx:afterSwap", function (event) {
-          initActualSolutionButtons(event.target);
-        });
+        if (document.body.dataset.actualSolutionInitBound !== "true") {
+          document.body.dataset.actualSolutionInitBound = "true";
+          document.body.addEventListener("htmx:afterSwap", function (event) {
+            initActualSolutionButtons(event.target);
+          });
+        }
       }
-    });
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", wireActualSolutionButtonInit);
+    } else {
+      wireActualSolutionButtonInit();
+    }
   </script>
 </body>
 </html>
