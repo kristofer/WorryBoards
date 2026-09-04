@@ -5,6 +5,8 @@ A static whiteboard practice app built with Go, HTMX, Bootstrap, and SQLite (pur
 Seeded catalog:
 - 225 total problems
 - Language choices: Java, Python, SQL
+- Changing language or difficulty auto-loads a fresh set of 5 problems
+- Each selected problem includes hint reveals plus a 60-second delayed “actual solution” reveal
 - Difficulty 1 has 97 fundamentals-focused prompts
 - Difficulty 2 has 52 prompts
 - Difficulty 3 has 31 prompts

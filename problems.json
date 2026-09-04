@@ -11,7 +11,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -24,7 +28,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -37,7 +45,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -50,7 +62,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -63,7 +79,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -76,7 +96,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -89,7 +113,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -102,7 +130,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -115,7 +147,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -128,7 +164,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -141,7 +181,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -154,7 +198,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -167,7 +215,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -180,7 +232,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -193,7 +249,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -206,7 +266,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -219,7 +283,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -232,7 +300,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -245,7 +317,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -258,7 +334,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -271,7 +351,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -284,7 +368,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -297,7 +385,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -310,7 +402,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -323,7 +419,11 @@
       "solutions": [
         "{{language}} approach: direct loop-first implementation with clear variable names.",
         "{{language}} approach: extract core logic into a small helper function, then print the result."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct loop-first implementation with clear variable names.",
+        "Python": "{{language}} approach: direct loop-first implementation with clear variable names."
+      }
     },
     {
       "difficulty": 1,
@@ -335,7 +435,11 @@
       "solutions": [
         "Python approach: return a slice that starts at index 1.",
         "Python approach: build a new list with a loop so the interviewer can see the indexing logic."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "Python approach: return a slice that starts at index 1.",
+        "Python": "Python approach: return a slice that starts at index 1."
+      }
     },
     {
       "difficulty": 1,
@@ -347,7 +451,11 @@
       "solutions": [
         "Python approach: use slicing to return everything except the last two positions.",
         "Python approach: compute the stop index explicitly, then copy values into a new list."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "Python approach: use slicing to return everything except the last two positions.",
+        "Python": "Python approach: use slicing to return everything except the last two positions."
+      }
     },
     {
       "difficulty": 1,
@@ -359,9 +467,14 @@
       "solutions": [
         "Python approach: return the result of list concatenation with `+`.",
         "Python approach: start with a copy of the first list, then append items from the second list in a loop."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "Python approach: return the result of list concatenation with `+`.",
+        "Python": "Python approach: return the result of list concatenation with `+`."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Sum integers from 7 to 23",
       "prompt": "Compute and print the sum of all integers from 7 through 23 inclusive. Example output: 255. Write your answer in Java.",
       "languages": [
@@ -371,9 +484,13 @@
         "Java approach: use a straightforward for-loop and an accumulator variable.",
         "Java approach: extract the summing logic into a helper method, then print the returned total."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: use a straightforward for-loop and an accumulator variable.",
+        "Python": "Java approach: use a straightforward for-loop and an accumulator variable."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Find the smallest integer in an array",
       "prompt": "Given [9, 5, 6, 3, 8, 2, 4], find and print the smallest integer. Example output: 2. Write your answer in Java.",
       "languages": [
@@ -383,9 +500,13 @@
         "Java approach: track the current smallest value while scanning the array once.",
         "Java approach: wrap the scan in a helper method that returns the minimum value."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: track the current smallest value while scanning the array once.",
+        "Python": "Java approach: track the current smallest value while scanning the array once."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Explain local variables vs instance variables",
       "prompt": "Explain local vs instance variables, then show one short code example of each. Example result: local exists only inside a method; instance belongs to each object. Write your answer in Java.",
       "languages": [
@@ -395,9 +516,13 @@
         "Java approach: define each term, then contrast lifetime, scope, and where each variable is declared.",
         "Java approach: pair the explanation with a tiny class that shows one field and one method-local variable."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: define each term, then contrast lifetime, scope, and where each variable is declared.",
+        "Python": "Java approach: define each term, then contrast lifetime, scope, and where each variable is declared."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Write the shortest Java class",
       "prompt": "Write the shortest valid Java class and explain why it compiles. Example result: class A {} compiles because it defines a legal class declaration. Write your answer in Java.",
       "languages": [
@@ -407,9 +532,13 @@
         "Java approach: show a minimal class declaration with matching braces and explain the required pieces.",
         "Java approach: compare a package-private class with a public class to explain the extra filename rule."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: show a minimal class declaration with matching braces and explain the required pieces.",
+        "Python": "Java approach: show a minimal class declaration with matching braces and explain the required pieces."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Create an object of type Foo",
       "prompt": "Given a class Foo, create a new Foo object and store it in a variable. Example result: Foo f = new Foo(); Write your answer in Java.",
       "languages": [
@@ -419,9 +548,13 @@
         "Java approach: instantiate `Foo` with `new` and assign it to a local variable.",
         "Java approach: explain what the reference stores after object creation."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: instantiate `Foo` with `new` and assign it to a local variable.",
+        "Python": "Java approach: instantiate `Foo` with `new` and assign it to a local variable."
+      }
     },
     {
+      "difficulty": 1,
       "title": "What is Java and what are its key features?",
       "prompt": "Explain what Java is and list key features such as platform independence and object orientation. Example result includes: 'Java runs on the JVM and uses bytecode for portability.' Write your answer in Java.",
       "languages": [
@@ -431,9 +564,13 @@
         "Java approach: define Java as an object-oriented language on the JVM, then cover portability, libraries, and memory management.",
         "Java approach: organize the answer as a short definition followed by a concise feature list."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: define Java as an object-oriented language on the JVM, then cover portability, libraries, and memory management.",
+        "Python": "Java approach: define Java as an object-oriented language on the JVM, then cover portability, libraries, and memory management."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Difference between a class and an object in Java",
       "prompt": "Explain class vs object and give a tiny example. Example result: 'Car is a class, myCar is an object created from Car.' Write your answer in Java.",
       "languages": [
@@ -443,9 +580,13 @@
         "Java approach: describe a class as a blueprint and an object as a concrete instance.",
         "Java approach: use a tiny example class and one created instance to illustrate the distinction."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: describe a class as a blueprint and an object as a concrete instance.",
+        "Python": "Java approach: describe a class as a blueprint and an object as a concrete instance."
+      }
     },
     {
+      "difficulty": 1,
       "title": "What is a constructor in Java?",
       "prompt": "Explain what a constructor is, when it runs, and why overloaded constructors are useful. Example result includes: 'A constructor runs during new Person(...)'. Write your answer in Java.",
       "languages": [
@@ -455,9 +596,13 @@
         "Java approach: define constructor behavior and mention object initialization with `new`.",
         "Java approach: contrast a no-argument constructor with an overloaded constructor that accepts initial state."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: define constructor behavior and mention object initialization with `new`.",
+        "Python": "Java approach: define constructor behavior and mention object initialization with `new`."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Static methods vs instance methods in Java",
       "prompt": "Explain static vs instance methods and show one call style for each. Example result: Math.max(...) is static; obj.printName() is instance. Write your answer in Java.",
       "languages": [
@@ -467,9 +612,13 @@
         "Java approach: compare class-level behavior against object-level behavior and note what each method can access.",
         "Java approach: include a tiny example showing one static method call and one instance method call."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: compare class-level behavior against object-level behavior and note what each method can access.",
+        "Python": "Java approach: compare class-level behavior against object-level behavior and note what each method can access."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Purpose of public static void main",
       "prompt": "Explain the role of public static void main(String[] args) as the Java entry point. Example result includes: 'The JVM calls main to start program execution.' Write your answer in Java.",
       "languages": [
@@ -479,9 +628,13 @@
         "Java approach: explain each keyword and describe why the JVM starts execution there.",
         "Java approach: mention command-line arguments and show a minimal runnable example."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: explain each keyword and describe why the JVM starts execution there.",
+        "Python": "Java approach: explain each keyword and describe why the JVM starts execution there."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Public methods vs private methods in Java",
       "prompt": "Explain when to use public vs private methods. Example result: public methods define API, private methods hide internal helpers. Write your answer in Java.",
       "languages": [
@@ -491,9 +644,13 @@
         "Java approach: compare visibility from inside and outside the class.",
         "Java approach: connect the answer to encapsulation and implementation hiding."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: compare visibility from inside and outside the class.",
+        "Python": "Java approach: compare visibility from inside and outside the class."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Public variables vs private variables in Java",
       "prompt": "Explain public vs private fields and why private fields plus getters/setters are common. Example result includes encapsulation benefits. Write your answer in Java.",
       "languages": [
@@ -503,9 +660,13 @@
         "Java approach: compare direct external access with controlled access through methods.",
         "Java approach: mention encapsulation and the ability to validate state changes."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: compare direct external access with controlled access through methods.",
+        "Python": "Java approach: compare direct external access with controlled access through methods."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Purpose of the this keyword in Java",
       "prompt": "Explain what this refers to and when it disambiguates fields from parameters. Example result: this.name = name. Write your answer in Java.",
       "languages": [
@@ -515,9 +676,13 @@
         "Java approach: explain that `this` refers to the current object and helps disambiguate field names.",
         "Java approach: show a constructor or setter where a parameter name matches a field name."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: explain that `this` refers to the current object and helps disambiguate field names.",
+        "Python": "Java approach: explain that `this` refers to the current object and helps disambiguate field names."
+      }
     },
     {
+      "difficulty": 1,
       "title": "While loops vs for loops in Java",
       "prompt": "Compare while and for loops and give one scenario for each. Example result: for for known counts, while for condition-driven loops. Write your answer in Java.",
       "languages": [
@@ -527,9 +692,13 @@
         "Java approach: compare known-iteration and condition-driven looping patterns.",
         "Java approach: pair the explanation with one short example of each loop form."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: compare known-iteration and condition-driven looping patterns.",
+        "Python": "Java approach: compare known-iteration and condition-driven looping patterns."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Declare a floating-point variable",
       "prompt": "Declare a floating-point variable named x initialized to 3.14. Example result: double x = 3.14; Write your answer in Java.",
       "languages": [
@@ -539,9 +708,13 @@
         "Java approach: declare and initialize the variable in one line using `double`.",
         "Java approach: declare first, then assign the value on the next line."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: declare and initialize the variable in one line using `double`.",
+        "Python": "Java approach: declare and initialize the variable in one line using `double`."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Write a Java for-loop that prints ZipCode",
       "prompt": "Write a for loop from 0 to 9 that prints index and 'ZipCode'. Example output line: 0 ZipCode. Write your answer in Java.",
       "languages": [
@@ -551,9 +724,13 @@
         "Java approach: use a counted `for` loop and print both values on each iteration.",
         "Java approach: build the output line with string concatenation or formatted printing."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: use a counted `for` loop and print both values on each iteration.",
+        "Python": "Java approach: use a counted `for` loop and print both values on each iteration."
+      }
     },
     {
+      "difficulty": 1,
       "title": "What is the void type in Java?",
       "prompt": "Explain what void means as a return type and when to use it. Example result: methods that only print or mutate state often return void. Write your answer in Java.",
       "languages": [
@@ -563,9 +740,13 @@
         "Java approach: explain that `void` means a method returns no value.",
         "Java approach: compare a `void` method with one that returns data to the caller."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "Java": "Java approach: explain that `void` means a method returns no value.",
+        "Python": "Java approach: explain that `void` means a method returns no value."
+      }
     },
     {
+      "difficulty": 1,
       "title": "What is the SELECT statement?",
       "prompt": "Explain what SELECT does in SQL and show a basic query. Example query: SELECT name FROM users; Write your answer in SQL.",
       "languages": [
@@ -575,9 +756,12 @@
         "SQL approach: define `SELECT` as a way to read data and demonstrate `SELECT * FROM table_name;`.",
         "SQL approach: explain how selecting specific columns differs from selecting every column."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: define `SELECT` as a way to read data and demonstrate `SELECT * FROM table_name;`."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Common clauses used with SELECT",
       "prompt": "Explain WHERE, ORDER BY, GROUP BY, and HAVING with one short query example. Example: SELECT dept, COUNT(*) FROM employees GROUP BY dept HAVING COUNT(*) > 5; Write your answer in SQL.",
       "languages": [
@@ -587,9 +771,12 @@
         "SQL approach: define each clause briefly, then show one combined example query.",
         "SQL approach: emphasize how filtering before grouping differs from filtering aggregated results."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: define each clause briefly, then show one combined example query."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Entities and relationships in databases",
       "prompt": "Explain entities and relationships in database design. Example result: Student and Course are entities linked by Enrollment. Write your answer in SQL.",
       "languages": [
@@ -599,9 +786,12 @@
         "SQL approach: define entities as things you store and relationships as the links between them.",
         "SQL approach: use a small example such as students and courses to ground the explanation."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: define entities as things you store and relationships as the links between them."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Common database relationship types",
       "prompt": "Describe one-to-one, one-to-many, and many-to-many with examples. Example result: one Author can have many Books. Write your answer in SQL.",
       "languages": [
@@ -611,9 +801,12 @@
         "SQL approach: cover one-to-one, one-to-many, many-to-one, and self-referencing relationships.",
         "SQL approach: tie each relationship type to a simple table example."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: cover one-to-one, one-to-many, many-to-one, and self-referencing relationships."
+      }
     },
     {
+      "difficulty": 1,
       "title": "What is a primary key?",
       "prompt": "Explain what a primary key is and why it must uniquely identify rows. Example: id INT PRIMARY KEY. Write your answer in SQL.",
       "languages": [
@@ -623,9 +816,12 @@
         "SQL approach: explain uniqueness and non-null behavior, then show a short `CREATE TABLE` example.",
         "SQL approach: compare a single-column primary key with a composite primary key."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: explain uniqueness and non-null behavior, then show a short `CREATE TABLE` example."
+      }
     },
     {
+      "difficulty": 1,
       "title": "What is a foreign key?",
       "prompt": "Explain what a foreign key is and how it links tables. Example: orders.customer_id references customers.id. Write your answer in SQL.",
       "languages": [
@@ -635,9 +831,12 @@
         "SQL approach: define referential integrity and show a parent-child table example.",
         "SQL approach: explain what column in one table points at the primary key of another table."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: define referential integrity and show a parent-child table example."
+      }
     },
     {
+      "difficulty": 1,
       "title": "What is a query?",
       "prompt": "Explain what a query is and contrast read vs data-changing queries. Example read: SELECT * FROM products; example write: UPDATE products SET price=10 WHERE id=1; Write your answer in SQL.",
       "languages": [
@@ -647,9 +846,12 @@
         "SQL approach: define a query as a request for data or a change to stored data.",
         "SQL approach: compare a `SELECT` query with an `UPDATE` example."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: define a query as a request for data or a change to stored data."
+      }
     },
     {
+      "difficulty": 1,
       "title": "What does the WHERE clause do?",
       "prompt": "Explain how WHERE filters rows before returning results. Example: SELECT * FROM orders WHERE total > 100; Write your answer in SQL.",
       "languages": [
@@ -659,9 +861,12 @@
         "SQL approach: define `WHERE` as row-level filtering and show one simple condition example.",
         "SQL approach: contrast filtering numeric ranges with filtering exact text matches."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: define `WHERE` as row-level filtering and show one simple condition example."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Sort rows with ORDER BY",
       "prompt": "Write a query that sorts by last_name ascending and created_at descending. Example: SELECT * FROM users ORDER BY last_name ASC, created_at DESC; Write your answer in SQL.",
       "languages": [
@@ -671,9 +876,12 @@
         "SQL approach: use `ORDER BY col1 ASC, col2 DESC` and explain default sort direction.",
         "SQL approach: show how ordering affects only presentation, not stored table order."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use `ORDER BY col1 ASC, col2 DESC` and explain default sort direction."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Limit result size with LIMIT",
       "prompt": "Write a query that returns only the first 10 rows. Example: SELECT * FROM logs ORDER BY created_at DESC LIMIT 10; Write your answer in SQL.",
       "languages": [
@@ -683,9 +891,12 @@
         "SQL approach: append `LIMIT 10` to a `SELECT` query.",
         "SQL approach: pair `ORDER BY` with `LIMIT` to make the first rows deterministic."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: append `LIMIT 10` to a `SELECT` query."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Remove duplicates with DISTINCT",
       "prompt": "Explain DISTINCT and show how it removes duplicates. Example: SELECT DISTINCT city FROM customers; Write your answer in SQL.",
       "languages": [
@@ -695,9 +906,12 @@
         "SQL approach: show `SELECT DISTINCT column_name FROM table_name;` and explain uniqueness in result sets.",
         "SQL approach: compare `DISTINCT` results with a regular `SELECT` that includes duplicates."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: show `SELECT DISTINCT column_name FROM table_name;` and explain uniqueness in result sets."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Rename columns with aliases",
       "prompt": "Write a query that renames output columns with aliases. Example: SELECT first_name AS first, last_name AS last FROM users; Write your answer in SQL.",
       "languages": [
@@ -707,9 +921,12 @@
         "SQL approach: use `AS` for column aliases and show one readable result example.",
         "SQL approach: mention that table aliases can also shorten join queries."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use `AS` for column aliases and show one readable result example."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Filter with IN",
       "prompt": "Write a query using IN to match a small set of values. Example: SELECT * FROM orders WHERE status IN ('new','paid'); Write your answer in SQL.",
       "languages": [
@@ -719,9 +936,12 @@
         "SQL approach: use `WHERE column_name IN (value1, value2, value3)` for concise multi-value filters.",
         "SQL approach: compare `IN` with multiple `OR` conditions."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use `WHERE column_name IN (value1, value2, value3)` for concise multi-value filters."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Filter with BETWEEN",
       "prompt": "Write a query using BETWEEN for a range. Example: SELECT * FROM events WHERE event_date BETWEEN '2026-01-01' AND '2026-01-31'; Write your answer in SQL.",
       "languages": [
@@ -731,9 +951,12 @@
         "SQL approach: use `WHERE value BETWEEN low AND high` and note inclusive boundaries.",
         "SQL approach: compare `BETWEEN` with equivalent `>=` and `<=` conditions."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use `WHERE value BETWEEN low AND high` and note inclusive boundaries."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Search text with LIKE",
       "prompt": "Write a query using LIKE to match a prefix. Example: SELECT * FROM users WHERE email LIKE 'sam%'; Write your answer in SQL.",
       "languages": [
@@ -743,9 +966,12 @@
         "SQL approach: use wildcard patterns such as `prefix%` to match starts-with behavior.",
         "SQL approach: explain `%` and `_` pattern characters with one short example each."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use wildcard patterns such as `prefix%` to match starts-with behavior."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Understand NULL and IS NULL",
       "prompt": "Explain NULL and how IS NULL / IS NOT NULL are used. Example: SELECT * FROM tasks WHERE completed_at IS NULL; Write your answer in SQL.",
       "languages": [
@@ -755,9 +981,12 @@
         "SQL approach: define `NULL` as unknown or missing and show why `= NULL` does not work.",
         "SQL approach: demonstrate correct predicates using `IS NULL` and `IS NOT NULL`."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: define `NULL` as unknown or missing and show why `= NULL` does not work."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Count rows with COUNT",
       "prompt": "Write one query that counts all rows and one that counts non-null values in a column. Example: SELECT COUNT(*) FROM users; SELECT COUNT(phone) FROM users; Write your answer in SQL.",
       "languages": [
@@ -767,9 +996,12 @@
         "SQL approach: compare `COUNT(*)` with `COUNT(column_name)`.",
         "SQL approach: explain how null values affect aggregate counts."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: compare `COUNT(*)` with `COUNT(column_name)`."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Find max and min values",
       "prompt": "Write queries that return the max and min of a numeric column. Example: SELECT MAX(score), MIN(score) FROM exams; Write your answer in SQL.",
       "languages": [
@@ -779,9 +1011,12 @@
         "SQL approach: use `MAX(column_name)` and `MIN(column_name)` aggregates.",
         "SQL approach: combine both aggregates in one query when helpful for quick range checks."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use `MAX(column_name)` and `MIN(column_name)` aggregates."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Compute averages with AVG",
       "prompt": "Write a query that computes an average and explain NULL handling. Example: SELECT AVG(price) FROM products; Write your answer in SQL.",
       "languages": [
@@ -791,9 +1026,12 @@
         "SQL approach: use `AVG(column_name)` to compute the mean of available numeric values.",
         "SQL approach: mention that null entries are ignored by aggregate calculations."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use `AVG(column_name)` to compute the mean of available numeric values."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Sum a numeric column",
       "prompt": "Write a query that totals a numeric column. Example: SELECT SUM(amount) FROM payments; Write your answer in SQL.",
       "languages": [
@@ -803,9 +1041,12 @@
         "SQL approach: use `SUM(column_name)` and optionally alias the result for readability.",
         "SQL approach: pair `WHERE` with `SUM` to total only a filtered subset."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use `SUM(column_name)` and optionally alias the result for readability."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Group rows with GROUP BY",
       "prompt": "Write a grouped query returning one row per department with counts. Example: SELECT department, COUNT(*) FROM employees GROUP BY department; Write your answer in SQL.",
       "languages": [
@@ -815,9 +1056,12 @@
         "SQL approach: combine `GROUP BY` with `COUNT(*)` to summarize repeated values.",
         "SQL approach: explain why non-aggregated selected columns must appear in `GROUP BY`."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: combine `GROUP BY` with `COUNT(*)` to summarize repeated values."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Filter grouped results with HAVING",
       "prompt": "Write a GROUP BY query and keep only groups passing an aggregate rule. Example: SELECT department, COUNT(*) c FROM employees GROUP BY department HAVING c >= 3; Write your answer in SQL.",
       "languages": [
@@ -827,9 +1071,12 @@
         "SQL approach: use `HAVING` after `GROUP BY` to filter on aggregate results like counts or sums.",
         "SQL approach: contrast `WHERE` (before grouping) with `HAVING` (after grouping)."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use `HAVING` after `GROUP BY` to filter on aggregate results like counts or sums."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Join two tables with INNER JOIN",
       "prompt": "Write an INNER JOIN between customers and orders on customer_id. Example: SELECT c.name, o.id FROM customers c INNER JOIN orders o ON o.customer_id = c.id; Write your answer in SQL.",
       "languages": [
@@ -839,9 +1086,12 @@
         "SQL approach: join on matching key columns and return selected fields from both tables.",
         "SQL approach: explain that unmatched rows from either side are excluded by inner joins."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: join on matching key columns and return selected fields from both tables."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Keep unmatched rows with LEFT JOIN",
       "prompt": "Explain LEFT JOIN and provide a query that keeps all rows from the left table. Example: SELECT c.name, o.id FROM customers c LEFT JOIN orders o ON o.customer_id = c.id; Write your answer in SQL.",
       "languages": [
@@ -851,9 +1101,12 @@
         "SQL approach: show `LEFT JOIN` syntax and point out nulls on the right side when no match exists.",
         "SQL approach: compare result size and null behavior against an inner join."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: show `LEFT JOIN` syntax and point out nulls on the right side when no match exists."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Add new rows with INSERT",
       "prompt": "Write an INSERT statement with explicit columns. Example: INSERT INTO users (name, email) VALUES ('Sam', 'sam@example.com'); Write your answer in SQL.",
       "languages": [
@@ -863,9 +1116,12 @@
         "SQL approach: use `INSERT INTO table_name (col1, col2) VALUES (val1, val2);`.",
         "SQL approach: mention that explicit column lists make inserts safer and clearer."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use `INSERT INTO table_name (col1, col2) VALUES (val1, val2);`."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Modify rows with UPDATE",
       "prompt": "Write an UPDATE statement with a WHERE clause targeting one row. Example: UPDATE users SET status='active' WHERE id=42; Write your answer in SQL.",
       "languages": [
@@ -875,9 +1131,12 @@
         "SQL approach: show `UPDATE table_name SET column_name = value WHERE id = ...;`.",
         "SQL approach: explain that omitting `WHERE` updates every row."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: show `UPDATE table_name SET column_name = value WHERE id = ...;`."
+      }
     },
     {
+      "difficulty": 1,
       "title": "Remove rows with DELETE",
       "prompt": "Write a DELETE statement that removes matching rows safely. Example: DELETE FROM sessions WHERE expires_at < '2026-01-01'; Write your answer in SQL.",
       "languages": [
@@ -887,7 +1146,9 @@
         "SQL approach: use `DELETE FROM table_name WHERE ...;` with a clear filter condition.",
         "SQL approach: suggest previewing matches with `SELECT` before running destructive deletes."
       ],
-      "difficulty": 1
+      "potential_solutions": {
+        "SQL": "SQL approach: use `DELETE FROM table_name WHERE ...;` with a clear filter condition."
+      }
     },
     {
       "difficulty": 2,
@@ -901,7 +1162,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -915,7 +1180,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -929,7 +1198,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -943,7 +1216,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -957,7 +1234,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -971,7 +1252,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -985,7 +1270,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -999,7 +1288,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -1013,7 +1306,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -1027,7 +1324,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -1041,7 +1342,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -1055,7 +1360,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -1069,7 +1378,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -1083,7 +1396,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 2,
@@ -1097,9 +1414,14 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Sum values from a nullable Xaction array",
       "prompt": "Given an array that may contain null Xaction objects, sum all non-null getValue() results. Example values [null, X(4), X(6)] -> output 10. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1109,9 +1431,13 @@
         "Java approach: scan the array once, skip null entries, and accumulate each value.",
         "Java approach: extract a helper method that safely converts each array element into a numeric contribution."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: scan the array once, skip null entries, and accumulate each value.",
+        "Python": "Java approach: scan the array once, skip null entries, and accumulate each value."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Reverse an array of Xaction objects",
       "prompt": "Reverse an Xaction array in place using two pointers. Example input [A,B,C,D] -> output [D,C,B,A]. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1121,9 +1447,13 @@
         "Java approach: use left and right indexes and swap until they cross.",
         "Java approach: create a reversed copy if interview constraints do not require an in-place solution."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: use left and right indexes and swap until they cross.",
+        "Python": "Java approach: use left and right indexes and swap until they cross."
+      }
     },
     {
+      "difficulty": 2,
       "title": "What are the four access modifiers in Java?",
       "prompt": "Explain public, protected, package-private, and private, including where each is accessible. Example result: private is only accessible inside the same class. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1133,9 +1463,13 @@
         "Java approach: cover private, package-private, protected, and public from narrowest to widest visibility.",
         "Java approach: use a same-class, same-package, subclass, and external-package comparison."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: cover private, package-private, protected, and public from narrowest to widest visibility.",
+        "Python": "Java approach: cover private, package-private, protected, and public from narrowest to widest visibility."
+      }
     },
     {
+      "difficulty": 2,
       "title": "What is inheritance in Java?",
       "prompt": "Explain inheritance with extends and show a short parent/child example. Example result: Dog extends Animal and inherits methods. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1145,9 +1479,13 @@
         "Java approach: describe a superclass-subclass relationship and show one small example.",
         "Java approach: explain code reuse together with method overriding."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: describe a superclass-subclass relationship and show one small example.",
+        "Python": "Java approach: describe a superclass-subclass relationship and show one small example."
+      }
     },
     {
+      "difficulty": 2,
       "title": "What is polymorphism in Java?",
       "prompt": "Explain polymorphism with method overriding and dynamic dispatch. Example result: Animal a = new Dog(); a.speak() calls Dog's version. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1157,9 +1495,13 @@
         "Java approach: describe one interface or superclass reference that can point to different concrete objects.",
         "Java approach: contrast overriding with overloading so the interviewer can see both ideas clearly."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: describe one interface or superclass reference that can point to different concrete objects.",
+        "Python": "Java approach: describe one interface or superclass reference that can point to different concrete objects."
+      }
     },
     {
+      "difficulty": 2,
       "title": "What is an interface in Java?",
       "prompt": "Explain interfaces and how classes implement them. Example result: class Car implements Drivable { ... }. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1169,9 +1511,13 @@
         "Java approach: describe an interface as a contract for behavior and mention `implements`.",
         "Java approach: compare shared behavior contracts against concrete stateful class implementations."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: describe an interface as a contract for behavior and mention `implements`.",
+        "Python": "Java approach: describe an interface as a contract for behavior and mention `implements`."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Purpose of encapsulation in Java",
       "prompt": "Explain encapsulation and why hiding mutable state is useful. Example result: private field + public getter/setter with validation. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1181,9 +1527,13 @@
         "Java approach: connect private fields with public methods that enforce invariants.",
         "Java approach: discuss how encapsulation lets implementations change without breaking callers."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: connect private fields with public methods that enforce invariants.",
+        "Python": "Java approach: connect private fields with public methods that enforce invariants."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Purpose of the super keyword in Java",
       "prompt": "Explain uses of super for parent constructors and methods. Example result: super(name); and super.toString(). Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1193,9 +1543,13 @@
         "Java approach: show `super(...)` for constructor chaining and `super.methodName()` for inherited behavior.",
         "Java approach: explain how `super` helps a subclass reuse part of a parent implementation."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: show `super(...)` for constructor chaining and `super.methodName()` for inherited behavior.",
+        "Python": "Java approach: show `super(...)` for constructor chaining and `super.methodName()` for inherited behavior."
+      }
     },
     {
+      "difficulty": 2,
       "title": "What is an exception in Java?",
       "prompt": "Explain exceptions and how try/catch/finally works. Example result includes one thrown exception and a matching catch. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1205,9 +1559,13 @@
         "Java approach: define exceptions as runtime error signals and walk through a short `try/catch/finally` example.",
         "Java approach: distinguish throwing an exception from handling one."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: define exceptions as runtime error signals and walk through a short `try/catch/finally` example.",
+        "Python": "Java approach: define exceptions as runtime error signals and walk through a short `try/catch/finally` example."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Checked vs unchecked exceptions in Java",
       "prompt": "Compare checked and unchecked exceptions with examples. Example result: IOException is checked, NullPointerException is unchecked. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1217,9 +1575,13 @@
         "Java approach: compare compiler-enforced handling with runtime exceptions.",
         "Java approach: give one example of each kind and explain why the distinction matters."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: compare compiler-enforced handling with runtime exceptions.",
+        "Python": "Java approach: compare compiler-enforced handling with runtime exceptions."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Pass by value vs pass by reference in Java",
       "prompt": "Explain Java parameter passing using a primitive and an object example. Example result: Java is pass-by-value, object references are copied by value. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1229,9 +1591,13 @@
         "Java approach: explain that Java always passes values, including copied object references.",
         "Java approach: contrast reassigning a parameter with mutating the object it points to."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: explain that Java always passes values, including copied object references.",
+        "Python": "Java approach: explain that Java always passes values, including copied object references."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Import vs static import in Java",
       "prompt": "Explain regular import vs static import and show one example of each. Example result: import java.util.List; vs import static java.lang.Math.PI; Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1241,9 +1607,13 @@
         "Java approach: compare importing types with importing static members.",
         "Java approach: explain when static import improves readability and when it can make code harder to follow."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: compare importing types with importing static members.",
+        "Python": "Java approach: compare importing types with importing static members."
+      }
     },
     {
+      "difficulty": 2,
       "title": "What is an enum in Java?",
       "prompt": "Explain enum usage and give a practical example. Example result: enum Status { NEW, IN_PROGRESS, DONE }. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1253,9 +1623,13 @@
         "Java approach: describe enums as a fixed set of named constants.",
         "Java approach: show how enums can also include fields or methods when needed."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: describe enums as a fixed set of named constants.",
+        "Python": "Java approach: describe enums as a fixed set of named constants."
+      }
     },
     {
+      "difficulty": 2,
       "title": "What is a JAR in Java?",
       "prompt": "Explain what a JAR is and why Java code is packaged this way. Example result: app.jar bundles compiled classes/resources for distribution. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1265,9 +1639,13 @@
         "Java approach: define a JAR as a ZIP-based archive for classes and resources.",
         "Java approach: mention portability, packaging, and executable application use cases."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: define a JAR as a ZIP-based archive for classes and resources.",
+        "Python": "Java approach: define a JAR as a ZIP-based archive for classes and resources."
+      }
     },
     {
+      "difficulty": 2,
       "title": "What is a NullPointerException?",
       "prompt": "Explain what NullPointerException means, a common trigger, and one prevention technique. Example result: call on null reference causes NPE; add null check. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1277,9 +1655,13 @@
         "Java approach: describe what happens when code dereferences a null reference.",
         "Java approach: mention defensive initialization, validation, and null-safe design habits."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: describe what happens when code dereferences a null reference.",
+        "Python": "Java approach: describe what happens when code dereferences a null reference."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Explain exception types in Java",
       "prompt": "Explain Java exception categories and give at least one checked and one unchecked example. Example result: SQLException (checked), IllegalArgumentException (unchecked). Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1289,9 +1671,13 @@
         "Java approach: classify exceptions by compiler enforcement and typical runtime behavior.",
         "Java approach: use examples like file I/O for checked exceptions and invalid indexing for unchecked exceptions."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: classify exceptions by compiler enforcement and typical runtime behavior.",
+        "Python": "Java approach: classify exceptions by compiler enforcement and typical runtime behavior."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Two ways to handle exceptions in Java",
       "prompt": "Show two handling strategies: catch locally and declare throws. Example result includes both method signatures/snippets. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1301,9 +1687,13 @@
         "Java approach: compare handling with `try/catch` against declaring with `throws`.",
         "Java approach: explain the tradeoff between immediate handling and letting callers decide."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: compare handling with `try/catch` against declaring with `throws`.",
+        "Python": "Java approach: compare handling with `try/catch` against declaring with `throws`."
+      }
     },
     {
+      "difficulty": 2,
       "title": "What are collections in Java?",
       "prompt": "Explain the Java Collections Framework and name classes for list, set, and map use cases. Example result: ArrayList, HashSet, HashMap. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1313,9 +1703,13 @@
         "Java approach: define the framework and compare a few common interfaces or implementations.",
         "Java approach: justify one favorite collection type based on ordering, lookup, or update needs."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: define the framework and compare a few common interfaces or implementations.",
+        "Python": "Java approach: define the framework and compare a few common interfaces or implementations."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Create a HashMap with object keys and URL values",
       "prompt": "Create a HashMap<Object, URL> and explain equals/hashCode requirements for object keys. Example result notes that equal keys must produce same hashCode. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1325,9 +1719,13 @@
         "Java approach: declare the map with generic types and add one or two example entries.",
         "Java approach: explain why custom key classes should implement `equals()` and `hashCode()` consistently."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: declare the map with generic types and add one or two example entries.",
+        "Python": "Java approach: declare the map with generic types and add one or two example entries."
+      }
     },
     {
+      "difficulty": 2,
       "title": "What is a subquery and what are its types?",
       "prompt": "Explain what a subquery is and compare correlated vs non-correlated forms. Example queries should include one of each type. Write your answer in SQL. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1337,9 +1735,12 @@
         "SQL approach: define a nested query and explain how its result helps the outer query.",
         "SQL approach: contrast a self-contained inner query with one that depends on the outer row context."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "SQL": "SQL approach: define a nested query and explain how its result helps the outer query."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Compare abstract classes and interfaces",
       "prompt": "Compare abstract classes and interfaces and explain when each is preferable. Example result: interface for capability contracts, abstract class for shared base state. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1349,9 +1750,13 @@
         "Java approach: compare shared state plus partial implementation against pure behavior contracts.",
         "Java approach: answer with one scenario that favors inheritance and one that favors an interface."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: compare shared state plus partial implementation against pure behavior contracts.",
+        "Python": "Java approach: compare shared state plus partial implementation against pure behavior contracts."
+      }
     },
     {
+      "difficulty": 2,
       "title": "Explain Map and HashMap in Java",
       "prompt": "Explain Map as an interface and HashMap as a concrete implementation. Example result includes put/get usage and key uniqueness. Write your answer in Java. Use core data structures and mention runtime/space complexity briefly.",
       "languages": [
@@ -1361,7 +1766,10 @@
         "Java approach: define key-value mapping behavior and explain why keys must compare consistently.",
         "Java approach: mention ordering expectations, null handling, and average lookup performance."
       ],
-      "difficulty": 2
+      "potential_solutions": {
+        "Java": "Java approach: define key-value mapping behavior and explain why keys must compare consistently.",
+        "Python": "Java approach: define key-value mapping behavior and explain why keys must compare consistently."
+      }
     },
     {
       "difficulty": 3,
@@ -1375,7 +1783,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 3,
@@ -1389,7 +1801,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 3,
@@ -1403,7 +1819,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 3,
@@ -1417,7 +1837,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 3,
@@ -1431,7 +1855,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 3,
@@ -1445,7 +1873,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 3,
@@ -1459,7 +1891,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 3,
@@ -1473,7 +1909,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 3,
@@ -1487,7 +1927,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 3,
@@ -1501,9 +1945,14 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
+      "difficulty": 3,
       "title": "What are the other modifiers in Java?",
       "prompt": "Explain modifiers such as static, final, abstract, synchronized, and volatile with one use example each. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1513,9 +1962,13 @@
         "Java approach: define each modifier and explain the kind of code element it can modify.",
         "Java approach: compare how some modifiers affect memory, inheritance, or concurrency."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: define each modifier and explain the kind of code element it can modify.",
+        "Python": "Java approach: define each modifier and explain the kind of code element it can modify."
+      }
     },
     {
+      "difficulty": 3,
       "title": "JDK vs JRE vs JVM",
       "prompt": "Explain differences among JDK, JRE, and JVM and how they relate. Example result: JDK includes tools, JRE runtime, JVM executes bytecode. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1525,9 +1978,13 @@
         "Java approach: describe the JVM as the runtime engine, the JRE as the runtime package, and the JDK as the developer toolkit.",
         "Java approach: answer by following the flow from writing code to compiling and then running it."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: describe the JVM as the runtime engine, the JRE as the runtime package, and the JDK as the developer toolkit.",
+        "Python": "Java approach: describe the JVM as the runtime engine, the JRE as the runtime package, and the JDK as the developer toolkit."
+      }
     },
     {
+      "difficulty": 3,
       "title": "Stack vs heap in Java",
       "prompt": "Explain stack vs heap memory with examples of what lives in each. Example result: local variables on stack, objects on heap. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1537,9 +1994,13 @@
         "Java approach: compare method-local storage with dynamically allocated objects.",
         "Java approach: mention recursion, object lifetime, and common errors like stack overflow or out-of-memory conditions."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: compare method-local storage with dynamically allocated objects.",
+        "Python": "Java approach: compare method-local storage with dynamically allocated objects."
+      }
     },
     {
+      "difficulty": 3,
       "title": "Comparable vs Comparator in Java",
       "prompt": "Compare Comparable and Comparator and give one sorting example for each. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1549,9 +2010,13 @@
         "Java approach: compare natural ordering built into a class with an external comparison strategy.",
         "Java approach: mention how each integrates with sorting APIs or sorted collections."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: compare natural ordering built into a class with an external comparison strategy.",
+        "Python": "Java approach: compare natural ordering built into a class with an external comparison strategy."
+      }
     },
     {
+      "difficulty": 3,
       "title": "Methods of the Object class",
       "prompt": "Name key Object methods (toString, equals, hashCode, clone, getClass) and explain what each is used for. Example result: equals compares logical equality while hashCode supports hashed collections. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1561,9 +2026,13 @@
         "Java approach: cover methods like `equals`, `hashCode`, `toString`, and `getClass` first.",
         "Java approach: mention which methods developers most often override in interview-style code."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: cover methods like `equals`, `hashCode`, `toString`, and `getClass` first.",
+        "Python": "Java approach: cover methods like `equals`, `hashCode`, `toString`, and `getClass` first."
+      }
     },
     {
+      "difficulty": 3,
       "title": "Casting in Java and avoiding ClassCastException",
       "prompt": "Explain upcasting and downcasting and show how instanceof checks avoid ClassCastException. Example result: if (obj instanceof Dog d) { d.bark(); }. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1573,9 +2042,13 @@
         "Java approach: contrast safe upcasting with risky downcasting and explain `instanceof` checks.",
         "Java approach: use one small example that succeeds and one that would fail at runtime."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: contrast safe upcasting with risky downcasting and explain `instanceof` checks.",
+        "Python": "Java approach: contrast safe upcasting with risky downcasting and explain `instanceof` checks."
+      }
     },
     {
+      "difficulty": 3,
       "title": "What is JIT in Java?",
       "prompt": "Explain JIT compilation and how it improves repeated code execution at runtime. Example result: frequently used bytecode is compiled to native machine instructions. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1585,9 +2058,13 @@
         "Java approach: define the just-in-time compiler and connect it to JVM execution.",
         "Java approach: mention that runtime profiling can guide optimizations."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: define the just-in-time compiler and connect it to JVM execution.",
+        "Python": "Java approach: define the just-in-time compiler and connect it to JVM execution."
+      }
     },
     {
+      "difficulty": 3,
       "title": "Purpose of the Serializable interface",
       "prompt": "Explain Serializable and what object serialization means, including one practical persistence or transfer use case. Example result: serialize a User object to store a session snapshot. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1597,9 +2074,13 @@
         "Java approach: define serialization as converting object state into bytes for storage or transfer.",
         "Java approach: mention how class structure and superclass behavior affect serializability."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: define serialization as converting object state into bytes for storage or transfer.",
+        "Python": "Java approach: define serialization as converting object state into bytes for storage or transfer."
+      }
     },
     {
+      "difficulty": 3,
       "title": "Is there a destructor in Java?",
       "prompt": "Explain whether Java has destructors and what is used instead for cleanup (try-with-resources/finally). Example result: InputStream closes in try-with-resources without a destructor. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1609,9 +2090,13 @@
         "Java approach: explain garbage collection and why explicit destructors are not part of the language.",
         "Java approach: mention `try-with-resources` or explicit `close()` patterns for non-memory resources."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: explain garbage collection and why explicit destructors are not part of the language.",
+        "Python": "Java approach: explain garbage collection and why explicit destructors are not part of the language."
+      }
     },
     {
+      "difficulty": 3,
       "title": "What is an abstract class in Java?",
       "prompt": "Explain abstract classes and abstract methods with a short class hierarchy example. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1621,9 +2106,13 @@
         "Java approach: describe partial implementation plus required subclass behavior.",
         "Java approach: contrast a concrete method in an abstract base class with an abstract method that subclasses must implement."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: describe partial implementation plus required subclass behavior.",
+        "Python": "Java approach: describe partial implementation plus required subclass behavior."
+      }
     },
     {
+      "difficulty": 3,
       "title": "Build a HashMap from scratch",
       "prompt": "Design a HashMap from scratch: hashing, buckets, collision handling, resizing, and expected operation complexity. Example result should explain lookup flow for one key. Write your answer in Java. Use an efficient approach, explain complexity clearly, and cover key edge cases.",
       "languages": [
@@ -1633,7 +2122,10 @@
         "Java approach: start with an array of buckets, then explain hashing and collision resolution.",
         "Java approach: discuss tradeoffs such as resizing, load factor, and worst-case lookup behavior."
       ],
-      "difficulty": 3
+      "potential_solutions": {
+        "Java": "Java approach: start with an array of buckets, then explain hashing and collision resolution.",
+        "Python": "Java approach: start with an array of buckets, then explain hashing and collision resolution."
+      }
     },
     {
       "difficulty": 4,
@@ -1647,7 +2139,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 4,
@@ -1661,7 +2157,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 4,
@@ -1675,7 +2175,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 4,
@@ -1689,7 +2193,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 4,
@@ -1703,7 +2211,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 4,
@@ -1717,7 +2229,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 4,
@@ -1731,7 +2247,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 4,
@@ -1745,7 +2265,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 4,
@@ -1759,7 +2283,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 4,
@@ -1773,9 +2301,14 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
+      "difficulty": 4,
       "title": "Why is String immutable in Java?",
       "prompt": "Explain why String is immutable and benefits for security, caching, and thread safety. Example result should mention string pool reuse. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
@@ -1785,9 +2318,13 @@
         "Java approach: discuss safety in hashing, sharing, threading, and security-sensitive contexts.",
         "Java approach: contrast immutable strings with mutable alternatives such as `StringBuilder`."
       ],
-      "difficulty": 4
+      "potential_solutions": {
+        "Java": "Java approach: discuss safety in hashing, sharing, threading, and security-sensitive contexts.",
+        "Python": "Java approach: discuss safety in hashing, sharing, threading, and security-sensitive contexts."
+      }
     },
     {
+      "difficulty": 4,
       "title": "Dynamic binding vs static binding in Java",
       "prompt": "Explain dynamic vs static binding with method overriding and overloading examples. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
@@ -1797,9 +2334,13 @@
         "Java approach: connect static binding to compile-time resolution and dynamic binding to runtime dispatch.",
         "Java approach: use an overload versus override example to illustrate the distinction."
       ],
-      "difficulty": 4
+      "potential_solutions": {
+        "Java": "Java approach: connect static binding to compile-time resolution and dynamic binding to runtime dispatch.",
+        "Python": "Java approach: connect static binding to compile-time resolution and dynamic binding to runtime dispatch."
+      }
     },
     {
+      "difficulty": 4,
       "title": "What is reflection in Java?",
       "prompt": "Explain reflection, what runtime metadata it can inspect, and one cautious real-world use case. Example result: reading annotation metadata at startup. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
@@ -1809,9 +2350,13 @@
         "Java approach: describe runtime inspection of fields, methods, and constructors through the reflection APIs.",
         "Java approach: mention flexibility together with readability, performance, and security tradeoffs."
       ],
-      "difficulty": 4
+      "potential_solutions": {
+        "Java": "Java approach: describe runtime inspection of fields, methods, and constructors through the reflection APIs.",
+        "Python": "Java approach: describe runtime inspection of fields, methods, and constructors through the reflection APIs."
+      }
     },
     {
+      "difficulty": 4,
       "title": "What is a classloader in Java?",
       "prompt": "Explain classloader responsibilities and common loader types (bootstrap, platform, application). Example result: ApplicationClassLoader loads classes from the classpath. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
@@ -1821,9 +2366,13 @@
         "Java approach: describe how classes are loaded into the JVM on demand.",
         "Java approach: mention bootstrap, extension/platform, and system/application classloaders."
       ],
-      "difficulty": 4
+      "potential_solutions": {
+        "Java": "Java approach: describe how classes are loaded into the JVM on demand.",
+        "Python": "Java approach: describe how classes are loaded into the JVM on demand."
+      }
     },
     {
+      "difficulty": 4,
       "title": "Static class loading vs dynamic class loading",
       "prompt": "Compare static and dynamic class loading and explain when Class.forName(...) is used. Example result: JDBC drivers can be loaded dynamically at runtime. Write your answer in Java. Use near-optimal complexity, justify trade-offs, and handle tricky edge cases explicitly.",
       "languages": [
@@ -1833,7 +2382,10 @@
         "Java approach: compare compile-time known types with runtime-resolved types.",
         "Java approach: use plugin or driver loading as a concrete example of dynamic loading."
       ],
-      "difficulty": 4
+      "potential_solutions": {
+        "Java": "Java approach: compare compile-time known types with runtime-resolved types.",
+        "Python": "Java approach: compare compile-time known types with runtime-resolved types."
+      }
     },
     {
       "difficulty": 5,
@@ -1847,7 +2399,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 5,
@@ -1861,7 +2417,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 5,
@@ -1875,7 +2435,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 5,
@@ -1889,7 +2453,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 5,
@@ -1903,7 +2471,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 5,
@@ -1917,7 +2489,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 5,
@@ -1931,7 +2507,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 5,
@@ -1945,7 +2525,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 5,
@@ -1959,7 +2543,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     },
     {
       "difficulty": 5,
@@ -1973,7 +2561,11 @@
         "{{language}} approach: direct implementation using core data structures.",
         "{{language}} approach: optimize time complexity with hashing, pruning, or memoization.",
         "{{language}} approach: optimize space usage while keeping interview readability."
-      ]
+      ],
+      "potential_solutions": {
+        "Java": "{{language}} approach: direct implementation using core data structures.",
+        "Python": "{{language}} approach: direct implementation using core data structures."
+      }
     }
   ]
 }
