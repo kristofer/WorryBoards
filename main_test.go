@@ -526,7 +526,8 @@ func TestSelectedProblemUsesClickToRevealFirstHint(t *testing.T) {
 	}
 	if !strings.Contains(body, `id="actual-solution-button-`) ||
 		!strings.Contains(body, "Show actual solution (available in 60s)") ||
-		!strings.Contains(body, "armActualSolutionDelay(document.getElementById(") ||
+		!strings.Contains(body, `data-unlock-seconds="60"`) ||
+		!strings.Contains(body, "/actual-solution?language=") ||
 		!strings.Contains(body, "revealActualSolutionAfterDelay(this") {
 		t.Fatalf("expected disabled actual-solution button with auto-unlock in selected problem response, got: %s", body)
 	}

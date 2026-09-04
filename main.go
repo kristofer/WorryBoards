@@ -562,12 +562,12 @@ ORDER BY solution_order ASC`, problemID)
 	return result, rows.Err()
 }
 
-func getProblemPotentialSolutions(db *sql.DB, problemID int) ([]PotentialSolution, error) {
+func getProblemPotentialSolutions(db *sql.DB, problemID int, language string) ([]PotentialSolution, error) {
 	rows, err := db.Query(`
 SELECT language, solution
 FROM problem_potential_solutions
-WHERE problem_id = ? AND language = (SELECT language FROM problems WHERE id = ?)
-ORDER BY CASE language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID, problemID)
+WHERE problem_id = ? AND language = ?
+ORDER BY CASE language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID, language)
 	if err != nil {
 		return nil, err
 	}
@@ -722,7 +722,21 @@ func (a *App) handleProblemSolutions(w http.ResponseWriter, r *http.Request, id 
 }
 
 func (a *App) handleProblemActualSolutions(w http.ResponseWriter, r *http.Request, id int) {
-	solutions, err := getProblemPotentialSolutions(a.db, id)
+	language := strings.TrimSpace(r.URL.Query().Get("language"))
+	if language == "" {
+		problem, err := getProblemByID(a.db, id)
+		if err != nil {
+			if errors.Is(err, sql.ErrNoRows) {
+				http.NotFound(w, r)
+				return
+			}
+			http.Error(w, "failed to load problem", http.StatusInternalServerError)
+			return
+		}
+		language = problem.Language
+	}
+
+	solutions, err := getProblemPotentialSolutions(a.db, id, language)
 	if err != nil {
 		http.Error(w, "failed to load potential solutions", http.StatusInternalServerError)
 		return
@@ -820,6 +834,15 @@ const templates = `
         }, 1200);
       });
     }
+    function initActualSolutionButtons(root) {
+      const scope = root && root.querySelectorAll ? root : document;
+      scope.querySelectorAll("button[data-unlock-seconds]").forEach(function (button) {
+        const delaySeconds = parseInt(button.getAttribute("data-unlock-seconds"), 10);
+        if (!Number.isNaN(delaySeconds) && delaySeconds > 0) {
+          armActualSolutionDelay(button, delaySeconds);
+        }
+      });
+    }
     function armActualSolutionDelay(button, delaySeconds) {
       if (!button || button.dataset.timerStarted === "true") {
         return;
@@ -898,6 +921,12 @@ const templates = `
           }
         });
     }
+    document.addEventListener("DOMContentLoaded", function () {
+      initActualSolutionButtons(document);
+    });
+    document.body.addEventListener("htmx:afterSwap", function (event) {
+      initActualSolutionButtons(event.target);
+    });
   </script>
 </body>
 </html>
@@ -946,14 +975,12 @@ const templates = `
           class="btn btn-outline-warning btn-sm"
           type="button"
           disabled
+          data-unlock-seconds="60"
           aria-describedby="actual-solution-status-{{.Problem.ID}}"
-          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution", "actual-solution-{{.Problem.ID}}")'>Show actual solution (available in 60s)</button>
+          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution?language={{.Problem.Language | urlquery}}", "actual-solution-{{.Problem.ID}}")'>Show actual solution (available in 60s)</button>
   <span id="actual-solution-status-{{.Problem.ID}}" class="visually-hidden" aria-live="polite">Actual solution available in 60 seconds.</span>
 </div>
 <div id="actual-solution-{{.Problem.ID}}" class="mt-3" aria-live="polite" aria-busy="false"></div>
-<script>
-  armActualSolutionDelay(document.getElementById("actual-solution-button-{{.Problem.ID}}"), 60);
-</script>
 {{end}}
 
 {{define "solutions"}}
