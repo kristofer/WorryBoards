@@ -98,8 +98,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        String s = \"WorryBoards\";\n        System.out.println(\"Length: \" + s.length());\n        System.out.println(\"Upper: \" + s.toUpperCase());\n        System.out.println(\"Lower: \" + s.toLowerCase());\n    }\n}",
-        "Python": "s = \"WorryBoards\"\nprint(\"Length:\", len(s))\nprint(\"Upper:\", s.upper())\nprint(\"Lower:\", s.lower())"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        String text = \"Alphabetical\";\n        int vowels = 0, consonants = 0;\n        for (char c : text.toLowerCase().toCharArray()) {\n            if (!Character.isLetter(c)) continue;\n            if (\"aeiou\".indexOf(c) >= 0) vowels++;\n            else consonants++;\n        }\n        System.out.println(\"length: \" + text.length());\n        System.out.println(\"vowels: \" + vowels);\n        System.out.println(\"consonants: \" + consonants);\n    }\n}",
+        "Python": "text = \"Alphabetical\"\nvowels = sum(1 for c in text.lower() if c in \"aeiou\")\nconsonants = sum(1 for c in text.lower() if c.isalpha() and c not in \"aeiou\")\nprint(\"length:\", len(text))\nprint(\"vowels:\", vowels)\nprint(\"consonants:\", consonants)"
       }
     },
     {
@@ -115,8 +115,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        String word = \"python\";\n        StringBuilder reversed = new StringBuilder();\n        for (int i = word.length() - 1; i >= 0; i--) {\n            reversed.append(word.charAt(i));\n        }\n        System.out.println(reversed);\n    }\n}",
-        "Python": "word = \"python\"\nchars = []\nfor i in range(len(word) - 1, -1, -1):\n    chars.append(word[i])\nprint(\"\".join(chars))"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        String word = \"straw\";\n        StringBuilder reversed = new StringBuilder();\n        for (int i = word.length() - 1; i >= 0; i--) {\n            reversed.append(word.charAt(i));\n        }\n        System.out.println(reversed);\n    }\n}",
+        "Python": "word = \"straw\"\nchars = []\nfor i in range(len(word) - 1, -1, -1):\n    chars.append(word[i])\nprint(\"\".join(chars))"
       }
     },
     {
@@ -132,8 +132,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        String text = \"This is a test sentence\".toLowerCase();\n        int count = 0;\n        for (int i = 0; i < text.length(); i++) {\n            char c = text.charAt(i);\n            if (\"aeiou\".indexOf(c) >= 0) count++;\n        }\n        System.out.println(count);\n    }\n}",
-        "Python": "text = \"This is a test sentence\".lower()\ncount = 0\nfor c in text:\n    if c in \"aeiou\":\n        count += 1\nprint(count)"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        String sentence = \"We code every day\".toLowerCase();\n        int count = 0;\n        for (int i = 0; i < sentence.length(); i++) {\n            char c = sentence.charAt(i);\n            if (\"aeiou\".indexOf(c) >= 0) count++;\n        }\n        System.out.println(count);\n    }\n}",
+        "Python": "sentence = \"We code every day\".lower()\ncount = 0\nfor c in sentence:\n    if c in \"aeiou\":\n        count += 1\nprint(count)"
       }
     },
     {
@@ -166,14 +166,14 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int[] nums = {3, 8, 2, 10, 4};\n        int max = nums[0];\n        for (int n : nums) {\n            if (n > max) max = n;\n        }\n        System.out.println(max);\n    }\n}",
-        "Python": "nums = [3, 8, 2, 10, 4]\nmax_value = nums[0]\nfor n in nums:\n    if n > max_value:\n        max_value = n\nprint(max_value)"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int[] numbers = {3, 18, 5, 11};\n        int max = numbers[0];\n        for (int n : numbers) {\n            if (n > max) max = n;\n        }\n        System.out.println(max);\n    }\n}",
+        "Python": "numbers = [3, 18, 5, 11]\nmax_value = numbers[0]\nfor n in numbers:\n    if n > max_value:\n        max_value = n\nprint(max_value)"
       }
     },
     {
       "difficulty": 1,
-      "title": "Filter positive numbers (list comprehension)",
-      "prompt": "Given numbers=[-2, 0, 7, -1, 5], return only positive values using list comprehension. Example output: [7, 5]. Write your answer in {language}.",
+      "title": "Filter positive numbers",
+      "prompt": "Given numbers=[-2, 0, 7, -1, 5], return only positive values. Example output: [7, 5]. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -183,14 +183,14 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        int[] nums = {-3, 4, 0, 5, -1, 9};\n        List<Integer> positives = new ArrayList<>();\n        for (int n : nums) {\n            if (n > 0) positives.add(n);\n        }\n        System.out.println(positives);\n    }\n}",
-        "Python": "nums = [-3, 4, 0, 5, -1, 9]\npositives = [n for n in nums if n > 0]\nprint(positives)"
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        int[] numbers = {-2, 0, 7, -1, 5};\n        List<Integer> positives = new ArrayList<>();\n        for (int n : numbers) {\n            if (n > 0) positives.add(n);\n        }\n        System.out.println(positives);\n    }\n}",
+        "Python": "numbers = [-2, 0, 7, -1, 5]\npositives = [n for n in numbers if n > 0]\nprint(positives)"
       }
     },
     {
       "difficulty": 1,
-      "title": "Square numbers (list comprehension)",
-      "prompt": "Given numbers=[1, 2, 3, 4], return a list of squares using list comprehension. Example output: [1, 4, 9, 16]. Write your answer in {language}.",
+      "title": "Square numbers",
+      "prompt": "Given numbers=[1, 2, 3, 4], return a list of squares. Example output: [1, 4, 9, 16]. Write your answer in {language}.",
       "languages": [
         "Java",
         "Python"
@@ -200,8 +200,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        int[] nums = {1, 2, 3, 4, 5};\n        List<Integer> squares = new ArrayList<>();\n        for (int n : nums) {\n            squares.add(n * n);\n        }\n        System.out.println(squares);\n    }\n}",
-        "Python": "nums = [1, 2, 3, 4, 5]\nsquares = [n * n for n in nums]\nprint(squares)"
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        int[] numbers = {1, 2, 3, 4};\n        List<Integer> squares = new ArrayList<>();\n        for (int n : numbers) {\n            squares.add(n * n);\n        }\n        System.out.println(squares);\n    }\n}",
+        "Python": "numbers = [1, 2, 3, 4]\nsquares = [n * n for n in numbers]\nprint(squares)"
       }
     },
     {
@@ -217,8 +217,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Map<String, Integer> ages = new HashMap<>();\n        ages.put(\"Ava\", 24);\n        ages.put(\"Noah\", 27);\n        ages.put(\"Mia\", 22);\n\n        System.out.println(ages.get(\"Noah\"));\n        ages.put(\"Noah\", 28);\n        System.out.println(ages);\n    }\n}",
-        "Python": "ages = {\"Ava\": 24, \"Noah\": 27, \"Mia\": 22}\nprint(ages[\"Noah\"])\nages[\"Noah\"] = 28\nprint(ages)"
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Map<String, Object> student = new HashMap<>();\n        student.put(\"name\", \"Ava\");\n        student.put(\"score\", 92);\n\n        System.out.println(\"score: \" + student.get(\"score\"));\n    }\n}",
+        "Python": "student = {\"name\": \"Ava\", \"score\": 92}\nprint(\"score:\", student[\"score\"])"
       }
     },
     {
@@ -234,8 +234,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        while (true) {\n            String line = sc.nextLine();\n            if (line.equalsIgnoreCase(\"exit\")) break;\n            System.out.println(\"You typed: \" + line);\n        }\n    }\n}",
-        "Python": "while True:\n    line = input()\n    if line.lower() == \"exit\":\n        break\n    print(\"You typed:\", line)"
+        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int sum = 0;\n        while (sc.hasNextInt()) {\n            int n = sc.nextInt();\n            if (n == 0) break;\n            sum += n;\n        }\n        System.out.println(\"sum: \" + sum);\n    }\n}",
+        "Python": "total = 0\nwhile True:\n    n = int(input())\n    if n == 0:\n        break\n    total += n\nprint(\"sum:\", total)"
       }
     },
     {
@@ -251,8 +251,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 100; i++) {\n            if (i % 15 == 0) System.out.println(\"FizzBuzz\");\n            else if (i % 3 == 0) System.out.println(\"Fizz\");\n            else if (i % 5 == 0) System.out.println(\"Buzz\");\n            else System.out.println(i);\n        }\n    }\n}",
-        "Python": "for i in range(1, 101):\n    if i % 15 == 0:\n        print(\"FizzBuzz\")\n    elif i % 3 == 0:\n        print(\"Fizz\")\n    elif i % 5 == 0:\n        print(\"Buzz\")\n    else:\n        print(i)"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 20; i++) {\n            if (i % 15 == 0) System.out.println(\"FizzBuzz\");\n            else if (i % 3 == 0) System.out.println(\"Fizz\");\n            else if (i % 5 == 0) System.out.println(\"Buzz\");\n            else System.out.println(i);\n        }\n    }\n}",
+        "Python": "for i in range(1, 21):\n    if i % 15 == 0:\n        print(\"FizzBuzz\")\n    elif i % 3 == 0:\n        print(\"Fizz\")\n    elif i % 5 == 0:\n        print(\"Buzz\")\n    else:\n        print(i)"
       }
     },
     {
@@ -268,8 +268,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int n = 15;\n        for (int i = 1; i <= n; i++) {\n            System.out.println(i);\n        }\n    }\n}",
-        "Python": "n = 15\nfor i in range(1, n + 1):\n    print(i)"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int N = 5;\n        for (int i = 1; i <= N; i++) {\n            System.out.println(i);\n        }\n    }\n}",
+        "Python": "N = 5\nfor i in range(1, N + 1):\n    print(i)"
       }
     },
     {
@@ -285,8 +285,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int start = 1, end = 20;\n        for (int i = start; i <= end; i++) {\n            if (i % 2 != 0) System.out.println(i);\n        }\n    }\n}",
-        "Python": "start, end = 1, 20\nfor i in range(start, end + 1):\n    if i % 2 != 0:\n        print(i)"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int start = 3, end = 11;\n        for (int i = start; i <= end; i++) {\n            if (i % 2 != 0) System.out.println(i);\n        }\n    }\n}",
+        "Python": "start, end = 3, 11\nfor i in range(start, end + 1):\n    if i % 2 != 0:\n        print(i)"
       }
     },
     {
@@ -319,8 +319,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int n = 8;\n        while (n > 0) {\n            System.out.println(n);\n            n--;\n        }\n        System.out.println(\"Done\");\n    }\n}",
-        "Python": "n = 8\nwhile n > 0:\n    print(n)\n    n -= 1\nprint(\"Done\")"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int N = 5;\n        while (N > 0) {\n            System.out.println(N);\n            N--;\n        }\n        System.out.println(\"Done\");\n    }\n}",
+        "Python": "N = 5\nwhile N > 0:\n    print(N)\n    N -= 1\nprint(\"Done\")"
       }
     },
     {
@@ -336,8 +336,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int n = 9;\n        for (int i = 1; i <= 12; i++) {\n            System.out.printf(\"%2d x %2d = %3d%n\", n, i, n * i);\n        }\n    }\n}",
-        "Python": "n = 9\nfor i in range(1, 13):\n    print(f\"{n:2d} x {i:2d} = {n * i:3d}\")"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int n = 4;\n        for (int i = 1; i <= 10; i++) {\n            System.out.printf(\"%2d x %2d = %3d%n\", n, i, n * i);\n        }\n    }\n}",
+        "Python": "n = 4\nfor i in range(1, 11):\n    print(f\"{n:2d} x {i:2d} = {n * i:3d}\")"
       }
     },
     {
@@ -353,8 +353,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    static boolean isPalindrome(String s) {\n        int left = 0, right = s.length() - 1;\n        while (left < right) {\n            if (s.charAt(left) != s.charAt(right)) return false;\n            left++;\n            right--;\n        }\n        return true;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(isPalindrome(\"racecar\"));\n    }\n}",
-        "Python": "def is_palindrome(s: str) -> bool:\n    left, right = 0, len(s) - 1\n    while left < right:\n        if s[left] != s[right]:\n            return False\n        left += 1\n        right -= 1\n    return True\n\nprint(is_palindrome(\"racecar\"))"
+        "Java": "public class Solution {\n    static boolean isPalindrome(String s) {\n        int left = 0, right = s.length() - 1;\n        while (left < right) {\n            if (s.charAt(left) != s.charAt(right)) return false;\n            left++;\n            right--;\n        }\n        return true;\n    }\n\n    public static void main(String[] args) {\n        String word = \"level\";\n        System.out.println(isPalindrome(word));\n    }\n}",
+        "Python": "def is_palindrome(s: str) -> bool:\n    left, right = 0, len(s) - 1\n    while left < right:\n        if s[left] != s[right]:\n            return False\n        left += 1\n        right -= 1\n    return True\n\nword = \"level\"\nprint(is_palindrome(word))"
       }
     },
     {
@@ -370,8 +370,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "import java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        String s = \"go build confidence\";\n        String[] words = s.split(\" \");\n        StringBuilder out = new StringBuilder();\n        for (int i = words.length - 1; i >= 0; i--) {\n            out.append(words[i]);\n            if (i > 0) out.append(\" \");\n        }\n        System.out.println(out);\n    }\n}",
-        "Python": "s = \"go build confidence\"\nwords = s.split()\nout = []\nfor i in range(len(words) - 1, -1, -1):\n    out.append(words[i])\nprint(\" \".join(out))"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        String sentence = \"we love coding\";\n        String[] words = sentence.split(\" \");\n        StringBuilder out = new StringBuilder();\n        for (int i = words.length - 1; i >= 0; i--) {\n            out.append(words[i]);\n            if (i > 0) out.append(\" \");\n        }\n        System.out.println(out);\n    }\n}",
+        "Python": "sentence = \"we love coding\"\nwords = sentence.split()\nout = []\nfor i in range(len(words) - 1, -1, -1):\n    out.append(words[i])\nprint(\" \".join(out))"
       }
     },
     {
@@ -387,8 +387,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        String s = \"Hello World\".toLowerCase();\n        int vowels = 0, consonants = 0;\n        for (char c : s.toCharArray()) {\n            if (c < 'a' || c > 'z') continue;\n            if (\"aeiou\".indexOf(c) >= 0) vowels++;\n            else consonants++;\n        }\n        System.out.println(\"vowels=\" + vowels + \", consonants=\" + consonants);\n    }\n}",
-        "Python": "s = \"Hello World\".lower()\nvowels = consonants = 0\nfor c in s:\n    if not c.isalpha():\n        continue\n    if c in \"aeiou\":\n        vowels += 1\n    else:\n        consonants += 1\nprint(f\"vowels={vowels}, consonants={consonants}\")"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        String word = \"alphabetical\".toLowerCase();\n        int vowels = 0, consonants = 0;\n        for (char c : word.toCharArray()) {\n            if (c < 'a' || c > 'z') continue;\n            if (\"aeiou\".indexOf(c) >= 0) vowels++;\n            else consonants++;\n        }\n        System.out.println(\"vowels=\" + vowels + \", consonants=\" + consonants);\n    }\n}",
+        "Python": "word = \"alphabetical\".lower()\nvowels = consonants = 0\nfor c in word:\n    if not c.isalpha():\n        continue\n    if c in \"aeiou\":\n        vowels += 1\n    else:\n        consonants += 1\nprint(f\"vowels={vowels}, consonants={consonants}\")"
       }
     },
     {
@@ -421,8 +421,8 @@
         "{{language}} approach: extract core logic into a small helper function, then print the result."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int[] nums = {10, 7, 2, 11, 4, 11};\n        Integer largest = null, second = null;\n        for (int n : nums) {\n            if (largest == null || n > largest) {\n                second = largest;\n                largest = n;\n            } else if (n != largest && (second == null || n > second)) {\n                second = n;\n            }\n        }\n        System.out.println(second);\n    }\n}",
-        "Python": "nums = [10, 7, 2, 11, 4, 11]\nlargest = second = None\nfor n in nums:\n    if largest is None or n > largest:\n        second = largest\n        largest = n\n    elif n != largest and (second is None or n > second):\n        second = n\nprint(second)"
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int[] numbers = {9, 2, 8, 6};\n        Integer largest = null, second = null;\n        for (int n : numbers) {\n            if (largest == null || n > largest) {\n                second = largest;\n                largest = n;\n            } else if (n != largest && (second == null || n > second)) {\n                second = n;\n            }\n        }\n        System.out.println(second);\n    }\n}",
+        "Python": "numbers = [9, 2, 8, 6]\nlargest = second = None\nfor n in numbers:\n    if largest is None or n > largest:\n        second = largest\n        largest = n\n    elif n != largest and (second is None or n > second):\n        second = n\nprint(second)"
       }
     },
     {
@@ -501,7 +501,7 @@
         "Java approach: wrap the scan in a helper method that returns the minimum value."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int[] nums = {14, 5, 9, 2, 11};\n        int min = nums[0];\n        for (int n : nums) {\n            if (n < min) min = n;\n        }\n        System.out.println(min);\n    }\n}",
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        int[] nums = {9, 5, 6, 3, 8, 2, 4};\n        int min = nums[0];\n        for (int n : nums) {\n            if (n < min) min = n;\n        }\n        System.out.println(min);\n    }\n}",
         "Python": "nums = [14, 5, 9, 2, 11]\nprint(min(nums))"
       }
     },
@@ -709,7 +709,7 @@
         "Java approach: declare first, then assign the value on the next line."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        double price = 19.99;\n        float ratio = 0.5f;\n        System.out.println(price + ratio);\n    }\n}",
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        double x = 3.14;\n        System.out.println(x);\n    }\n}",
         "Python": "price = 19.99\nratio = 0.5\nprint(price + ratio)"
       }
     },
@@ -725,7 +725,7 @@
         "Java approach: build the output line with string concatenation or formatted printing."
       ],
       "potential_solutions": {
-        "Java": "public class Solution {\n    public static void main(String[] args) {\n        String zipCode = \"ZipCode\";\n        for (int i = 0; i < 5; i++) {\n            System.out.println(zipCode);\n        }\n    }\n}",
+        "Java": "public class Solution {\n    public static void main(String[] args) {\n        for (int i = 0; i < 10; i++) {\n            System.out.println(i + \" ZipCode\");\n        }\n    }\n}",
         "Python": "for _ in range(5):\n    print(\"ZipCode\")"
       }
     },
@@ -1132,7 +1132,7 @@
         "SQL approach: explain that omitting `WHERE` updates every row."
       ],
       "potential_solutions": {
-        "SQL": "UPDATE users\nSET email = 'new-email@example.com'\nWHERE id = 1;"
+        "SQL": "UPDATE users\nSET status = 'active'\nWHERE id = 42;"
       }
     },
     {
@@ -1432,7 +1432,7 @@
         "Java approach: extract a helper method that safely converts each array element into a numeric contribution."
       ],
       "potential_solutions": {
-        "Java": "class Xaction { Integer value; Xaction(Integer value) { this.value = value; } }\n\npublic class Solution {\n    static int sumValues(Xaction[] arr) {\n        int sum = 0;\n        for (Xaction x : arr) {\n            if (x != null && x.value != null) sum += x.value;\n        }\n        return sum;\n    }\n}",
+        "Java": "class Xaction { Integer value; Xaction(Integer value) { this.value = value; } Integer getValue() { return value; } }\n\npublic class Solution {\n    static int sumValues(Xaction[] arr) {\n        int sum = 0;\n        for (Xaction x : arr) {\n            if (x != null && x.getValue() != null) sum += x.getValue();\n        }\n        return sum;\n    }\n}",
         "Python": "class Xaction:\n    def __init__(self, value: int | None):\n        self.value = value\n\ndef sum_values(items: list[Xaction | None]) -> int:\n    total = 0\n    for x in items:\n        if x is not None and x.value is not None:\n            total += x.value\n    return total"
       }
     },
