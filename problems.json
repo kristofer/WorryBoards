@@ -437,8 +437,8 @@
         "Python approach: build a new list with a loop so the interviewer can see the indexing logic."
       ],
       "potential_solutions": {
-        "Java": "Python approach: return a slice that starts at index 1.",
-        "Python": "Python approach: return a slice that starts at index 1."
+        "Java": "{{language}} approach: return a slice that starts at index 1.",
+        "Python": "{{language}} approach: return a slice that starts at index 1."
       }
     },
     {
@@ -453,8 +453,8 @@
         "Python approach: compute the stop index explicitly, then copy values into a new list."
       ],
       "potential_solutions": {
-        "Java": "Python approach: use slicing to return everything except the last two positions.",
-        "Python": "Python approach: use slicing to return everything except the last two positions."
+        "Java": "{{language}} approach: use slicing to return everything except the last two positions.",
+        "Python": "{{language}} approach: use slicing to return everything except the last two positions."
       }
     },
     {
@@ -469,8 +469,8 @@
         "Python approach: start with a copy of the first list, then append items from the second list in a loop."
       ],
       "potential_solutions": {
-        "Java": "Python approach: return the result of list concatenation with `+`.",
-        "Python": "Python approach: return the result of list concatenation with `+`."
+        "Java": "{{language}} approach: return the result of list concatenation with `+`.",
+        "Python": "{{language}} approach: return the result of list concatenation with `+`."
       }
     },
     {
@@ -485,8 +485,8 @@
         "Java approach: extract the summing logic into a helper method, then print the returned total."
       ],
       "potential_solutions": {
-        "Java": "Java approach: use a straightforward for-loop and an accumulator variable.",
-        "Python": "Java approach: use a straightforward for-loop and an accumulator variable."
+        "Java": "{{language}} approach: use a straightforward for-loop and an accumulator variable.",
+        "Python": "{{language}} approach: use a straightforward for-loop and an accumulator variable."
       }
     },
     {
@@ -501,8 +501,8 @@
         "Java approach: wrap the scan in a helper method that returns the minimum value."
       ],
       "potential_solutions": {
-        "Java": "Java approach: track the current smallest value while scanning the array once.",
-        "Python": "Java approach: track the current smallest value while scanning the array once."
+        "Java": "{{language}} approach: track the current smallest value while scanning the array once.",
+        "Python": "{{language}} approach: track the current smallest value while scanning the array once."
       }
     },
     {
@@ -517,8 +517,8 @@
         "Java approach: pair the explanation with a tiny class that shows one field and one method-local variable."
       ],
       "potential_solutions": {
-        "Java": "Java approach: define each term, then contrast lifetime, scope, and where each variable is declared.",
-        "Python": "Java approach: define each term, then contrast lifetime, scope, and where each variable is declared."
+        "Java": "{{language}} approach: define each term, then contrast lifetime, scope, and where each variable is declared.",
+        "Python": "{{language}} approach: define each term, then contrast lifetime, scope, and where each variable is declared."
       }
     },
     {
@@ -533,8 +533,8 @@
         "Java approach: compare a package-private class with a public class to explain the extra filename rule."
       ],
       "potential_solutions": {
-        "Java": "Java approach: show a minimal class declaration with matching braces and explain the required pieces.",
-        "Python": "Java approach: show a minimal class declaration with matching braces and explain the required pieces."
+        "Java": "{{language}} approach: show a minimal class declaration with matching braces and explain the required pieces.",
+        "Python": "{{language}} approach: show a minimal class declaration with matching braces and explain the required pieces."
       }
     },
     {
@@ -549,8 +549,8 @@
         "Java approach: explain what the reference stores after object creation."
       ],
       "potential_solutions": {
-        "Java": "Java approach: instantiate `Foo` with `new` and assign it to a local variable.",
-        "Python": "Java approach: instantiate `Foo` with `new` and assign it to a local variable."
+        "Java": "{{language}} approach: instantiate `Foo` with `new` and assign it to a local variable.",
+        "Python": "{{language}} approach: instantiate `Foo` with `new` and assign it to a local variable."
       }
     },
     {
@@ -565,8 +565,8 @@
         "Java approach: organize the answer as a short definition followed by a concise feature list."
       ],
       "potential_solutions": {
-        "Java": "Java approach: define Java as an object-oriented language on the JVM, then cover portability, libraries, and memory management.",
-        "Python": "Java approach: define Java as an object-oriented language on the JVM, then cover portability, libraries, and memory management."
+        "Java": "{{language}} approach: define {{language}} as an object-oriented language on the JVM, then cover portability, libraries, and memory management.",
+        "Python": "{{language}} approach: define {{language}} as an object-oriented language on the JVM, then cover portability, libraries, and memory management."
       }
     },
     {
@@ -581,8 +581,8 @@
         "Java approach: use a tiny example class and one created instance to illustrate the distinction."
       ],
       "potential_solutions": {
-        "Java": "Java approach: describe a class as a blueprint and an object as a concrete instance.",
-        "Python": "Java approach: describe a class as a blueprint and an object as a concrete instance."
+        "Java": "{{language}} approach: describe a class as a blueprint and an object as a concrete instance.",
+        "Python": "{{language}} approach: describe a class as a blueprint and an object as a concrete instance."
       }
     },
     {
@@ -597,8 +597,8 @@
         "Java approach: contrast a no-argument constructor with an overloaded constructor that accepts initial state."
       ],
       "potential_solutions": {
-        "Java": "Java approach: define constructor behavior and mention object initialization with `new`.",
-        "Python": "Java approach: define constructor behavior and mention object initialization with `new`."
+        "Java": "{{language}} approach: define constructor behavior and mention object initialization with `new`.",
+        "Python": "{{language}} approach: define constructor behavior and mention object initialization with `new`."
       }
     },
     {
@@ -613,8 +613,8 @@
         "Java approach: include a tiny example showing one static method call and one instance method call."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare class-level behavior against object-level behavior and note what each method can access.",
-        "Python": "Java approach: compare class-level behavior against object-level behavior and note what each method can access."
+        "Java": "{{language}} approach: compare class-level behavior against object-level behavior and note what each method can access.",
+        "Python": "{{language}} approach: compare class-level behavior against object-level behavior and note what each method can access."
       }
     },
     {
@@ -629,8 +629,8 @@
         "Java approach: mention command-line arguments and show a minimal runnable example."
       ],
       "potential_solutions": {
-        "Java": "Java approach: explain each keyword and describe why the JVM starts execution there.",
-        "Python": "Java approach: explain each keyword and describe why the JVM starts execution there."
+        "Java": "{{language}} approach: explain each keyword and describe why the JVM starts execution there.",
+        "Python": "{{language}} approach: explain each keyword and describe why the JVM starts execution there."
       }
     },
     {
@@ -645,8 +645,8 @@
         "Java approach: connect the answer to encapsulation and implementation hiding."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare visibility from inside and outside the class.",
-        "Python": "Java approach: compare visibility from inside and outside the class."
+        "Java": "{{language}} approach: compare visibility from inside and outside the class.",
+        "Python": "{{language}} approach: compare visibility from inside and outside the class."
       }
     },
     {
@@ -661,8 +661,8 @@
         "Java approach: mention encapsulation and the ability to validate state changes."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare direct external access with controlled access through methods.",
-        "Python": "Java approach: compare direct external access with controlled access through methods."
+        "Java": "{{language}} approach: compare direct external access with controlled access through methods.",
+        "Python": "{{language}} approach: compare direct external access with controlled access through methods."
       }
     },
     {
@@ -677,8 +677,8 @@
         "Java approach: show a constructor or setter where a parameter name matches a field name."
       ],
       "potential_solutions": {
-        "Java": "Java approach: explain that `this` refers to the current object and helps disambiguate field names.",
-        "Python": "Java approach: explain that `this` refers to the current object and helps disambiguate field names."
+        "Java": "{{language}} approach: explain that `this` refers to the current object and helps disambiguate field names.",
+        "Python": "{{language}} approach: explain that `this` refers to the current object and helps disambiguate field names."
       }
     },
     {
@@ -693,8 +693,8 @@
         "Java approach: pair the explanation with one short example of each loop form."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare known-iteration and condition-driven looping patterns.",
-        "Python": "Java approach: compare known-iteration and condition-driven looping patterns."
+        "Java": "{{language}} approach: compare known-iteration and condition-driven looping patterns.",
+        "Python": "{{language}} approach: compare known-iteration and condition-driven looping patterns."
       }
     },
     {
@@ -709,8 +709,8 @@
         "Java approach: declare first, then assign the value on the next line."
       ],
       "potential_solutions": {
-        "Java": "Java approach: declare and initialize the variable in one line using `double`.",
-        "Python": "Java approach: declare and initialize the variable in one line using `double`."
+        "Java": "{{language}} approach: declare and initialize the variable in one line using `double`.",
+        "Python": "{{language}} approach: declare and initialize the variable in one line using `double`."
       }
     },
     {
@@ -725,8 +725,8 @@
         "Java approach: build the output line with string concatenation or formatted printing."
       ],
       "potential_solutions": {
-        "Java": "Java approach: use a counted `for` loop and print both values on each iteration.",
-        "Python": "Java approach: use a counted `for` loop and print both values on each iteration."
+        "Java": "{{language}} approach: use a counted `for` loop and print both values on each iteration.",
+        "Python": "{{language}} approach: use a counted `for` loop and print both values on each iteration."
       }
     },
     {
@@ -741,8 +741,8 @@
         "Java approach: compare a `void` method with one that returns data to the caller."
       ],
       "potential_solutions": {
-        "Java": "Java approach: explain that `void` means a method returns no value.",
-        "Python": "Java approach: explain that `void` means a method returns no value."
+        "Java": "{{language}} approach: explain that `void` means a method returns no value.",
+        "Python": "{{language}} approach: explain that `void` means a method returns no value."
       }
     },
     {
@@ -757,7 +757,7 @@
         "SQL approach: explain how selecting specific columns differs from selecting every column."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: define `SELECT` as a way to read data and demonstrate `SELECT * FROM table_name;`."
+        "SQL": "{{language}} approach: define `SELECT` as a way to read data and demonstrate `SELECT * FROM table_name;`."
       }
     },
     {
@@ -772,7 +772,7 @@
         "SQL approach: emphasize how filtering before grouping differs from filtering aggregated results."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: define each clause briefly, then show one combined example query."
+        "SQL": "{{language}} approach: define each clause briefly, then show one combined example query."
       }
     },
     {
@@ -787,7 +787,7 @@
         "SQL approach: use a small example such as students and courses to ground the explanation."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: define entities as things you store and relationships as the links between them."
+        "SQL": "{{language}} approach: define entities as things you store and relationships as the links between them."
       }
     },
     {
@@ -802,7 +802,7 @@
         "SQL approach: tie each relationship type to a simple table example."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: cover one-to-one, one-to-many, many-to-one, and self-referencing relationships."
+        "SQL": "{{language}} approach: cover one-to-one, one-to-many, many-to-one, and self-referencing relationships."
       }
     },
     {
@@ -817,7 +817,7 @@
         "SQL approach: compare a single-column primary key with a composite primary key."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: explain uniqueness and non-null behavior, then show a short `CREATE TABLE` example."
+        "SQL": "{{language}} approach: explain uniqueness and non-null behavior, then show a short `CREATE TABLE` example."
       }
     },
     {
@@ -832,7 +832,7 @@
         "SQL approach: explain what column in one table points at the primary key of another table."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: define referential integrity and show a parent-child table example."
+        "SQL": "{{language}} approach: define referential integrity and show a parent-child table example."
       }
     },
     {
@@ -847,7 +847,7 @@
         "SQL approach: compare a `SELECT` query with an `UPDATE` example."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: define a query as a request for data or a change to stored data."
+        "SQL": "{{language}} approach: define a query as a request for data or a change to stored data."
       }
     },
     {
@@ -862,7 +862,7 @@
         "SQL approach: contrast filtering numeric ranges with filtering exact text matches."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: define `WHERE` as row-level filtering and show one simple condition example."
+        "SQL": "{{language}} approach: define `WHERE` as row-level filtering and show one simple condition example."
       }
     },
     {
@@ -877,7 +877,7 @@
         "SQL approach: show how ordering affects only presentation, not stored table order."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use `ORDER BY col1 ASC, col2 DESC` and explain default sort direction."
+        "SQL": "{{language}} approach: use `ORDER BY col1 ASC, col2 DESC` and explain default sort direction."
       }
     },
     {
@@ -892,7 +892,7 @@
         "SQL approach: pair `ORDER BY` with `LIMIT` to make the first rows deterministic."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: append `LIMIT 10` to a `SELECT` query."
+        "SQL": "{{language}} approach: append `LIMIT 10` to a `SELECT` query."
       }
     },
     {
@@ -907,7 +907,7 @@
         "SQL approach: compare `DISTINCT` results with a regular `SELECT` that includes duplicates."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: show `SELECT DISTINCT column_name FROM table_name;` and explain uniqueness in result sets."
+        "SQL": "{{language}} approach: show `SELECT DISTINCT column_name FROM table_name;` and explain uniqueness in result sets."
       }
     },
     {
@@ -922,7 +922,7 @@
         "SQL approach: mention that table aliases can also shorten join queries."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use `AS` for column aliases and show one readable result example."
+        "SQL": "{{language}} approach: use `AS` for column aliases and show one readable result example."
       }
     },
     {
@@ -937,7 +937,7 @@
         "SQL approach: compare `IN` with multiple `OR` conditions."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use `WHERE column_name IN (value1, value2, value3)` for concise multi-value filters."
+        "SQL": "{{language}} approach: use `WHERE column_name IN (value1, value2, value3)` for concise multi-value filters."
       }
     },
     {
@@ -952,7 +952,7 @@
         "SQL approach: compare `BETWEEN` with equivalent `>=` and `<=` conditions."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use `WHERE value BETWEEN low AND high` and note inclusive boundaries."
+        "SQL": "{{language}} approach: use `WHERE value BETWEEN low AND high` and note inclusive boundaries."
       }
     },
     {
@@ -967,7 +967,7 @@
         "SQL approach: explain `%` and `_` pattern characters with one short example each."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use wildcard patterns such as `prefix%` to match starts-with behavior."
+        "SQL": "{{language}} approach: use wildcard patterns such as `prefix%` to match starts-with behavior."
       }
     },
     {
@@ -982,7 +982,7 @@
         "SQL approach: demonstrate correct predicates using `IS NULL` and `IS NOT NULL`."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: define `NULL` as unknown or missing and show why `= NULL` does not work."
+        "SQL": "{{language}} approach: define `NULL` as unknown or missing and show why `= NULL` does not work."
       }
     },
     {
@@ -997,7 +997,7 @@
         "SQL approach: explain how null values affect aggregate counts."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: compare `COUNT(*)` with `COUNT(column_name)`."
+        "SQL": "{{language}} approach: compare `COUNT(*)` with `COUNT(column_name)`."
       }
     },
     {
@@ -1012,7 +1012,7 @@
         "SQL approach: combine both aggregates in one query when helpful for quick range checks."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use `MAX(column_name)` and `MIN(column_name)` aggregates."
+        "SQL": "{{language}} approach: use `MAX(column_name)` and `MIN(column_name)` aggregates."
       }
     },
     {
@@ -1027,7 +1027,7 @@
         "SQL approach: mention that null entries are ignored by aggregate calculations."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use `AVG(column_name)` to compute the mean of available numeric values."
+        "SQL": "{{language}} approach: use `AVG(column_name)` to compute the mean of available numeric values."
       }
     },
     {
@@ -1042,7 +1042,7 @@
         "SQL approach: pair `WHERE` with `SUM` to total only a filtered subset."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use `SUM(column_name)` and optionally alias the result for readability."
+        "SQL": "{{language}} approach: use `SUM(column_name)` and optionally alias the result for readability."
       }
     },
     {
@@ -1057,7 +1057,7 @@
         "SQL approach: explain why non-aggregated selected columns must appear in `GROUP BY`."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: combine `GROUP BY` with `COUNT(*)` to summarize repeated values."
+        "SQL": "{{language}} approach: combine `GROUP BY` with `COUNT(*)` to summarize repeated values."
       }
     },
     {
@@ -1072,7 +1072,7 @@
         "SQL approach: contrast `WHERE` (before grouping) with `HAVING` (after grouping)."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use `HAVING` after `GROUP BY` to filter on aggregate results like counts or sums."
+        "SQL": "{{language}} approach: use `HAVING` after `GROUP BY` to filter on aggregate results like counts or sums."
       }
     },
     {
@@ -1087,7 +1087,7 @@
         "SQL approach: explain that unmatched rows from either side are excluded by inner joins."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: join on matching key columns and return selected fields from both tables."
+        "SQL": "{{language}} approach: join on matching key columns and return selected fields from both tables."
       }
     },
     {
@@ -1102,7 +1102,7 @@
         "SQL approach: compare result size and null behavior against an inner join."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: show `LEFT JOIN` syntax and point out nulls on the right side when no match exists."
+        "SQL": "{{language}} approach: show `LEFT JOIN` syntax and point out nulls on the right side when no match exists."
       }
     },
     {
@@ -1117,7 +1117,7 @@
         "SQL approach: mention that explicit column lists make inserts safer and clearer."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use `INSERT INTO table_name (col1, col2) VALUES (val1, val2);`."
+        "SQL": "{{language}} approach: use `INSERT INTO table_name (col1, col2) VALUES (val1, val2);`."
       }
     },
     {
@@ -1132,7 +1132,7 @@
         "SQL approach: explain that omitting `WHERE` updates every row."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: show `UPDATE table_name SET column_name = value WHERE id = ...;`."
+        "SQL": "{{language}} approach: show `UPDATE table_name SET column_name = value WHERE id = ...;`."
       }
     },
     {
@@ -1147,7 +1147,7 @@
         "SQL approach: suggest previewing matches with `SELECT` before running destructive deletes."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: use `DELETE FROM table_name WHERE ...;` with a clear filter condition."
+        "SQL": "{{language}} approach: use `DELETE FROM table_name WHERE ...;` with a clear filter condition."
       }
     },
     {
@@ -1432,8 +1432,8 @@
         "Java approach: extract a helper method that safely converts each array element into a numeric contribution."
       ],
       "potential_solutions": {
-        "Java": "Java approach: scan the array once, skip null entries, and accumulate each value.",
-        "Python": "Java approach: scan the array once, skip null entries, and accumulate each value."
+        "Java": "{{language}} approach: scan the array once, skip null entries, and accumulate each value.",
+        "Python": "{{language}} approach: scan the array once, skip null entries, and accumulate each value."
       }
     },
     {
@@ -1448,8 +1448,8 @@
         "Java approach: create a reversed copy if interview constraints do not require an in-place solution."
       ],
       "potential_solutions": {
-        "Java": "Java approach: use left and right indexes and swap until they cross.",
-        "Python": "Java approach: use left and right indexes and swap until they cross."
+        "Java": "{{language}} approach: use left and right indexes and swap until they cross.",
+        "Python": "{{language}} approach: use left and right indexes and swap until they cross."
       }
     },
     {
@@ -1464,8 +1464,8 @@
         "Java approach: use a same-class, same-package, subclass, and external-package comparison."
       ],
       "potential_solutions": {
-        "Java": "Java approach: cover private, package-private, protected, and public from narrowest to widest visibility.",
-        "Python": "Java approach: cover private, package-private, protected, and public from narrowest to widest visibility."
+        "Java": "{{language}} approach: cover private, package-private, protected, and public from narrowest to widest visibility.",
+        "Python": "{{language}} approach: cover private, package-private, protected, and public from narrowest to widest visibility."
       }
     },
     {
@@ -1480,8 +1480,8 @@
         "Java approach: explain code reuse together with method overriding."
       ],
       "potential_solutions": {
-        "Java": "Java approach: describe a superclass-subclass relationship and show one small example.",
-        "Python": "Java approach: describe a superclass-subclass relationship and show one small example."
+        "Java": "{{language}} approach: describe a superclass-subclass relationship and show one small example.",
+        "Python": "{{language}} approach: describe a superclass-subclass relationship and show one small example."
       }
     },
     {
@@ -1496,8 +1496,8 @@
         "Java approach: contrast overriding with overloading so the interviewer can see both ideas clearly."
       ],
       "potential_solutions": {
-        "Java": "Java approach: describe one interface or superclass reference that can point to different concrete objects.",
-        "Python": "Java approach: describe one interface or superclass reference that can point to different concrete objects."
+        "Java": "{{language}} approach: describe one interface or superclass reference that can point to different concrete objects.",
+        "Python": "{{language}} approach: describe one interface or superclass reference that can point to different concrete objects."
       }
     },
     {
@@ -1512,8 +1512,8 @@
         "Java approach: compare shared behavior contracts against concrete stateful class implementations."
       ],
       "potential_solutions": {
-        "Java": "Java approach: describe an interface as a contract for behavior and mention `implements`.",
-        "Python": "Java approach: describe an interface as a contract for behavior and mention `implements`."
+        "Java": "{{language}} approach: describe an interface as a contract for behavior and mention `implements`.",
+        "Python": "{{language}} approach: describe an interface as a contract for behavior and mention `implements`."
       }
     },
     {
@@ -1528,8 +1528,8 @@
         "Java approach: discuss how encapsulation lets implementations change without breaking callers."
       ],
       "potential_solutions": {
-        "Java": "Java approach: connect private fields with public methods that enforce invariants.",
-        "Python": "Java approach: connect private fields with public methods that enforce invariants."
+        "Java": "{{language}} approach: connect private fields with public methods that enforce invariants.",
+        "Python": "{{language}} approach: connect private fields with public methods that enforce invariants."
       }
     },
     {
@@ -1544,8 +1544,8 @@
         "Java approach: explain how `super` helps a subclass reuse part of a parent implementation."
       ],
       "potential_solutions": {
-        "Java": "Java approach: show `super(...)` for constructor chaining and `super.methodName()` for inherited behavior.",
-        "Python": "Java approach: show `super(...)` for constructor chaining and `super.methodName()` for inherited behavior."
+        "Java": "{{language}} approach: show `super(...)` for constructor chaining and `super.methodName()` for inherited behavior.",
+        "Python": "{{language}} approach: show `super(...)` for constructor chaining and `super.methodName()` for inherited behavior."
       }
     },
     {
@@ -1560,8 +1560,8 @@
         "Java approach: distinguish throwing an exception from handling one."
       ],
       "potential_solutions": {
-        "Java": "Java approach: define exceptions as runtime error signals and walk through a short `try/catch/finally` example.",
-        "Python": "Java approach: define exceptions as runtime error signals and walk through a short `try/catch/finally` example."
+        "Java": "{{language}} approach: define exceptions as runtime error signals and walk through a short `try/catch/finally` example.",
+        "Python": "{{language}} approach: define exceptions as runtime error signals and walk through a short `try/catch/finally` example."
       }
     },
     {
@@ -1576,8 +1576,8 @@
         "Java approach: give one example of each kind and explain why the distinction matters."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare compiler-enforced handling with runtime exceptions.",
-        "Python": "Java approach: compare compiler-enforced handling with runtime exceptions."
+        "Java": "{{language}} approach: compare compiler-enforced handling with runtime exceptions.",
+        "Python": "{{language}} approach: compare compiler-enforced handling with runtime exceptions."
       }
     },
     {
@@ -1592,8 +1592,8 @@
         "Java approach: contrast reassigning a parameter with mutating the object it points to."
       ],
       "potential_solutions": {
-        "Java": "Java approach: explain that Java always passes values, including copied object references.",
-        "Python": "Java approach: explain that Java always passes values, including copied object references."
+        "Java": "{{language}} approach: explain that {{language}} always passes values, including copied object references.",
+        "Python": "{{language}} approach: explain that {{language}} always passes values, including copied object references."
       }
     },
     {
@@ -1608,8 +1608,8 @@
         "Java approach: explain when static import improves readability and when it can make code harder to follow."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare importing types with importing static members.",
-        "Python": "Java approach: compare importing types with importing static members."
+        "Java": "{{language}} approach: compare importing types with importing static members.",
+        "Python": "{{language}} approach: compare importing types with importing static members."
       }
     },
     {
@@ -1624,8 +1624,8 @@
         "Java approach: show how enums can also include fields or methods when needed."
       ],
       "potential_solutions": {
-        "Java": "Java approach: describe enums as a fixed set of named constants.",
-        "Python": "Java approach: describe enums as a fixed set of named constants."
+        "Java": "{{language}} approach: describe enums as a fixed set of named constants.",
+        "Python": "{{language}} approach: describe enums as a fixed set of named constants."
       }
     },
     {
@@ -1640,8 +1640,8 @@
         "Java approach: mention portability, packaging, and executable application use cases."
       ],
       "potential_solutions": {
-        "Java": "Java approach: define a JAR as a ZIP-based archive for classes and resources.",
-        "Python": "Java approach: define a JAR as a ZIP-based archive for classes and resources."
+        "Java": "{{language}} approach: define a JAR as a ZIP-based archive for classes and resources.",
+        "Python": "{{language}} approach: define a JAR as a ZIP-based archive for classes and resources."
       }
     },
     {
@@ -1656,8 +1656,8 @@
         "Java approach: mention defensive initialization, validation, and null-safe design habits."
       ],
       "potential_solutions": {
-        "Java": "Java approach: describe what happens when code dereferences a null reference.",
-        "Python": "Java approach: describe what happens when code dereferences a null reference."
+        "Java": "{{language}} approach: describe what happens when code dereferences a null reference.",
+        "Python": "{{language}} approach: describe what happens when code dereferences a null reference."
       }
     },
     {
@@ -1672,8 +1672,8 @@
         "Java approach: use examples like file I/O for checked exceptions and invalid indexing for unchecked exceptions."
       ],
       "potential_solutions": {
-        "Java": "Java approach: classify exceptions by compiler enforcement and typical runtime behavior.",
-        "Python": "Java approach: classify exceptions by compiler enforcement and typical runtime behavior."
+        "Java": "{{language}} approach: classify exceptions by compiler enforcement and typical runtime behavior.",
+        "Python": "{{language}} approach: classify exceptions by compiler enforcement and typical runtime behavior."
       }
     },
     {
@@ -1688,8 +1688,8 @@
         "Java approach: explain the tradeoff between immediate handling and letting callers decide."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare handling with `try/catch` against declaring with `throws`.",
-        "Python": "Java approach: compare handling with `try/catch` against declaring with `throws`."
+        "Java": "{{language}} approach: compare handling with `try/catch` against declaring with `throws`.",
+        "Python": "{{language}} approach: compare handling with `try/catch` against declaring with `throws`."
       }
     },
     {
@@ -1704,8 +1704,8 @@
         "Java approach: justify one favorite collection type based on ordering, lookup, or update needs."
       ],
       "potential_solutions": {
-        "Java": "Java approach: define the framework and compare a few common interfaces or implementations.",
-        "Python": "Java approach: define the framework and compare a few common interfaces or implementations."
+        "Java": "{{language}} approach: define the framework and compare a few common interfaces or implementations.",
+        "Python": "{{language}} approach: define the framework and compare a few common interfaces or implementations."
       }
     },
     {
@@ -1720,8 +1720,8 @@
         "Java approach: explain why custom key classes should implement `equals()` and `hashCode()` consistently."
       ],
       "potential_solutions": {
-        "Java": "Java approach: declare the map with generic types and add one or two example entries.",
-        "Python": "Java approach: declare the map with generic types and add one or two example entries."
+        "Java": "{{language}} approach: declare the map with generic types and add one or two example entries.",
+        "Python": "{{language}} approach: declare the map with generic types and add one or two example entries."
       }
     },
     {
@@ -1736,7 +1736,7 @@
         "SQL approach: contrast a self-contained inner query with one that depends on the outer row context."
       ],
       "potential_solutions": {
-        "SQL": "SQL approach: define a nested query and explain how its result helps the outer query."
+        "SQL": "{{language}} approach: define a nested query and explain how its result helps the outer query."
       }
     },
     {
@@ -1751,8 +1751,8 @@
         "Java approach: answer with one scenario that favors inheritance and one that favors an interface."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare shared state plus partial implementation against pure behavior contracts.",
-        "Python": "Java approach: compare shared state plus partial implementation against pure behavior contracts."
+        "Java": "{{language}} approach: compare shared state plus partial implementation against pure behavior contracts.",
+        "Python": "{{language}} approach: compare shared state plus partial implementation against pure behavior contracts."
       }
     },
     {
@@ -1767,8 +1767,8 @@
         "Java approach: mention ordering expectations, null handling, and average lookup performance."
       ],
       "potential_solutions": {
-        "Java": "Java approach: define key-value mapping behavior and explain why keys must compare consistently.",
-        "Python": "Java approach: define key-value mapping behavior and explain why keys must compare consistently."
+        "Java": "{{language}} approach: define key-value mapping behavior and explain why keys must compare consistently.",
+        "Python": "{{language}} approach: define key-value mapping behavior and explain why keys must compare consistently."
       }
     },
     {
@@ -1963,8 +1963,8 @@
         "Java approach: compare how some modifiers affect memory, inheritance, or concurrency."
       ],
       "potential_solutions": {
-        "Java": "Java approach: define each modifier and explain the kind of code element it can modify.",
-        "Python": "Java approach: define each modifier and explain the kind of code element it can modify."
+        "Java": "{{language}} approach: define each modifier and explain the kind of code element it can modify.",
+        "Python": "{{language}} approach: define each modifier and explain the kind of code element it can modify."
       }
     },
     {
@@ -1979,8 +1979,8 @@
         "Java approach: answer by following the flow from writing code to compiling and then running it."
       ],
       "potential_solutions": {
-        "Java": "Java approach: describe the JVM as the runtime engine, the JRE as the runtime package, and the JDK as the developer toolkit.",
-        "Python": "Java approach: describe the JVM as the runtime engine, the JRE as the runtime package, and the JDK as the developer toolkit."
+        "Java": "{{language}} approach: describe the JVM as the runtime engine, the JRE as the runtime package, and the JDK as the developer toolkit.",
+        "Python": "{{language}} approach: describe the JVM as the runtime engine, the JRE as the runtime package, and the JDK as the developer toolkit."
       }
     },
     {
@@ -1995,8 +1995,8 @@
         "Java approach: mention recursion, object lifetime, and common errors like stack overflow or out-of-memory conditions."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare method-local storage with dynamically allocated objects.",
-        "Python": "Java approach: compare method-local storage with dynamically allocated objects."
+        "Java": "{{language}} approach: compare method-local storage with dynamically allocated objects.",
+        "Python": "{{language}} approach: compare method-local storage with dynamically allocated objects."
       }
     },
     {
@@ -2011,8 +2011,8 @@
         "Java approach: mention how each integrates with sorting APIs or sorted collections."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare natural ordering built into a class with an external comparison strategy.",
-        "Python": "Java approach: compare natural ordering built into a class with an external comparison strategy."
+        "Java": "{{language}} approach: compare natural ordering built into a class with an external comparison strategy.",
+        "Python": "{{language}} approach: compare natural ordering built into a class with an external comparison strategy."
       }
     },
     {
@@ -2027,8 +2027,8 @@
         "Java approach: mention which methods developers most often override in interview-style code."
       ],
       "potential_solutions": {
-        "Java": "Java approach: cover methods like `equals`, `hashCode`, `toString`, and `getClass` first.",
-        "Python": "Java approach: cover methods like `equals`, `hashCode`, `toString`, and `getClass` first."
+        "Java": "{{language}} approach: cover methods like `equals`, `hashCode`, `toString`, and `getClass` first.",
+        "Python": "{{language}} approach: cover methods like `equals`, `hashCode`, `toString`, and `getClass` first."
       }
     },
     {
@@ -2043,8 +2043,8 @@
         "Java approach: use one small example that succeeds and one that would fail at runtime."
       ],
       "potential_solutions": {
-        "Java": "Java approach: contrast safe upcasting with risky downcasting and explain `instanceof` checks.",
-        "Python": "Java approach: contrast safe upcasting with risky downcasting and explain `instanceof` checks."
+        "Java": "{{language}} approach: contrast safe upcasting with risky downcasting and explain `instanceof` checks.",
+        "Python": "{{language}} approach: contrast safe upcasting with risky downcasting and explain `instanceof` checks."
       }
     },
     {
@@ -2059,8 +2059,8 @@
         "Java approach: mention that runtime profiling can guide optimizations."
       ],
       "potential_solutions": {
-        "Java": "Java approach: define the just-in-time compiler and connect it to JVM execution.",
-        "Python": "Java approach: define the just-in-time compiler and connect it to JVM execution."
+        "Java": "{{language}} approach: define the just-in-time compiler and connect it to JVM execution.",
+        "Python": "{{language}} approach: define the just-in-time compiler and connect it to JVM execution."
       }
     },
     {
@@ -2075,8 +2075,8 @@
         "Java approach: mention how class structure and superclass behavior affect serializability."
       ],
       "potential_solutions": {
-        "Java": "Java approach: define serialization as converting object state into bytes for storage or transfer.",
-        "Python": "Java approach: define serialization as converting object state into bytes for storage or transfer."
+        "Java": "{{language}} approach: define serialization as converting object state into bytes for storage or transfer.",
+        "Python": "{{language}} approach: define serialization as converting object state into bytes for storage or transfer."
       }
     },
     {
@@ -2091,8 +2091,8 @@
         "Java approach: mention `try-with-resources` or explicit `close()` patterns for non-memory resources."
       ],
       "potential_solutions": {
-        "Java": "Java approach: explain garbage collection and why explicit destructors are not part of the language.",
-        "Python": "Java approach: explain garbage collection and why explicit destructors are not part of the language."
+        "Java": "{{language}} approach: explain garbage collection and why explicit destructors are not part of the language.",
+        "Python": "{{language}} approach: explain garbage collection and why explicit destructors are not part of the language."
       }
     },
     {
@@ -2107,8 +2107,8 @@
         "Java approach: contrast a concrete method in an abstract base class with an abstract method that subclasses must implement."
       ],
       "potential_solutions": {
-        "Java": "Java approach: describe partial implementation plus required subclass behavior.",
-        "Python": "Java approach: describe partial implementation plus required subclass behavior."
+        "Java": "{{language}} approach: describe partial implementation plus required subclass behavior.",
+        "Python": "{{language}} approach: describe partial implementation plus required subclass behavior."
       }
     },
     {
@@ -2123,8 +2123,8 @@
         "Java approach: discuss tradeoffs such as resizing, load factor, and worst-case lookup behavior."
       ],
       "potential_solutions": {
-        "Java": "Java approach: start with an array of buckets, then explain hashing and collision resolution.",
-        "Python": "Java approach: start with an array of buckets, then explain hashing and collision resolution."
+        "Java": "{{language}} approach: start with an array of buckets, then explain hashing and collision resolution.",
+        "Python": "{{language}} approach: start with an array of buckets, then explain hashing and collision resolution."
       }
     },
     {
@@ -2319,8 +2319,8 @@
         "Java approach: contrast immutable strings with mutable alternatives such as `StringBuilder`."
       ],
       "potential_solutions": {
-        "Java": "Java approach: discuss safety in hashing, sharing, threading, and security-sensitive contexts.",
-        "Python": "Java approach: discuss safety in hashing, sharing, threading, and security-sensitive contexts."
+        "Java": "{{language}} approach: discuss safety in hashing, sharing, threading, and security-sensitive contexts.",
+        "Python": "{{language}} approach: discuss safety in hashing, sharing, threading, and security-sensitive contexts."
       }
     },
     {
@@ -2335,8 +2335,8 @@
         "Java approach: use an overload versus override example to illustrate the distinction."
       ],
       "potential_solutions": {
-        "Java": "Java approach: connect static binding to compile-time resolution and dynamic binding to runtime dispatch.",
-        "Python": "Java approach: connect static binding to compile-time resolution and dynamic binding to runtime dispatch."
+        "Java": "{{language}} approach: connect static binding to compile-time resolution and dynamic binding to runtime dispatch.",
+        "Python": "{{language}} approach: connect static binding to compile-time resolution and dynamic binding to runtime dispatch."
       }
     },
     {
@@ -2351,8 +2351,8 @@
         "Java approach: mention flexibility together with readability, performance, and security tradeoffs."
       ],
       "potential_solutions": {
-        "Java": "Java approach: describe runtime inspection of fields, methods, and constructors through the reflection APIs.",
-        "Python": "Java approach: describe runtime inspection of fields, methods, and constructors through the reflection APIs."
+        "Java": "{{language}} approach: describe runtime inspection of fields, methods, and constructors through the reflection APIs.",
+        "Python": "{{language}} approach: describe runtime inspection of fields, methods, and constructors through the reflection APIs."
       }
     },
     {
@@ -2367,8 +2367,8 @@
         "Java approach: mention bootstrap, extension/platform, and system/application classloaders."
       ],
       "potential_solutions": {
-        "Java": "Java approach: describe how classes are loaded into the JVM on demand.",
-        "Python": "Java approach: describe how classes are loaded into the JVM on demand."
+        "Java": "{{language}} approach: describe how classes are loaded into the JVM on demand.",
+        "Python": "{{language}} approach: describe how classes are loaded into the JVM on demand."
       }
     },
     {
@@ -2383,8 +2383,8 @@
         "Java approach: use plugin or driver loading as a concrete example of dynamic loading."
       ],
       "potential_solutions": {
-        "Java": "Java approach: compare compile-time known types with runtime-resolved types.",
-        "Python": "Java approach: compare compile-time known types with runtime-resolved types."
+        "Java": "{{language}} approach: compare compile-time known types with runtime-resolved types.",
+        "Python": "{{language}} approach: compare compile-time known types with runtime-resolved types."
       }
     },
     {

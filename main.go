@@ -824,6 +824,7 @@ const templates = `
       if (button.dataset.pending === "true") {
         return;
       }
+      const originalLabel = "Show actual solution (60s delay)";
       button.dataset.pending = "true";
       button.disabled = true;
       let remaining = 60;
@@ -832,10 +833,25 @@ const templates = `
         remaining -= 1;
         if (remaining <= 0) {
           clearInterval(timer);
-          if (window.htmx && window.htmx.ajax) {
-            window.htmx.ajax("GET", url, { target: "#" + targetId, swap: "innerHTML" });
-          }
-          button.textContent = "Actual solution shown";
+          fetch(url)
+            .then(function (response) {
+              if (!response.ok) {
+                throw new Error("request failed");
+              }
+              return response.text();
+            })
+            .then(function (html) {
+              const target = document.getElementById(targetId);
+              if (target) {
+                target.innerHTML = html;
+              }
+              button.textContent = "Actual solution shown";
+            })
+            .catch(function () {
+              button.dataset.pending = "false";
+              button.disabled = false;
+              button.textContent = originalLabel;
+            });
           return;
         }
         button.textContent = "Unlocking in " + remaining + "s...";
