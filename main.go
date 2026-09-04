@@ -660,8 +660,8 @@ func (a *App) handleProblemRoutes(w http.ResponseWriter, r *http.Request) {
 		a.handleProblemSolutions(w, r, id)
 		return
 	}
-	if len(parts) == 2 && parts[1] == "potential-solutions" {
-		a.handleProblemPotentialSolutions(w, r, id)
+	if len(parts) == 2 && (parts[1] == "actual-solution" || parts[1] == "potential-solutions") {
+		a.handleProblemActualSolutions(w, r, id)
 		return
 	}
 	http.NotFound(w, r)
@@ -721,7 +721,7 @@ func (a *App) handleProblemSolutions(w http.ResponseWriter, r *http.Request, id 
 	}
 }
 
-func (a *App) handleProblemPotentialSolutions(w http.ResponseWriter, r *http.Request, id int) {
+func (a *App) handleProblemActualSolutions(w http.ResponseWriter, r *http.Request, id int) {
 	solutions, err := getProblemPotentialSolutions(a.db, id)
 	if err != nil {
 		http.Error(w, "failed to load potential solutions", http.StatusInternalServerError)
@@ -733,7 +733,7 @@ func (a *App) handleProblemPotentialSolutions(w http.ResponseWriter, r *http.Req
 	}
 
 	data := PotentialSolutionsData{Solutions: solutions}
-	if err := a.templates.ExecuteTemplate(w, "potential_solutions", data); err != nil {
+	if err := a.templates.ExecuteTemplate(w, "actual_solutions", data); err != nil {
 		http.Error(w, "failed to render potential solutions", http.StatusInternalServerError)
 	}
 }
@@ -825,8 +825,12 @@ const templates = `
         return;
       }
       const originalLabel = "Show actual solution (60s delay)";
+      const target = document.getElementById(targetId);
       button.dataset.pending = "true";
       button.disabled = true;
+      if (target) {
+        target.setAttribute("aria-busy", "true");
+      }
       let remaining = 60;
       button.textContent = "Unlocking in " + remaining + "s...";
       const timer = setInterval(function () {
@@ -841,9 +845,9 @@ const templates = `
               return response.text();
             })
             .then(function (html) {
-              const target = document.getElementById(targetId);
               if (target) {
                 target.innerHTML = html;
+                target.setAttribute("aria-busy", "false");
               }
               button.textContent = "Actual solution shown";
             })
@@ -851,6 +855,9 @@ const templates = `
               button.dataset.pending = "false";
               button.disabled = false;
               button.textContent = originalLabel;
+              if (target) {
+                target.setAttribute("aria-busy", "false");
+              }
             });
           return;
         }
@@ -893,7 +900,7 @@ const templates = `
           onclick='copyProblemPrompt(this, "{{.Problem.Prompt | js}}")'>Copy question</button>
   <button class="btn btn-outline-warning btn-sm"
           type="button"
-          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/potential-solutions", "actual-solution-{{.Problem.ID}}")'>Show actual solution (60s delay)</button>
+          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution", "actual-solution-{{.Problem.ID}}")'>Show actual solution (60s delay)</button>
 </div>
 <div id="solutions-{{.Problem.ID}}"
      hx-swap="innerHTML">
@@ -903,7 +910,7 @@ const templates = `
           hx-swap="innerHTML"
           type="button">Show first hint</button>
 </div>
-<div id="actual-solution-{{.Problem.ID}}" class="mt-3"></div>
+<div id="actual-solution-{{.Problem.ID}}" class="mt-3" aria-live="polite" aria-busy="false"></div>
 {{end}}
 
 {{define "solutions"}}
@@ -922,8 +929,8 @@ const templates = `
 {{end}}
 {{end}}
 
-{{define "potential_solutions"}}
-<h6>Potential Solution{{if gt (len .Solutions) 1}}s{{end}}</h6>
+{{define "actual_solutions"}}
+<h6>Actual Solution{{if gt (len .Solutions) 1}}s{{end}} (Potential Approaches)</h6>
 <ul class="list-unstyled mb-0">
   {{range .Solutions}}
     <li class="mb-2">

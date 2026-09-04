@@ -532,9 +532,9 @@ func TestProblemPotentialSolutionsShowsJavaAndPythonForNonSQL(t *testing.T) {
 	app := newTestApp(t)
 	problemID := firstProblemIDForLanguage(t, app.db, "Java")
 
-	req := httptest.NewRequest(http.MethodGet, fmt.Sprintf("/problem/%d/potential-solutions", problemID), nil)
+	req := httptest.NewRequest(http.MethodGet, fmt.Sprintf("/problem/%d/actual-solution", problemID), nil)
 	rr := httptest.NewRecorder()
-	app.handleProblemPotentialSolutions(rr, req, problemID)
+	app.handleProblemActualSolutions(rr, req, problemID)
 
 	if rr.Code != http.StatusOK {
 		t.Fatalf("expected status 200, got %d", rr.Code)
@@ -543,15 +543,21 @@ func TestProblemPotentialSolutionsShowsJavaAndPythonForNonSQL(t *testing.T) {
 	if !strings.Contains(body, ">Java<") || !strings.Contains(body, ">Python<") {
 		t.Fatalf("expected Java and Python labeled potential solutions, got: %s", body)
 	}
+	if !strings.Contains(strings.ToLower(body), "actual solution") {
+		t.Fatalf("expected actual solution heading, got: %s", body)
+	}
+	if !strings.Contains(body, "Java potential solution:") || !strings.Contains(body, "Python potential solution:") {
+		t.Fatalf("expected language-specific potential solution text, got: %s", body)
+	}
 }
 
 func TestProblemPotentialSolutionsShowsSQLForSQLProblem(t *testing.T) {
 	app := newTestApp(t)
 	problemID := firstProblemIDForLanguage(t, app.db, "SQL")
 
-	req := httptest.NewRequest(http.MethodGet, fmt.Sprintf("/problem/%d/potential-solutions", problemID), nil)
+	req := httptest.NewRequest(http.MethodGet, fmt.Sprintf("/problem/%d/actual-solution", problemID), nil)
 	rr := httptest.NewRecorder()
-	app.handleProblemPotentialSolutions(rr, req, problemID)
+	app.handleProblemActualSolutions(rr, req, problemID)
 
 	if rr.Code != http.StatusOK {
 		t.Fatalf("expected status 200, got %d", rr.Code)
