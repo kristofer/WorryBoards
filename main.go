@@ -562,12 +562,12 @@ ORDER BY solution_order ASC`, problemID)
 	return result, rows.Err()
 }
 
-func getProblemPotentialSolutions(db *sql.DB, problemID int) ([]PotentialSolution, error) {
+func getProblemPotentialSolutions(db *sql.DB, problemID int, language string) ([]PotentialSolution, error) {
 	rows, err := db.Query(`
 SELECT language, solution
 FROM problem_potential_solutions
-WHERE problem_id = ?
-ORDER BY CASE language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID)
+WHERE problem_id = ? AND language = ?
+ORDER BY CASE language WHEN 'Java' THEN 1 WHEN 'Python' THEN 2 WHEN 'SQL' THEN 3 ELSE 4 END`, problemID, language)
 	if err != nil {
 		return nil, err
 	}
@@ -722,7 +722,17 @@ func (a *App) handleProblemSolutions(w http.ResponseWriter, r *http.Request, id 
 }
 
 func (a *App) handleProblemActualSolutions(w http.ResponseWriter, r *http.Request, id int) {
-	solutions, err := getProblemPotentialSolutions(a.db, id)
+	problem, err := getProblemByID(a.db, id)
+	if err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			http.NotFound(w, r)
+			return
+		}
+		http.Error(w, "failed to load problem", http.StatusInternalServerError)
+		return
+	}
+
+	solutions, err := getProblemPotentialSolutions(a.db, id, problem.Language)
 	if err != nil {
 		http.Error(w, "failed to load potential solutions", http.StatusInternalServerError)
 		return
@@ -820,49 +830,61 @@ const templates = `
         }, 1200);
       });
     }
+    function armActualSolutionDelay(button, delaySeconds) {
+      if (!button || button.dataset.timerStarted === "true") {
+        return;
+      }
+      button.dataset.timerStarted = "true";
+      button.disabled = true;
+      let remaining = delaySeconds;
+      button.textContent = "Show actual solution (available in " + remaining + "s)";
+      const timer = setInterval(function () {
+        remaining -= 1;
+        if (remaining <= 0) {
+          clearInterval(timer);
+          button.disabled = false;
+          button.textContent = "Show actual solution";
+          return;
+        }
+        button.textContent = "Show actual solution (available in " + remaining + "s)";
+      }, 1000);
+    }
     function revealActualSolutionAfterDelay(button, url, targetId) {
+      if (button.disabled) {
+        return;
+      }
       if (button.dataset.pending === "true") {
         return;
       }
-      const originalLabel = "Show actual solution (60s delay)";
+      const originalLabel = "Show actual solution";
       const target = document.getElementById(targetId);
       button.dataset.pending = "true";
       button.disabled = true;
       if (target) {
         target.setAttribute("aria-busy", "true");
       }
-      let remaining = 60;
-      button.textContent = "Unlocking in " + remaining + "s...";
-      const timer = setInterval(function () {
-        remaining -= 1;
-        if (remaining <= 0) {
-          clearInterval(timer);
-          fetch(url)
-            .then(function (response) {
-              if (!response.ok) {
-                throw new Error("request failed");
-              }
-              return response.text();
-            })
-            .then(function (html) {
-              if (target) {
-                target.innerHTML = html;
-                target.setAttribute("aria-busy", "false");
-              }
-              button.textContent = "Actual solution shown";
-            })
-            .catch(function () {
-              button.dataset.pending = "false";
-              button.disabled = false;
-              button.textContent = originalLabel;
-              if (target) {
-                target.setAttribute("aria-busy", "false");
-              }
-            });
-          return;
-        }
-        button.textContent = "Unlocking in " + remaining + "s...";
-      }, 1000);
+      fetch(url)
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error("request failed");
+          }
+          return response.text();
+        })
+        .then(function (html) {
+          if (target) {
+            target.innerHTML = html;
+            target.setAttribute("aria-busy", "false");
+          }
+          button.textContent = "Actual solution shown";
+        })
+        .catch(function () {
+          button.dataset.pending = "false";
+          button.disabled = false;
+          button.textContent = originalLabel;
+          if (target) {
+            target.setAttribute("aria-busy", "false");
+          }
+        });
     }
   </script>
 </body>
@@ -898,9 +920,6 @@ const templates = `
   <button class="btn btn-outline-primary btn-sm"
           type="button"
           onclick='copyProblemPrompt(this, "{{.Problem.Prompt | js}}")'>Copy question</button>
-  <button class="btn btn-outline-warning btn-sm"
-          type="button"
-          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution", "actual-solution-{{.Problem.ID}}")'>Show actual solution (60s delay)</button>
 </div>
 <div id="solutions-{{.Problem.ID}}"
      hx-swap="innerHTML">
@@ -910,7 +929,17 @@ const templates = `
           hx-swap="innerHTML"
           type="button">Show first hint</button>
 </div>
+<div class="mt-3">
+  <button id="actual-solution-button-{{.Problem.ID}}"
+          class="btn btn-outline-warning btn-sm"
+          type="button"
+          disabled
+          onclick='revealActualSolutionAfterDelay(this, "/problem/{{.Problem.ID}}/actual-solution", "actual-solution-{{.Problem.ID}}")'>Show actual solution (available in 60s)</button>
+</div>
 <div id="actual-solution-{{.Problem.ID}}" class="mt-3" aria-live="polite" aria-busy="false"></div>
+<script>
+  armActualSolutionDelay(document.getElementById("actual-solution-button-{{.Problem.ID}}"), 60);
+</script>
 {{end}}
 
 {{define "solutions"}}
